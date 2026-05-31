@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excipient Sourcing Navigator | Pharma Excipients</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --blue: #2B6099;
+      --blue-hover: #1E4A75;
+      --blue-light: #EEF3F8;
+      --blue-glow: rgba(43, 96, 153, 0.25);
+      --gray-brand: #4A4F54;
+      --gray-brand-hover: #3A3E42;
+      --dark: #1A2332;
+      --text: #384250;
+      --text-light: #6B7785;
+      --text-muted: #94A0AE;
+      --border: #D5DCE4;
+      --bg: #F7F9FB;
+      --white: #FFFFFF;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      background-image: radial-gradient(circle, #D5DCE4 0.5px, transparent 0.5px);
+      background-size: 28px 28px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 28px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .logo {
+      height: 34px;
+      width: auto;
+      flex-shrink: 0;
+    }
+
+    .header-divider {
+      width: 1px;
+      height: 28px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+
+    .header-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: -0.02em;
+    }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 18px 28px 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 13.5px;
+      min-height: 20px;
+    }
+
+    .breadcrumb:empty { display: none; }
+
+    .crumb {
+      padding: 2px 0;
+      transition: color 0.15s ease;
+    }
+
+    .crumb.clickable {
+      color: var(--blue);
+      cursor: pointer;
+    }
+
+    .crumb.clickable:hover {
+      color: var(--blue-hover);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .crumb.current {
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .sep {
+      color: var(--text-muted);
+      font-size: 11px;
+      user-select: none;
+    }
+
+    /* ── Main ── */
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 28px 60px;
+      overflow: hidden;
+    }
+
+    /* ── Welcome ── */
+    .welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+
+    .welcome h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .welcome p {
+      font-size: 16px;
+      color: var(--text-light);
+      max-width: 440px;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .cta-btn {
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      padding: 16px 44px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 16px var(--blue-glow);
+      letter-spacing: 0.01em;
+    }
+
+    .cta-btn:hover {
+      background: var(--blue-hover);
+      box-shadow: 0 6px 24px rgba(43, 96, 153, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .cta-btn:active {
+      transform: translateY(0);
+    }
+
+    .stats {
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Stage Header ── */
+    .stage-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 12px;
+    }
+
+    .stage-header h2 {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: -0.02em;
+    }
+
+    .item-count {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 400;
+      white-space: nowrap;
+    }
+
+    /* ── Supplier Context ── */
+    .supplier-context {
+      font-size: 14.5px;
+      color: var(--text-light);
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .supplier-context strong {
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    /* ── Button Grid ── */
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .btn-grid.single-col {
+      grid-template-columns: 1fr;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* ── Excipient Buttons (blue variant) ── */
+    .nav-btn.blue {
+      background: var(--blue);
+      border-color: var(--blue);
+      border-left-color: var(--blue);
+      color: var(--white);
+    }
+
+    .nav-btn.blue .btn-label {
+      color: var(--white);
+    }
+
+    .nav-btn.blue .btn-meta {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .nav-btn.blue:hover {
+      background: var(--blue-hover);
+      border-color: var(--blue-hover);
+      border-left-color: var(--white);
+    }
+
+    /* ── Navigation Buttons ── */
+    .nav-btn {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px 18px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-btn:hover {
+      border-color: var(--blue);
+      background: var(--blue-light);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+
+    .nav-btn:active {
+      transform: translateY(0);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-label {
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--dark);
+      line-height: 1.35;
+    }
+
+    .btn-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* ── Supplier Grid ── */
+    .supplier-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      max-width: 580px;
+      overflow: hidden;
+    }
+
+    /* ── Supplier Row ── */
+    .supplier-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow: hidden;
+    }
+
+    .supplier-row-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--dark);
+      padding: 0 2px;
+    }
+
+    .supplier-row-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    .supplier-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      border: 1px solid;
+    }
+
+    .supplier-btn-page {
+      background: #CDEBFF;
+      border-color: #B0DEFF;
+      color: var(--dark);
+    }
+
+    .supplier-btn-page:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: var(--white);
+      box-shadow: 0 4px 14px var(--blue-glow);
+      transform: translateY(-1px);
+    }
+
+    .supplier-btn-products {
+      background: var(--white);
+      border-color: var(--border);
+      color: var(--dark);
+      flex: 1;
+      justify-content: space-between;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .supplier-btn-products span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .supplier-btn-products:hover {
+      border-color: var(--blue);
+      background: var(--blue-light);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+
+    .supplier-arrow {
+      flex-shrink: 0;
+      opacity: 0.5;
+      transition: opacity 0.2s ease;
+    }
+
+    .supplier-btn:hover .supplier-arrow {
+      opacity: 1;
+    }
+
+    /* ── Product Grid (Stage 6) ── */
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      max-width: 580px;
+    }
+
+    .product-card {
+      display: block;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 18px;
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+
+    a.product-card:hover {
+      border-color: var(--blue);
+      background: var(--blue-light);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+
+    .product-name {
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+
+    .product-chemical {
+      font-size: 12.5px;
+      color: var(--text-light);
+      margin-bottom: 2px;
+    }
+
+    .product-function {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .no-products {
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-light);
+      font-size: 14.5px;
+    }
+
+    @media (max-width: 480px) {
+      .supplier-row-btns {
+        flex-direction: column;
+      }
+    }
+
+    /* ── Loading ── */
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px;
+      color: var(--text-muted);
+      font-size: 15px;
+      gap: 16px;
+    }
+
+    .spinner {
+      width: 28px;
+      height: 28px;
+      border: 3px solid var(--border);
+      border-top-color: var(--blue);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.32s ease forwards;
+      opacity: 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 20px 28px 32px;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    footer a {
+      color: var(--text-muted);
+      font-size: 12.5px;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    footer a:hover {
+      color: var(--blue);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 720px) {
+      .btn-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .supplier-grid {
+        grid-template-columns: 1fr;
+      }
+      .welcome { padding: 52px 16px 40px; }
+      .welcome h2 { font-size: 26px; }
+      .header-title { font-size: 15px; }
+    }
+
+    @media (max-width: 480px) {
+      .btn-grid {
+        grid-template-columns: 1fr;
+      }
+      .header-inner { padding: 0 16px; gap: 12px; }
+      main { padding: 20px 16px 48px; }
+      .breadcrumb { padding: 14px 16px 0; }
+      .welcome h2 { font-size: 23px; }
+      .welcome p { font-size: 15px; }
+      .stage-header h2 { font-size: 19px; }
+      .logo { height: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <img src="pe-logo.png" alt="Pharma Excipients" class="logo">
+      <div class="header-divider"></div>
+      <span class="header-title">Excipient Sourcing Navigator</span>
+    </div>
+  </header>
+
+  <nav id="breadcrumb" class="breadcrumb"></nav>
+
+  <main id="app">
+    <div class="loading">
+      <div class="spinner"></div>
+      Loading excipient data...
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://www.pharmaexcipients.com" target="_blank" rel="noopener noreferrer">
+      pharmaexcipients.com
+    </a>
+  </footer>
+
+<script>
+const SUPPLIER_URLS = {
+  "ADM": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/",
+  "Antares Health Products": "https://www.pharmaexcipients.com/excipient-suppliers-list/antares-health-products/",
+  "Armor Pharma": "https://www.pharmaexcipients.com/excipient-suppliers-list/armor-pharma-lactose/",
+  "Asahi Kasei": "https://www.pharmaexcipients.com/asahi-kasei/",
+  "Ashland": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/",
+  "BASF": "https://www.pharmaexcipients.com/basf/",
+  "BENEO (galenIQ)": "https://www.pharmaexcipients.com/excipient-suppliers-list/pharma-excipients-d5/",
+  "Biogrund": "https://www.pharmaexcipients.com/excipient-suppliers-list/film-coating-excellence/",
+  "Captisol": "https://www.pharmaexcipients.com/excipient-suppliers-list/captisol-cyclodextrin/",
+  "Clariant": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/",
+  "Croda": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/",
+  "DFE Pharma": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/",
+  "Evonik": "https://www.pharmaexcipients.com/evonik/",
+  "Fuji Chemical Industries": "https://www.pharmaexcipients.com/excipient-suppliers-list/fuji-chemical-industries/",
+  "Gangwal Healthcare": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/",
+  "Gattefosse": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/",
+  "IOI Oleochemical": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/",
+  "JRS Pharma": "https://www.pharmaexcipients.com/jrs-pharma/",
+  "Kerry": "https://www.pharmaexcipients.com/excipient-suppliers-list/downloads-kerry-documents/",
+  "KLK Oleo Life Science": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/",
+  "Lonza Capsugel": "https://www.pharmaexcipients.com/excipient-suppliers-list/lonza/",
+  "Lactalis Ingredients Pharma": "https://www.pharmaexcipients.com/excipient-suppliers-list/lactalis/",
+  "Lipoid": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/",
+  "Lubrizol Life Science Health (LLS Health)": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/",
+  "MAGNESIA": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/",
+  "MEGGLE": "https://www.pharmaexcipients.com/excipient-suppliers-list/meggle/",
+  "Nagase Viita": "https://www.pharmaexcipients.com/excipient-suppliers-list/nagase-viita/",
+  "Nordic Bioproducts Group": "https://www.pharmaexcipients.com/nordic-bioproducts-group/",
+  "pharm-a-spheres": "https://www.pharmaexcipients.com/excipient-suppliers-list/pharm-a-spheres-documents/",
+  "PMC Isochem": "https://www.pharmaexcipients.com/excipient-suppliers-list/pmc-isochem/",
+  "Roquette": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/",
+  "Seppic": "https://www.pharmaexcipients.com/seppic-5/",
+  "ShinEtsu": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/",
+  "Sigachi": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/",
+  "SPI Pharma": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/",
+  "Sudzucker": "https://www.pharmaexcipients.com/excipient-suppliers-list/suedzucker-ag/",
+  "Vikram Thermo": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
+};
+
+const ARROW_SVG = '<svg class="supplier-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13L13 5M13 5H6.5M13 5V11.5"/></svg>';
+
+const state = {
+  started: false,
+  data: null,
+  products: null,
+  route: null,
+  category: null,
+  excipient: null,
+  supplier: null
+};
+
+function getStage() {
+  if (!state.started) return 0;
+  if (!state.route) return 1;
+  if (!state.category) return 2;
+  if (!state.excipient) return 3;
+  if (!state.supplier) return 4;
+  return 5;
+}
+
+function getSupplierUrl(supplier) {
+  return SUPPLIER_URLS[supplier.name] || supplier.link || null;
+}
+
+function plural(n, singular, pluralForm) {
+  return n === 1 ? singular : (pluralForm || singular + 's');
+}
+
+function computeStats() {
+  let routes = 0, categories = 0, excipients = 0;
+  const suppliers = new Set();
+  state.data.forEach(function(r) {
+    routes++;
+    (r.children || []).forEach(function(c) {
+      categories++;
+      (c.children || []).forEach(function(e) {
+        excipients++;
+        (e.suppliers || []).forEach(function(s) { suppliers.add(s.name); });
+      });
+    });
+  });
+  return { routes: routes, categories: categories, excipients: excipients, suppliers: suppliers.size };
+}
+
+function startExploring() {
+  state.started = true;
+  render();
+}
+
+function selectRoute(route) {
+  state.route = route;
+  state.category = null;
+  state.excipient = null;
+  render();
+}
+
+function selectCategory(category) {
+  state.category = category;
+  state.excipient = null;
+  render();
+}
+
+function selectExcipient(excipient) {
+  state.excipient = excipient;
+  state.supplier = null;
+  render();
+}
+
+function selectSupplier(supplier) {
+  state.supplier = supplier;
+  render();
+}
+
+function goBack(toStage) {
+  if (toStage <= 1) { state.route = null; state.category = null; state.excipient = null; state.supplier = null; }
+  else if (toStage <= 2) { state.category = null; state.excipient = null; state.supplier = null; }
+  else if (toStage <= 3) { state.excipient = null; state.supplier = null; }
+  else if (toStage <= 4) { state.supplier = null; }
+  if (toStage === 0) { state.started = false; }
+  render();
+}
+
+function matchProducts(supplierName, excipientName) {
+  if (!state.products || !state.products[supplierName]) return [];
+  var allProducts = state.products[supplierName];
+  var lower = excipientName.toLowerCase();
+  var terms = [lower];
+
+  var parenMatch = excipientName.match(/\(([^)]+)\)/);
+  var nameClean = lower.replace(/\s*\([^)]+\)\s*/g, '').trim();
+  terms.push(nameClean);
+
+  if (parenMatch) {
+    var parenContent = parenMatch[1].toLowerCase();
+    terms.push(parenContent);
+    parenContent.split(/[,\/]/).forEach(function(part) {
+      var t = part.trim();
+      if (t.length > 3 && t !== 'pre-blended') terms.push(t);
+    });
+  }
+
+  var broader = nameClean.replace(/\s+(systems?|formers?|agents?)$/i, '').trim();
+  if (broader !== nameClean && broader.length > 3) terms.push(broader);
+
+  if (nameClean.indexOf('/') !== -1) {
+    nameClean.split('/').forEach(function(part) {
+      var t = part.trim();
+      if (t.length > 3) terms.push(t);
+    });
+  }
+
+  var seen = {};
+  terms = terms.filter(function(t) { if (seen[t]) return false; seen[t] = true; return true; });
+
+  return allProducts.filter(function(p) {
+    var chem = (p.chemical || '').toLowerCase();
+    var func = (p['function'] || '').toLowerCase();
+    return terms.some(function(t) { return chem.indexOf(t) !== -1 || func.indexOf(t) !== -1; });
+  });
+}
+
+function renderBreadcrumb() {
+  var bc = document.getElementById('breadcrumb');
+  var stage = getStage();
+
+  if (stage === 0) { bc.innerHTML = ''; return; }
+
+  var html = '';
+
+  if (stage > 1) {
+    html += '<span class="crumb clickable" onclick="goBack(1)">Home</span>';
+  } else {
+    html += '<span class="crumb current">Home</span>';
+  }
+
+  if (stage >= 2 && state.route) {
+    var rn = state.route.name.replace(' Excipients', '');
+    html += '<span class="sep">/</span>';
+    html += stage > 2
+      ? '<span class="crumb clickable" onclick="goBack(2)">' + rn + '</span>'
+      : '<span class="crumb current">' + rn + '</span>';
+  }
+
+  if (stage >= 3 && state.category) {
+    html += '<span class="sep">/</span>';
+    html += stage > 3
+      ? '<span class="crumb clickable" onclick="goBack(3)">' + state.category.name + '</span>'
+      : '<span class="crumb current">' + state.category.name + '</span>';
+  }
+
+  if (stage >= 4 && state.excipient) {
+    html += '<span class="sep">/</span>';
+    html += stage > 4
+      ? '<span class="crumb clickable" onclick="goBack(4)">' + state.excipient.name + '</span>'
+      : '<span class="crumb current">' + state.excipient.name + '</span>';
+  }
+
+  if (stage >= 5 && state.supplier) {
+    html += '<span class="sep">/</span>';
+    html += '<span class="crumb current">' + state.supplier.name + '</span>';
+  }
+
+  bc.innerHTML = html;
+}
+
+function render() {
+  var app = document.getElementById('app');
+  var stage = getStage();
+
+  switch (stage) {
+    case 0: renderWelcome(app); break;
+    case 1: renderRoutes(app); break;
+    case 2: renderCategories(app); break;
+    case 3: renderExcipients(app); break;
+    case 4: renderSuppliers(app); break;
+    case 5: renderProducts(app); break;
+  }
+
+  renderBreadcrumb();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderWelcome(container) {
+  var s = state.data ? computeStats() : null;
+  var statsHtml = s
+    ? '<div class="stats">' + s.routes + ' routes &middot; ' + s.categories + ' categories &middot; ' + s.excipients + ' excipients &middot; ' + s.suppliers + ' suppliers</div>'
+    : '';
+
+  container.innerHTML =
+    '<div class="welcome animate-in">' +
+      '<h2>Find Your Excipient Suppliers</h2>' +
+      '<p>Navigate by route of administration to discover qualified excipient suppliers on PharmaExcipients.com</p>' +
+      '<button class="cta-btn" onclick="startExploring()">Start Exploring</button>' +
+      statsHtml +
+    '</div>';
+}
+
+function renderRoutes(container) {
+  var items = state.data;
+  container.innerHTML =
+    '<div class="stage-header animate-in">' +
+      '<h2>Select Route of Administration</h2>' +
+      '<span class="item-count">' + items.length + ' routes</span>' +
+    '</div>' +
+    '<div class="btn-grid single-col" id="btn-grid"></div>';
+
+  var grid = document.getElementById('btn-grid');
+  items.forEach(function(route, i) {
+    var btn = document.createElement('button');
+    btn.className = 'nav-btn animate-in';
+    btn.style.animationDelay = (i + 1) * 50 + 'ms';
+    var n = route.children ? route.children.length : 0;
+    btn.innerHTML =
+      '<span class="btn-label">' + route.name + '</span>' +
+      '<span class="btn-meta">' + n + ' ' + plural(n, 'category', 'categories') + '</span>';
+    btn.onclick = function() { selectRoute(route); };
+    grid.appendChild(btn);
+  });
+}
+
+function renderCategories(container) {
+  var items = state.route.children || [];
+  container.innerHTML =
+    '<div class="stage-header animate-in">' +
+      '<h2>Select Excipient Category</h2>' +
+      '<span class="item-count">' + items.length + ' ' + plural(items.length, 'category', 'categories') + '</span>' +
+    '</div>' +
+    '<div class="btn-grid" id="btn-grid"></div>';
+
+  var grid = document.getElementById('btn-grid');
+  items.forEach(function(cat, i) {
+    var btn = document.createElement('button');
+    btn.className = 'nav-btn animate-in';
+    btn.style.animationDelay = (i + 1) * 35 + 'ms';
+    var n = cat.children ? cat.children.length : 0;
+    btn.innerHTML =
+      '<span class="btn-label">' + cat.name + '</span>' +
+      '<span class="btn-meta">' + n + ' ' + plural(n, 'excipient') + '</span>';
+    btn.onclick = function() { selectCategory(cat); };
+    grid.appendChild(btn);
+  });
+}
+
+function renderExcipients(container) {
+  var items = state.category.children || [];
+  container.innerHTML =
+    '<div class="stage-header animate-in">' +
+      '<h2>Select Excipient</h2>' +
+      '<span class="item-count">' + items.length + ' ' + plural(items.length, 'excipient') + '</span>' +
+    '</div>' +
+    '<div class="btn-grid" id="btn-grid"></div>';
+
+  var grid = document.getElementById('btn-grid');
+  items.forEach(function(exc, i) {
+    var btn = document.createElement('button');
+    btn.className = 'nav-btn blue animate-in';
+    btn.style.animationDelay = (i + 1) * 35 + 'ms';
+    var n = exc.suppliers ? exc.suppliers.length : 0;
+    btn.innerHTML =
+      '<span class="btn-label">' + exc.name + '</span>' +
+      '<span class="btn-meta">' + n + ' ' + plural(n, 'supplier') + '</span>';
+    btn.onclick = function() { selectExcipient(exc); };
+    grid.appendChild(btn);
+  });
+}
+
+function renderSuppliers(container) {
+  var suppliers = (state.excipient.suppliers || []).slice().sort(function(a, b) {
+    return a.name.localeCompare(b.name);
+  });
+  var routeName = state.route.name.replace(' Excipients', '');
+  var excName = state.excipient.name;
+
+  container.innerHTML =
+    '<div class="stage-header animate-in">' +
+      '<h2>Available Suppliers</h2>' +
+      '<span class="item-count">' + suppliers.length + ' ' + plural(suppliers.length, 'supplier') + '</span>' +
+    '</div>' +
+    '<p class="supplier-context animate-in" style="animation-delay:50ms">' +
+      'Suppliers of <strong>' + excName + '</strong> for <strong>' + routeName + '</strong> formulations' +
+    '</p>' +
+    '<div class="supplier-grid" id="supplier-grid"></div>';
+
+  var grid = document.getElementById('supplier-grid');
+  suppliers.forEach(function(sup, i) {
+    var url = getSupplierUrl(sup);
+    var row = document.createElement('div');
+    row.className = 'supplier-row animate-in';
+    row.style.animationDelay = (i + 1) * 60 + 'ms';
+
+    var nameEl = document.createElement('div');
+    nameEl.className = 'supplier-row-name';
+    nameEl.textContent = sup.name;
+    row.appendChild(nameEl);
+
+    var btns = document.createElement('div');
+    btns.className = 'supplier-row-btns';
+
+    if (url) {
+      var pageBtn = document.createElement('a');
+      pageBtn.className = 'supplier-btn supplier-btn-page';
+      pageBtn.href = url;
+      pageBtn.target = '_blank';
+      pageBtn.rel = 'noopener noreferrer';
+      pageBtn.innerHTML = 'Supplier Page ' + ARROW_SVG;
+      btns.appendChild(pageBtn);
+    }
+
+    var prodBtn = document.createElement('button');
+    prodBtn.className = 'supplier-btn supplier-btn-products';
+    prodBtn.innerHTML = '<span>' + excName + ' by ' + sup.name + '</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg>';
+    prodBtn.onclick = (function(s) { return function() { selectSupplier(s); }; })(sup);
+    btns.appendChild(prodBtn);
+
+    row.appendChild(btns);
+    grid.appendChild(row);
+  });
+}
+
+function renderProducts(container) {
+  var supplierName = state.supplier.name;
+  var excName = state.excipient.name;
+  var products = matchProducts(supplierName, excName);
+
+  container.innerHTML =
+    '<div class="stage-header animate-in">' +
+      '<h2>' + excName + ' by ' + supplierName + '</h2>' +
+      '<span class="item-count">' + products.length + ' ' + plural(products.length, 'product') + '</span>' +
+    '</div>' +
+    '<div class="product-grid" id="product-grid"></div>';
+
+  var grid = document.getElementById('product-grid');
+
+  if (products.length === 0) {
+    grid.innerHTML = '<div class="no-products animate-in">No specific products found for this combination.</div>';
+    return;
+  }
+
+  products.forEach(function(p, i) {
+    var card;
+    if (p.url) {
+      card = document.createElement('a');
+      card.href = p.url;
+      card.target = '_blank';
+      card.rel = 'noopener noreferrer';
+    } else {
+      card = document.createElement('div');
+    }
+    card.className = 'product-card animate-in';
+    card.style.animationDelay = (i + 1) * 40 + 'ms';
+    var linkIcon = p.url ? ' ' + ARROW_SVG : '';
+    card.innerHTML =
+      '<div class="product-name">' + p.product + linkIcon + '</div>' +
+      '<div class="product-chemical">' + p.chemical + '</div>' +
+      '<div class="product-function">' + p.function + '</div>';
+    grid.appendChild(card);
+  });
+}
+
+async function init() {
+  try {
+    var results = await Promise.all([
+      fetch('excipients.json').then(function(r) { return r.json(); }),
+      fetch('products.json').then(function(r) { return r.json(); })
+    ]);
+    state.data = results[0];
+    state.products = results[1];
+    render();
+  } catch (err) {
+    document.getElementById('app').innerHTML =
+      '<div class="loading" style="color:var(--text)">' +
+        '<p>Could not load data.</p>' +
+        '<p style="font-size:13px;color:var(--text-muted)">Make sure excipients.json and products.json are in the same folder and serve this page from a web server.</p>' +
+      '</div>';
+  }
+}
+
+init();
+</script>
+
+</body>
+</html>
