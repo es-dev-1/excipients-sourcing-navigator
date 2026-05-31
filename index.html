@@ -707,7 +707,7 @@ function matchProducts(supplierName, excipientName) {
     });
   }
 
-  var broader = nameClean.replace(/\s+(systems?|formers?|agents?)$/i, '').trim();
+  var broader = nameClean.replace(/\s+(systems?|formers?|agents?|shells?)$/i, '').trim();
   if (broader !== nameClean && broader.length > 3) terms.push(broader);
 
   if (nameClean.indexOf('/') !== -1) {
@@ -720,11 +720,26 @@ function matchProducts(supplierName, excipientName) {
   var seen = {};
   terms = terms.filter(function(t) { if (seen[t]) return false; seen[t] = true; return true; });
 
-  return allProducts.filter(function(p) {
+  var broaderWords = (broader !== nameClean && broader.indexOf(' ') !== -1)
+    ? broader.split(/\s+/) : null;
+
+  console.log('matchProducts:', supplierName, excipientName);
+  console.log('  terms:', terms);
+  console.log('  broader:', broader, '| broaderWords:', broaderWords);
+  console.log('  allProducts count:', allProducts.length);
+
+  var results = allProducts.filter(function(p) {
     var chem = (p.chemical || '').toLowerCase();
     var func = (p['function'] || '').toLowerCase();
-    return terms.some(function(t) { return chem.indexOf(t) !== -1 || func.indexOf(t) !== -1; });
+    var combined = chem + ' ' + func;
+    if (terms.some(function(t) { return chem.indexOf(t) !== -1 || func.indexOf(t) !== -1; })) return true;
+    if (broaderWords) {
+      return broaderWords.every(function(w) { return new RegExp('\\b' + w + '\\b').test(combined); });
+    }
+    return false;
   });
+  console.log('  matches:', results.length);
+  return results;
 }
 
 function renderBreadcrumb() {
@@ -796,8 +811,8 @@ function renderWelcome(container) {
 
   container.innerHTML =
     '<div class="welcome animate-in">' +
-      '<h2>Find Your Excipient Suppliers</h2>' +
-      '<p>Navigate by route of administration to discover qualified excipient suppliers on PharmaExcipients.com</p>' +
+      '<h2>Find Your Excipient Products</h2>' +
+      '<p>Navigate by route of administration and category to find the right excipient products on PharmaExcipients.com</p>' +
       '<button class="cta-btn" onclick="startExploring()">Start Exploring</button>' +
       statsHtml +
     '</div>';
