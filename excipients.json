@@ -83,6 +83,113 @@
                 "link": "https://www.pharmaexcipients.com/jrs-pharma/"
               }
             ]
+          },
+          {
+            "name": "Hydroxyethylcellulose (HEC)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              }
+            ]
+          },
+          {
+            "name": "Hypromellose (HPMC)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              },
+              {
+                "name": "Biogrund",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/film-coating-excellence/"
+              },
+              {
+                "name": "JRS Pharma",
+                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
+              },
+              {
+                "name": "ShinEtsu",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
+              },
+              {
+                "name": "Sigachi",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
+              }
+            ]
+          },
+          {
+            "name": "Methylcellulose (MC)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              },
+              {
+                "name": "ShinEtsu",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
+              }
+            ]
+          },
+          {
+            "name": "Sodium Carboxymethylcellulose (CMC)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              },
+              {
+                "name": "Biogrund",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/film-coating-excellence/"
+              },
+              {
+                "name": "JRS Pharma",
+                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Carbomer (Polyacrylic Acid)",
+            "suppliers": [
+              {
+                "name": "Lubrizol Life Science Health (LLS Health)",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
+              },
+              {
+                "name": "Vikram Thermo",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
+              }
+            ]
+          },
+          {
+            "name": "Xanthan Gum",
+            "suppliers": [
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              },
+              {
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
+              }
+            ]
+          },
+          {
+            "name": "Pregelatinized Starch",
+            "suppliers": [
+              {
+                "name": "Asahi Kasei",
+                "link": "https://www.pharmaexcipients.com/asahi-kasei/"
+              },
+              {
+                "name": "DFE Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/"
+              },
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              }
+            ]
           }
         ]
       },
@@ -121,169 +228,6 @@
               {
                 "name": "Lonza Capsugel",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lonza/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Cellulose Derivatives",
-        "children": [
-          {
-            "name": "Ethylcellulose (EC)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              }
-            ]
-          },
-          {
-            "name": "Hydroxyethylcellulose (HEC)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              }
-            ]
-          },
-          {
-            "name": "Hypromellose Acetate Succinate (HPMCAS)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              },
-              {
-                "name": "ShinEtsu",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
-              }
-            ]
-          },
-          {
-            "name": "Hypromellose Phthalate (HPMCP)",
-            "suppliers": [
-              {
-                "name": "ShinEtsu",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
-              }
-            ]
-          },
-          {
-            "name": "Hypromellose (HPMC)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              },
-              {
-                "name": "Biogrund",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/film-coating-excellence/"
-              },
-              {
-                "name": "JRS Pharma",
-                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
-              },
-              {
-                "name": "ShinEtsu",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
-              },
-              {
-                "name": "Sigachi",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
-              }
-            ]
-          },
-          {
-            "name": "Low-Substituted Hydroxypropylcellulose (L-HPC)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              },
-              {
-                "name": "ShinEtsu",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
-              }
-            ]
-          },
-          {
-            "name": "Methylcellulose (MC)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              },
-              {
-                "name": "ShinEtsu",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
-              }
-            ]
-          },
-          {
-            "name": "Microcrystalline Cellulose (MCC)",
-            "suppliers": [
-              {
-                "name": "Asahi Kasei",
-                "link": "https://www.pharmaexcipients.com/asahi-kasei/"
-              },
-              {
-                "name": "DFE Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/"
-              },
-              {
-                "name": "Gangwal Healthcare",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
-              },
-              {
-                "name": "JRS Pharma",
-                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
-              },
-              {
-                "name": "Nordic Bioproducts Group",
-                "link": "https://www.pharmaexcipients.com/nordic-bioproducts-group/"
-              },
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
-              },
-              {
-                "name": "Sigachi",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
-              },
-              {
-                "name": "SPI Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Powdered Cellulose",
-            "suppliers": [
-              {
-                "name": "JRS Pharma",
-                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
-              },
-              {
-                "name": "Sigachi",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
-              }
-            ]
-          },
-          {
-            "name": "Sodium Carboxymethylcellulose (CMC)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              },
-              {
-                "name": "Biogrund",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/film-coating-excellence/"
-              },
-              {
-                "name": "JRS Pharma",
-                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
               }
             ]
           }
@@ -441,6 +385,177 @@
                 "link": "https://www.pharmaexcipients.com/seppic-5/"
               }
             ]
+          },
+          {
+            "name": "Ethylcellulose (EC)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              }
+            ]
+          },
+          {
+            "name": "Hypromellose Acetate Succinate (HPMCAS)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              },
+              {
+                "name": "ShinEtsu",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
+              }
+            ]
+          },
+          {
+            "name": "Hypromellose Phthalate (HPMCP)",
+            "suppliers": [
+              {
+                "name": "ShinEtsu",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
+              }
+            ]
+          },
+          {
+            "name": "Carnauba Wax",
+            "suppliers": [
+              {
+                "name": "Pharma Line",
+                "link": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diluents",
+        "children": [
+          {
+            "name": "Dextrates",
+            "suppliers": [
+              {
+                "name": "JRS Pharma",
+                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Dextrose Monohydrate",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              }
+            ]
+          },
+          {
+            "name": "Fructose",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              }
+            ]
+          },
+          {
+            "name": "Lactose Monohydrate",
+            "suppliers": [
+              {
+                "name": "Armor Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/armor-pharma-lactose/"
+              },
+              {
+                "name": "DFE Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/"
+              },
+              {
+                "name": "Kerry",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/downloads-kerry-documents/"
+              },
+              {
+                "name": "Lactalis Ingredients Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lactalis/"
+              },
+              {
+                "name": "MEGGLE",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/meggle/"
+              }
+            ]
+          },
+          {
+            "name": "Mannitol",
+            "suppliers": [
+              {
+                "name": "Gangwal Healthcare",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
+              },
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              },
+              {
+                "name": "SPI Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Sucrose (Pharma Grade)",
+            "suppliers": [
+              {
+                "name": "Sudzucker",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/suedzucker-ag/"
+              }
+            ]
+          },
+          {
+            "name": "Corn / Maize Starch (Native)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "Gangwal Healthcare",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
+              },
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              }
+            ]
+          },
+          {
+            "name": "Potato Starch (Native)",
+            "suppliers": [
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              }
+            ]
+          },
+          {
+            "name": "Rice Starch",
+            "suppliers": [
+              {
+                "name": "Gangwal Healthcare",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
+              }
+            ]
+          },
+          {
+            "name": "Wheat Starch",
+            "suppliers": [
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              }
+            ]
           }
         ]
       },
@@ -522,11 +637,24 @@
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
               }
             ]
+          },
+          {
+            "name": "Low-Substituted Hydroxypropylcellulose (L-HPC)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              },
+              {
+                "name": "ShinEtsu",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Fillers & Diluents",
+        "name": "Fillers",
         "children": [
           {
             "name": "Calcium Carbonate",
@@ -576,62 +704,6 @@
             ]
           },
           {
-            "name": "Dextrates",
-            "suppliers": [
-              {
-                "name": "JRS Pharma",
-                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Dextrose Monohydrate",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
-              }
-            ]
-          },
-          {
-            "name": "Fructose",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              }
-            ]
-          },
-          {
-            "name": "Lactose Monohydrate",
-            "suppliers": [
-              {
-                "name": "Armor Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/armor-pharma-lactose/"
-              },
-              {
-                "name": "DFE Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/"
-              },
-              {
-                "name": "Kerry",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/downloads-kerry-documents/"
-              },
-              {
-                "name": "Lactalis Ingredients Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lactalis/"
-              },
-              {
-                "name": "MEGGLE",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/meggle/"
-              }
-            ]
-          },
-          {
             "name": "Magnesium Carbonate",
             "suppliers": [
               {
@@ -659,15 +731,35 @@
             ]
           },
           {
-            "name": "Mannitol",
+            "name": "Microcrystalline Cellulose (MCC)",
             "suppliers": [
+              {
+                "name": "Asahi Kasei",
+                "link": "https://www.pharmaexcipients.com/asahi-kasei/"
+              },
+              {
+                "name": "DFE Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/"
+              },
               {
                 "name": "Gangwal Healthcare",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
               },
               {
+                "name": "JRS Pharma",
+                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
+              },
+              {
+                "name": "Nordic Bioproducts Group",
+                "link": "https://www.pharmaexcipients.com/nordic-bioproducts-group/"
+              },
+              {
                 "name": "Roquette",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              },
+              {
+                "name": "Sigachi",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
               },
               {
                 "name": "SPI Pharma",
@@ -676,188 +768,15 @@
             ]
           },
           {
-            "name": "Sucrose (Pharma Grade)",
+            "name": "Powdered Cellulose",
             "suppliers": [
-              {
-                "name": "Sudzucker",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/suedzucker-ag/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lipid Excipients",
-        "children": [
-          {
-            "name": "Carnauba Wax",
-            "suppliers": [
-              {
-                "name": "Pharma Line",
-                "link": null
-              }
-            ]
-          },
-          {
-            "name": "Glyceryl Behenate (Compritol-type)",
-            "suppliers": [
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              }
-            ]
-          },
-          {
-            "name": "Glyceryl Monooleate",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              }
-            ]
-          },
-          {
-            "name": "Glyceryl Monostearate",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              }
-            ]
-          },
-          {
-            "name": "Glyceryl Palmitostearate (Precirol-type)",
-            "suppliers": [
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              }
-            ]
-          },
-          {
-            "name": "Glycerin (Glycerol)",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              }
-            ]
-          },
-          {
-            "name": "Hydrogenated Castor Oil",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Clariant",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
-              }
-            ]
-          },
-          {
-            "name": "Hydrogenated Vegetable Oil",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
               {
                 "name": "JRS Pharma",
                 "link": "https://www.pharmaexcipients.com/jrs-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Medium-Chain Triglycerides (MCT)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
               },
               {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Stearic Acid",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              }
-            ]
-          },
-          {
-            "name": "Vegetable Oils (Refined / Super Refined)",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              }
-            ]
-          },
-          {
-            "name": "Monoacid Triglycerides (Trimyristin / Tripalmitin / Tristearin)",
-            "suppliers": [
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+                "name": "Sigachi",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
               }
             ]
           }
@@ -921,105 +840,48 @@
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "pH Control & Buffering",
-        "children": [
+          },
           {
-            "name": "Citric Acid Anhydrous",
+            "name": "Glyceryl Behenate (Compritol-type)",
+            "suppliers": [
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              }
+            ]
+          },
+          {
+            "name": "Glyceryl Palmitostearate (Precirol-type)",
+            "suppliers": [
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              }
+            ]
+          },
+          {
+            "name": "Hydrogenated Vegetable Oil",
             "suppliers": [
               {
                 "name": "ADM",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+                "name": "JRS Pharma",
+                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
               }
             ]
           },
           {
-            "name": "Magnesium Hydroxide",
+            "name": "Stearic Acid",
             "suppliers": [
               {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
               },
               {
-                "name": "SPI Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Sodium Bicarbonate",
-            "suppliers": [
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              },
-              {
-                "name": "SPI Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Trisodium Citrate Dihydrate",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Phospholipids & Liposomes",
-        "children": [
-          {
-            "name": "Egg Phospholipids",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Phosphatidylcholine (Natural, Soybean)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Synthetic Phospholipids (DPPC, DSPC, DOPC)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
               }
             ]
           }
@@ -1105,7 +967,7 @@
         ]
       },
       {
-        "name": "Solubilizers & Surfactants",
+        "name": "Solubilizers",
         "children": [
           {
             "name": "Beta-Cyclodextrin",
@@ -1173,6 +1035,183 @@
             ]
           },
           {
+            "name": "Polyoxyl Castor Oil (Kolliphor EL-type)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Clariant",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
+              }
+            ]
+          },
+          {
+            "name": "Polyoxyl Hydrogenated Castor Oil (Kolliphor RH 40-type)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Clariant",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
+              }
+            ]
+          },
+          {
+            "name": "Sulfobutylether-Beta-Cyclodextrin (SBE-beta-CD / Captisol)",
+            "suppliers": [
+              {
+                "name": "Captisol",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/captisol-cyclodextrin/"
+              }
+            ]
+          },
+          {
+            "name": "Soluplus (PVCap-PVAc-PEG Graft Copolymer)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Solvents & Vehicles",
+        "children": [
+          {
+            "name": "Diethylene Glycol Monoethyl Ether (Transcutol)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              }
+            ]
+          },
+          {
+            "name": "Ethanol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              }
+            ]
+          },
+          {
+            "name": "N-Methyl-2-Pyrrolidone (NMP)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              }
+            ]
+          },
+          {
+            "name": "Propylene Glycol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              }
+            ]
+          },
+          {
+            "name": "Glycerin (Glycerol)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              }
+            ]
+          },
+          {
+            "name": "Medium-Chain Triglycerides (MCT)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Vegetable Oils (Refined / Super Refined)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Surfactants",
+        "children": [
+          {
             "name": "Poloxamer (Pluronic)",
             "suppliers": [
               {
@@ -1236,48 +1275,6 @@
             ]
           },
           {
-            "name": "Polyoxyl Castor Oil (Kolliphor EL-type)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Clariant",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
-              }
-            ]
-          },
-          {
-            "name": "Polyoxyl Hydrogenated Castor Oil (Kolliphor RH 40-type)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Clariant",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
-              }
-            ]
-          },
-          {
             "name": "Sodium Lauryl Sulfate",
             "suppliers": [
               {
@@ -1304,21 +1301,7 @@
             ]
           },
           {
-            "name": "Sulfobutylether-Beta-Cyclodextrin (SBE-beta-CD / Captisol)",
-            "suppliers": [
-              {
-                "name": "Captisol",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/captisol-cyclodextrin/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Solvents & Vehicles",
-        "children": [
-          {
-            "name": "Diethylene Glycol Monoethyl Ether (Transcutol)",
+            "name": "Glyceryl Monooleate",
             "suppliers": [
               {
                 "name": "Croda",
@@ -1327,65 +1310,28 @@
               {
                 "name": "Gattefosse",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              }
-            ]
-          },
-          {
-            "name": "Ethanol",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              }
-            ]
-          },
-          {
-            "name": "N-Methyl-2-Pyrrolidone (NMP)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              }
-            ]
-          },
-          {
-            "name": "Propylene Glycol",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              }
+            ]
+          },
+          {
+            "name": "Glyceryl Monostearate",
+            "suppliers": [
               {
                 "name": "Croda",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Specialty Polymers",
-        "children": [
-          {
-            "name": "Carbomer (Polyacrylic Acid)",
-            "suppliers": [
-              {
-                "name": "Lubrizol Life Science Health (LLS Health)",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
               },
               {
-                "name": "Vikram Thermo",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
-              }
-            ]
-          },
-          {
-            "name": "Polyvinyl Acetate + Povidone (Kollidon SR-type)",
-            "suppliers": [
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
               {
                 "name": "BASF",
                 "link": "https://www.pharmaexcipients.com/basf/"
@@ -1393,177 +1339,41 @@
             ]
           },
           {
-            "name": "Soluplus (PVCap-PVAc-PEG Graft Copolymer)",
+            "name": "Egg Phospholipids",
             "suppliers": [
               {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
               }
             ]
           },
           {
-            "name": "Xanthan Gum",
+            "name": "Phosphatidylcholine (Natural, Soybean)",
             "suppliers": [
               {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
               },
               {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Starch & Starch Derivatives",
-        "children": [
-          {
-            "name": "Corn / Maize Starch (Native)",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "Gangwal Healthcare",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
-              },
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
               }
             ]
           },
           {
-            "name": "Potato Starch (Native)",
+            "name": "Synthetic Phospholipids (DPPC, DSPC, DOPC)",
             "suppliers": [
               {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
-              }
-            ]
-          },
-          {
-            "name": "Pregelatinized Starch",
-            "suppliers": [
-              {
-                "name": "Asahi Kasei",
-                "link": "https://www.pharmaexcipients.com/asahi-kasei/"
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
               },
               {
-                "name": "DFE Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/"
-              },
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
-              }
-            ]
-          },
-          {
-            "name": "Rice Starch",
-            "suppliers": [
-              {
-                "name": "Gangwal Healthcare",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
-              }
-            ]
-          },
-          {
-            "name": "Wheat Starch",
-            "suppliers": [
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Sugar Alcohols",
-        "children": [
-          {
-            "name": "Erythritol",
-            "suppliers": [
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              }
-            ]
-          },
-          {
-            "name": "Isomalt",
-            "suppliers": [
-              {
-                "name": "BENEO (galenIQ)",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/pharma-excipients-d5/"
-              },
-              {
-                "name": "Biogrund",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/film-coating-excellence/"
-              }
-            ]
-          },
-          {
-            "name": "Maltitol",
-            "suppliers": [
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
-              }
-            ]
-          },
-          {
-            "name": "Mannitol (as Sugar Alcohol)",
-            "suppliers": [
-              {
-                "name": "Gangwal Healthcare",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
-              },
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
-              },
-              {
-                "name": "SPI Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Sorbitol",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "Gangwal Healthcare",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
-              },
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
-              },
-              {
-                "name": "SPI Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Xylitol",
-            "suppliers": [
-              {
-                "name": "pharm-a-spheres",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/pharm-a-spheres-documents/"
-              },
-              {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
               }
             ]
           }
@@ -1711,6 +1521,37 @@
                 "link": null
               }
             ]
+          },
+          {
+            "name": "Hydrogenated Castor Oil",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Clariant",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
+              }
+            ]
+          },
+          {
+            "name": "Monoacid Triglycerides (Trimyristin / Tripalmitin / Tristearin)",
+            "suppliers": [
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              }
+            ]
+          },
+          {
+            "name": "Polyvinyl Acetate + Povidone (Kollidon SR-type)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              }
+            ]
           }
         ]
       },
@@ -1773,6 +1614,145 @@
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/nagase-viita/"
               }
             ]
+          },
+          {
+            "name": "Erythritol",
+            "suppliers": [
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              }
+            ]
+          },
+          {
+            "name": "Isomalt",
+            "suppliers": [
+              {
+                "name": "BENEO (galenIQ)",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/pharma-excipients-d5/"
+              },
+              {
+                "name": "Biogrund",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/film-coating-excellence/"
+              }
+            ]
+          },
+          {
+            "name": "Maltitol",
+            "suppliers": [
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              }
+            ]
+          },
+          {
+            "name": "Mannitol (as Sugar Alcohol)",
+            "suppliers": [
+              {
+                "name": "Gangwal Healthcare",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
+              },
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              },
+              {
+                "name": "SPI Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Sorbitol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "Gangwal Healthcare",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
+              },
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              },
+              {
+                "name": "SPI Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Xylitol",
+            "suppliers": [
+              {
+                "name": "pharm-a-spheres",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/pharm-a-spheres-documents/"
+              },
+              {
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "pH Control & Buffering",
+        "children": [
+          {
+            "name": "Citric Acid Anhydrous",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              }
+            ]
+          },
+          {
+            "name": "Magnesium Hydroxide",
+            "suppliers": [
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              },
+              {
+                "name": "SPI Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Sodium Bicarbonate",
+            "suppliers": [
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              },
+              {
+                "name": "SPI Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Trisodium Citrate Dihydrate",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              }
+            ]
           }
         ]
       }
@@ -1782,7 +1762,7 @@
     "name": "Injectable Excipients",
     "children": [
       {
-        "name": "Cellulose Derivatives",
+        "name": "Binders",
         "children": [
           {
             "name": "Sodium Carboxymethylcellulose (CMC)",
@@ -1804,7 +1784,7 @@
         ]
       },
       {
-        "name": "Fillers & Diluents",
+        "name": "Diluents",
         "children": [
           {
             "name": "Dextrose Monohydrate",
@@ -1848,80 +1828,8 @@
         ]
       },
       {
-        "name": "Lipid Excipients",
+        "name": "Lubricants & Glidants",
         "children": [
-          {
-            "name": "Glyceryl Monooleate",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              }
-            ]
-          },
-          {
-            "name": "Glycerin (Glycerol)",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              }
-            ]
-          },
-          {
-            "name": "Medium-Chain Triglycerides (MCT)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Plant-Derived Cholesterol",
-            "suppliers": [
-              {
-                "name": "Evonik",
-                "link": "https://www.pharmaexcipients.com/evonik/"
-              }
-            ]
-          },
           {
             "name": "Stearic Acid",
             "suppliers": [
@@ -1932,120 +1840,6 @@
               {
                 "name": "IOI Oleochemical",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              }
-            ]
-          },
-          {
-            "name": "Vegetable Oils (Refined / Super Refined)",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "pH Control & Buffering",
-        "children": [
-          {
-            "name": "Citric Acid Anhydrous",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              }
-            ]
-          },
-          {
-            "name": "Sodium Bicarbonate",
-            "suppliers": [
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              },
-              {
-                "name": "SPI Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Trisodium Citrate Dihydrate",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Phospholipids & Liposomes",
-        "children": [
-          {
-            "name": "Egg Phospholipids",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "PEG-Lipids (mPEG-DSPE)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Phosphatidylcholine (Natural, Soybean)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Synthetic Phospholipids (DPPC, DSPC, DOPC)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
               }
             ]
           }
@@ -2109,7 +1903,7 @@
         ]
       },
       {
-        "name": "Solubilizers & Surfactants",
+        "name": "Solubilizers",
         "children": [
           {
             "name": "Hydroxypropyl-Beta-Cyclodextrin (HP-beta-CD)",
@@ -2145,6 +1939,161 @@
               }
             ]
           },
+          {
+            "name": "Polyoxyl Castor Oil (Kolliphor EL-type)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Clariant",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
+              }
+            ]
+          },
+          {
+            "name": "Polyoxyl Hydrogenated Castor Oil (Kolliphor RH 40-type)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Clariant",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
+              }
+            ]
+          },
+          {
+            "name": "Sulfobutylether-Beta-Cyclodextrin (SBE-beta-CD / Captisol)",
+            "suppliers": [
+              {
+                "name": "Captisol",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/captisol-cyclodextrin/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Solvents & Vehicles",
+        "children": [
+          {
+            "name": "Ethanol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              }
+            ]
+          },
+          {
+            "name": "N-Methyl-2-Pyrrolidone (NMP)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              }
+            ]
+          },
+          {
+            "name": "Propylene Glycol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              }
+            ]
+          },
+          {
+            "name": "Glycerin (Glycerol)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              }
+            ]
+          },
+          {
+            "name": "Medium-Chain Triglycerides (MCT)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Vegetable Oils (Refined / Super Refined)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Surfactants",
+        "children": [
           {
             "name": "Poloxamer (Pluronic)",
             "suppliers": [
@@ -2209,48 +2158,6 @@
             ]
           },
           {
-            "name": "Polyoxyl Castor Oil (Kolliphor EL-type)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Clariant",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
-              }
-            ]
-          },
-          {
-            "name": "Polyoxyl Hydrogenated Castor Oil (Kolliphor RH 40-type)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Clariant",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
-              }
-            ]
-          },
-          {
             "name": "Sodium Lauryl Sulfate",
             "suppliers": [
               {
@@ -2277,58 +2184,87 @@
             ]
           },
           {
-            "name": "Sulfobutylether-Beta-Cyclodextrin (SBE-beta-CD / Captisol)",
+            "name": "Glyceryl Monooleate",
             "suppliers": [
-              {
-                "name": "Captisol",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/captisol-cyclodextrin/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Solvents & Vehicles",
-        "children": [
-          {
-            "name": "Ethanol",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              }
-            ]
-          },
-          {
-            "name": "N-Methyl-2-Pyrrolidone (NMP)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              }
-            ]
-          },
-          {
-            "name": "Propylene Glycol",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
               {
                 "name": "Croda",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              }
+            ]
+          },
+          {
+            "name": "Plant-Derived Cholesterol",
+            "suppliers": [
+              {
+                "name": "Evonik",
+                "link": "https://www.pharmaexcipients.com/evonik/"
+              }
+            ]
+          },
+          {
+            "name": "Egg Phospholipids",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "PEG-Lipids (mPEG-DSPE)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Phosphatidylcholine (Natural, Soybean)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Synthetic Phospholipids (DPPC, DSPC, DOPC)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
               }
             ]
           }
         ]
       },
       {
-        "name": "Specialty Polymers",
+        "name": "Sustained & Controlled Release",
         "children": [
           {
             "name": "PLGA / PLA Biodegradable Polymers",
@@ -2346,8 +2282,25 @@
         ]
       },
       {
-        "name": "Sugar Alcohols",
+        "name": "Sweeteners & Flavoring",
         "children": [
+          {
+            "name": "Trehalose",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              },
+              {
+                "name": "DFE Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/"
+              },
+              {
+                "name": "Nagase Viita",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/nagase-viita/"
+              }
+            ]
+          },
           {
             "name": "Mannitol (as Sugar Alcohol)",
             "suppliers": [
@@ -2398,22 +2351,44 @@
         ]
       },
       {
-        "name": "Sweeteners & Flavoring",
+        "name": "pH Control & Buffering",
         "children": [
           {
-            "name": "Trehalose",
+            "name": "Citric Acid Anhydrous",
             "suppliers": [
               {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "DFE Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/"
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              }
+            ]
+          },
+          {
+            "name": "Sodium Bicarbonate",
+            "suppliers": [
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
               },
               {
-                "name": "Nagase Viita",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/nagase-viita/"
+                "name": "SPI Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Trisodium Citrate Dihydrate",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
               }
             ]
           }
@@ -2425,7 +2400,7 @@
     "name": "Topical Excipients",
     "children": [
       {
-        "name": "Cellulose Derivatives",
+        "name": "Binders",
         "children": [
           {
             "name": "Hydroxyethylcellulose (HEC)",
@@ -2475,15 +2450,6 @@
             ]
           },
           {
-            "name": "Ethylcellulose (EC)",
-            "suppliers": [
-              {
-                "name": "Ashland",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
-              }
-            ]
-          },
-          {
             "name": "Sodium Carboxymethylcellulose (CMC)",
             "suppliers": [
               {
@@ -2499,12 +2465,56 @@
                 "link": "https://www.pharmaexcipients.com/jrs-pharma/"
               }
             ]
+          },
+          {
+            "name": "Carbomer (Polyacrylic Acid)",
+            "suppliers": [
+              {
+                "name": "Lubrizol Life Science Health (LLS Health)",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
+              },
+              {
+                "name": "Vikram Thermo",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
+              }
+            ]
+          },
+          {
+            "name": "Polycarbophil",
+            "suppliers": [
+              {
+                "name": "Lubrizol Life Science Health (LLS Health)",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
+              }
+            ]
+          },
+          {
+            "name": "Xanthan Gum",
+            "suppliers": [
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              },
+              {
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Lipid Excipients",
+        "name": "Coating Agents",
         "children": [
+          {
+            "name": "Ethylcellulose (EC)",
+            "suppliers": [
+              {
+                "name": "Ashland",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/"
+              }
+            ]
+          },
           {
             "name": "Carnauba Wax",
             "suppliers": [
@@ -2513,140 +2523,26 @@
                 "link": null
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Diluents",
+        "children": [
           {
-            "name": "Glyceryl Monooleate",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              }
-            ]
-          },
-          {
-            "name": "Glyceryl Monostearate",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              }
-            ]
-          },
-          {
-            "name": "Glycerin (Glycerol)",
+            "name": "Corn / Maize Starch (Native)",
             "suppliers": [
               {
                 "name": "ADM",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+                "name": "Gangwal Healthcare",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
               },
               {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              }
-            ]
-          },
-          {
-            "name": "Medium-Chain Triglycerides (MCT)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Stearic Acid",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              }
-            ]
-          },
-          {
-            "name": "Vegetable Oils (Refined / Super Refined)",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              }
-            ]
-          },
-          {
-            "name": "Hydrogenated Castor Oil",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Clariant",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
-              }
-            ]
-          },
-          {
-            "name": "Hydrogenated Vegetable Oil",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "JRS Pharma",
-                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
+                "name": "Roquette",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
               }
             ]
           }
@@ -2667,79 +2563,30 @@
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/"
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "pH Control & Buffering",
-        "children": [
+          },
           {
-            "name": "Citric Acid Anhydrous",
+            "name": "Stearic Acid",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              }
+            ]
+          },
+          {
+            "name": "Hydrogenated Vegetable Oil",
             "suppliers": [
               {
                 "name": "ADM",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              }
-            ]
-          },
-          {
-            "name": "Trisodium Citrate Dihydrate",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Phospholipids & Liposomes",
-        "children": [
-          {
-            "name": "Egg Phospholipids",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Phosphatidylcholine (Natural, Soybean)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Synthetic Phospholipids (DPPC, DSPC, DOPC)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+                "name": "JRS Pharma",
+                "link": "https://www.pharmaexcipients.com/jrs-pharma/"
               }
             ]
           }
@@ -2825,7 +2672,157 @@
         ]
       },
       {
-        "name": "Solubilizers & Surfactants",
+        "name": "Solubilizers",
+        "children": [
+          {
+            "name": "Polyoxyl Castor Oil (Kolliphor EL-type)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Clariant",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
+              }
+            ]
+          },
+          {
+            "name": "Polyoxyl Hydrogenated Castor Oil (Kolliphor RH 40-type)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Clariant",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Solvents & Vehicles",
+        "children": [
+          {
+            "name": "Diethylene Glycol Monoethyl Ether (Transcutol)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              }
+            ]
+          },
+          {
+            "name": "Ethanol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              }
+            ]
+          },
+          {
+            "name": "Propylene Glycol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              }
+            ]
+          },
+          {
+            "name": "Glycerin (Glycerol)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              }
+            ]
+          },
+          {
+            "name": "Medium-Chain Triglycerides (MCT)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Vegetable Oils (Refined / Super Refined)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Surfactants",
         "children": [
           {
             "name": "Poloxamer (Pluronic)",
@@ -2917,54 +2914,7 @@
             ]
           },
           {
-            "name": "Polyoxyl Castor Oil (Kolliphor EL-type)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Clariant",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
-              }
-            ]
-          },
-          {
-            "name": "Polyoxyl Hydrogenated Castor Oil (Kolliphor RH 40-type)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Clariant",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Solvents & Vehicles",
-        "children": [
-          {
-            "name": "Diethylene Glycol Monoethyl Ether (Transcutol)",
+            "name": "Glyceryl Monooleate",
             "suppliers": [
               {
                 "name": "Croda",
@@ -2973,94 +2923,119 @@
               {
                 "name": "Gattefosse",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              }
-            ]
-          },
-          {
-            "name": "Ethanol",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              }
-            ]
-          },
-          {
-            "name": "Propylene Glycol",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              }
+            ]
+          },
+          {
+            "name": "Glyceryl Monostearate",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              }
+            ]
+          },
+          {
+            "name": "Egg Phospholipids",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Phosphatidylcholine (Natural, Soybean)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Synthetic Phospholipids (DPPC, DSPC, DOPC)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sustained & Controlled Release",
+        "children": [
+          {
+            "name": "Hydrogenated Castor Oil",
+            "suppliers": [
               {
                 "name": "BASF",
                 "link": "https://www.pharmaexcipients.com/basf/"
               },
               {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+                "name": "Clariant",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/"
               }
             ]
           }
         ]
       },
       {
-        "name": "Specialty Polymers",
+        "name": "pH Control & Buffering",
         "children": [
           {
-            "name": "Carbomer (Polyacrylic Acid)",
-            "suppliers": [
-              {
-                "name": "Lubrizol Life Science Health (LLS Health)",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
-              },
-              {
-                "name": "Vikram Thermo",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
-              }
-            ]
-          },
-          {
-            "name": "Polycarbophil",
-            "suppliers": [
-              {
-                "name": "Lubrizol Life Science Health (LLS Health)",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
-              }
-            ]
-          },
-          {
-            "name": "Xanthan Gum",
-            "suppliers": [
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              },
-              {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Starch & Starch Derivatives",
-        "children": [
-          {
-            "name": "Corn / Maize Starch (Native)",
+            "name": "Citric Acid Anhydrous",
             "suppliers": [
               {
                 "name": "ADM",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "Gangwal Healthcare",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/"
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              }
+            ]
+          },
+          {
+            "name": "Trisodium Citrate Dihydrate",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "Roquette",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/"
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
               }
             ]
           }
@@ -3072,7 +3047,7 @@
     "name": "Ocular Excipients",
     "children": [
       {
-        "name": "Cellulose Derivatives",
+        "name": "Binders",
         "children": [
           {
             "name": "Hydroxyethylcellulose (HEC)",
@@ -3137,114 +3112,39 @@
                 "link": "https://www.pharmaexcipients.com/jrs-pharma/"
               }
             ]
-          }
-        ]
-      },
-      {
-        "name": "Lipid Excipients",
-        "children": [
+          },
           {
-            "name": "Glycerin (Glycerol)",
+            "name": "Carbomer (Polyacrylic Acid)",
             "suppliers": [
               {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+                "name": "Lubrizol Life Science Health (LLS Health)",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
               },
               {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "pH Control & Buffering",
-        "children": [
-          {
-            "name": "Citric Acid Anhydrous",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+                "name": "Vikram Thermo",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
               }
             ]
           },
           {
-            "name": "Sodium Bicarbonate",
+            "name": "Polycarbophil",
+            "suppliers": [
+              {
+                "name": "Lubrizol Life Science Health (LLS Health)",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
+              }
+            ]
+          },
+          {
+            "name": "Xanthan Gum",
             "suppliers": [
               {
                 "name": "MAGNESIA",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
               },
               {
-                "name": "SPI Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
-              }
-            ]
-          },
-          {
-            "name": "Trisodium Citrate Dihydrate",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Phospholipids & Liposomes",
-        "children": [
-          {
-            "name": "Egg Phospholipids",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Phosphatidylcholine (Natural, Soybean)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          },
-          {
-            "name": "Synthetic Phospholipids (DPPC, DSPC, DOPC)",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+                "name": "Seppic",
+                "link": "https://www.pharmaexcipients.com/seppic-5/"
               }
             ]
           }
@@ -3299,7 +3199,7 @@
         ]
       },
       {
-        "name": "Solubilizers & Surfactants",
+        "name": "Solubilizers",
         "children": [
           {
             "name": "Hydroxypropyl-Beta-Cyclodextrin (HP-beta-CD)",
@@ -3322,6 +3222,59 @@
               }
             ]
           },
+          {
+            "name": "Sulfobutylether-Beta-Cyclodextrin (SBE-beta-CD / Captisol)",
+            "suppliers": [
+              {
+                "name": "Captisol",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/captisol-cyclodextrin/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Solvents & Vehicles",
+        "children": [
+          {
+            "name": "Propylene Glycol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              }
+            ]
+          },
+          {
+            "name": "Glycerin (Glycerol)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Surfactants",
+        "children": [
           {
             "name": "Poloxamer (Pluronic)",
             "suppliers": [
@@ -3365,73 +3318,85 @@
             ]
           },
           {
-            "name": "Sulfobutylether-Beta-Cyclodextrin (SBE-beta-CD / Captisol)",
+            "name": "Egg Phospholipids",
             "suppliers": [
               {
-                "name": "Captisol",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/captisol-cyclodextrin/"
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Phosphatidylcholine (Natural, Soybean)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          },
+          {
+            "name": "Synthetic Phospholipids (DPPC, DSPC, DOPC)",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
               }
             ]
           }
         ]
       },
       {
-        "name": "Solvents & Vehicles",
+        "name": "pH Control & Buffering",
         "children": [
           {
-            "name": "Propylene Glycol",
+            "name": "Citric Acid Anhydrous",
             "suppliers": [
               {
                 "name": "ADM",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Specialty Polymers",
-        "children": [
-          {
-            "name": "Carbomer (Polyacrylic Acid)",
-            "suppliers": [
-              {
-                "name": "Lubrizol Life Science Health (LLS Health)",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
-              },
-              {
-                "name": "Vikram Thermo",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
               }
             ]
           },
           {
-            "name": "Polycarbophil",
-            "suppliers": [
-              {
-                "name": "Lubrizol Life Science Health (LLS Health)",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
-              }
-            ]
-          },
-          {
-            "name": "Xanthan Gum",
+            "name": "Sodium Bicarbonate",
             "suppliers": [
               {
                 "name": "MAGNESIA",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
               },
               {
-                "name": "Seppic",
-                "link": "https://www.pharmaexcipients.com/seppic-5/"
+                "name": "SPI Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
+              }
+            ]
+          },
+          {
+            "name": "Trisodium Citrate Dihydrate",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
               }
             ]
           }
@@ -3443,7 +3408,7 @@
     "name": "Rectal & Vaginal Excipients",
     "children": [
       {
-        "name": "Cellulose Derivatives",
+        "name": "Binders",
         "children": [
           {
             "name": "Hydroxyethylcellulose (HEC)",
@@ -3483,63 +3448,34 @@
                 "link": "https://www.pharmaexcipients.com/jrs-pharma/"
               }
             ]
+          },
+          {
+            "name": "Carbomer (Polyacrylic Acid)",
+            "suppliers": [
+              {
+                "name": "Lubrizol Life Science Health (LLS Health)",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
+              },
+              {
+                "name": "Vikram Thermo",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
+              }
+            ]
+          },
+          {
+            "name": "Polycarbophil",
+            "suppliers": [
+              {
+                "name": "Lubrizol Life Science Health (LLS Health)",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Lipid Excipients",
+        "name": "Lubricants & Glidants",
         "children": [
-          {
-            "name": "Glyceryl Monostearate",
-            "suppliers": [
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              }
-            ]
-          },
-          {
-            "name": "Glycerin (Glycerol)",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              }
-            ]
-          },
-          {
-            "name": "Hard Fat / Suppository Base",
-            "suppliers": [
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              }
-            ]
-          },
           {
             "name": "Stearic Acid",
             "suppliers": [
@@ -3550,66 +3486,6 @@
               {
                 "name": "IOI Oleochemical",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              }
-            ]
-          },
-          {
-            "name": "Medium-Chain Triglycerides (MCT)",
-            "suppliers": [
-              {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              },
-              {
-                "name": "Gattefosse",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
-              },
-              {
-                "name": "IOI Oleochemical",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
-              },
-              {
-                "name": "KLK Oleo Life Science",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
-              },
-              {
-                "name": "Lipoid",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "pH Control & Buffering",
-        "children": [
-          {
-            "name": "Citric Acid Anhydrous",
-            "suppliers": [
-              {
-                "name": "ADM",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
-              },
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              }
-            ]
-          },
-          {
-            "name": "Sodium Bicarbonate",
-            "suppliers": [
-              {
-                "name": "MAGNESIA",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
-              },
-              {
-                "name": "SPI Pharma",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
               }
             ]
           }
@@ -3656,7 +3532,88 @@
         ]
       },
       {
-        "name": "Solubilizers & Surfactants",
+        "name": "Solvents & Vehicles",
+        "children": [
+          {
+            "name": "Propylene Glycol",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              }
+            ]
+          },
+          {
+            "name": "Glycerin (Glycerol)",
+            "suppliers": [
+              {
+                "name": "ADM",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              }
+            ]
+          },
+          {
+            "name": "Hard Fat / Suppository Base",
+            "suppliers": [
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              }
+            ]
+          },
+          {
+            "name": "Medium-Chain Triglycerides (MCT)",
+            "suppliers": [
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              },
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "KLK Oleo Life Science",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/"
+              },
+              {
+                "name": "Lipoid",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Surfactants",
         "children": [
           {
             "name": "Poloxamer (Pluronic)",
@@ -3725,53 +3682,56 @@
                 "link": "https://www.pharmaexcipients.com/seppic-5/"
               }
             ]
+          },
+          {
+            "name": "Glyceryl Monostearate",
+            "suppliers": [
+              {
+                "name": "Croda",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
+              },
+              {
+                "name": "Gattefosse",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/"
+              },
+              {
+                "name": "IOI Oleochemical",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/"
+              },
+              {
+                "name": "BASF",
+                "link": "https://www.pharmaexcipients.com/basf/"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Solvents & Vehicles",
+        "name": "pH Control & Buffering",
         "children": [
           {
-            "name": "Propylene Glycol",
+            "name": "Citric Acid Anhydrous",
             "suppliers": [
               {
                 "name": "ADM",
                 "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/"
               },
               {
-                "name": "BASF",
-                "link": "https://www.pharmaexcipients.com/basf/"
-              },
-              {
-                "name": "Croda",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Specialty Polymers",
-        "children": [
-          {
-            "name": "Carbomer (Polyacrylic Acid)",
-            "suppliers": [
-              {
-                "name": "Lubrizol Life Science Health (LLS Health)",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
-              },
-              {
-                "name": "Vikram Thermo",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
               }
             ]
           },
           {
-            "name": "Polycarbophil",
+            "name": "Sodium Bicarbonate",
             "suppliers": [
               {
-                "name": "Lubrizol Life Science Health (LLS Health)",
-                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/"
+                "name": "MAGNESIA",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/"
+              },
+              {
+                "name": "SPI Pharma",
+                "link": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/"
               }
             ]
           }
