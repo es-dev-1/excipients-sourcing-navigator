@@ -22,6 +22,9 @@ The pharma-excipients-landscape project established a comprehensive structure tr
 ## Foundation
 The data structure tree lives in `ea-work/data-for-reoccurring-tasks/excipient-sourcing-tree.md` and in `ea-work/projects/pharma-excipients-landscape/excipients.json`.
 
+## Data structure (stage 3 and stage 4)
+`excipients.json` is regenerated from `ea-work/data-for-reoccurring-tasks/excipients-landscape-structure.md`, which is the source of truth for the functional categories (stage 3) and the excipients within each category (stage 4). As of 2026-06-04, an excipient can appear under multiple functional categories within the same route of administration when it serves both functions (e.g. Alginic Acid under both Binders and Disintegrants in Oral). Supplier lists (stage 5) are attached per route + excipient and are identical across every category an excipient appears in. To regenerate, rebuild the route > category > excipient tree from the structure markdown and re-attach each excipient's existing supplier list keyed by route + excipient name.
+
 ## Open questions
 - What technology stack to use?
 - How should the tool integrate with the existing PharmaExcipients.com site?
@@ -29,4 +32,4 @@ The data structure tree lives in `ea-work/data-for-reoccurring-tasks/excipient-s
 - Should supplier links point to PharmaExcipients.com supplier pages or external sites?
 
 ## Last updated
-2026-05-30
+2026-06-04
