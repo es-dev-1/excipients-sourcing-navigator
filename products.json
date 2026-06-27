@@ -41,26 +41,22 @@
     {
       "product": "Dextrose Monohydrate 200",
       "chemical": "Dextrose monohydrate",
-      "function": "Filler, diluent, sweetener",
-      "url": "https://www.pharmaexcipients.com/product/dextrose-monohydrate/"
+      "function": "Filler, diluent, sweetener"
     },
     {
       "product": "Dextrose Monohydrate 300",
       "chemical": "Dextrose monohydrate",
-      "function": "Filler, diluent, sweetener",
-      "url": "https://www.pharmaexcipients.com/product/dextrose-monohydrate/"
+      "function": "Filler, diluent, sweetener"
     },
     {
       "product": "Crystalline Fructose C",
       "chemical": "Fructose",
-      "function": "Filler, sweetener, humectant",
-      "url": "https://www.pharmaexcipients.com/product/fructose/"
+      "function": "Filler, sweetener, humectant"
     },
     {
       "product": "Crystalline Fructose M",
       "chemical": "Fructose",
-      "function": "Filler, sweetener, humectant",
-      "url": "https://www.pharmaexcipients.com/product/fructose/"
+      "function": "Filler, sweetener, humectant"
     },
     {
       "product": "PharmaPlus Native Corn Starch 102",
@@ -167,14 +163,12 @@
     {
       "product": "Antares Vitamin E TPGS, Pharmaceutical Grade (NF)",
       "chemical": "d-alpha-tocopheryl polyethylene glycol 1000 succinate (tocophersolan)",
-      "function": "Solubilizer, emulsifier, absorption enhancer, P-gp inhibitor",
-      "url": "https://www.pharmaexcipients.com/product/antares-vitamin-e-tpgs/"
+      "function": "Solubilizer, emulsifier, absorption enhancer, P-gp inhibitor"
     },
     {
       "product": "Antares Vitamin E TPGS, Food Grade (FG)",
       "chemical": "d-alpha-tocopheryl polyethylene glycol 1000 succinate (tocophersolan)",
-      "function": "Solubilizer, emulsifier, absorption enhancer",
-      "url": "https://www.pharmaexcipients.com/product/antares-vitamin-e-tpgs/"
+      "function": "Solubilizer, emulsifier, absorption enhancer"
     },
     {
       "product": "Antares Sunflower TPGS, Pharmaceutical Grade (NF)",
@@ -231,7 +225,8 @@
     {
       "product": "EXCIPRESS GR 150",
       "chemical": "Granulated lactose (x50 150 um)",
-      "function": "Direct compression excipient"
+      "function": "Direct compression excipient",
+      "url": "https://www.pharmaexcipients.com/product/excipress-gr-150/"
     },
     {
       "product": "EXCIPRESS SD 2L",
@@ -251,12 +246,14 @@
     {
       "product": "EXCIPURE DPI 223",
       "chemical": "alpha-Lactose monohydrate (milled, x50 48 um)",
-      "function": "Fine cohesive inhalation powder"
+      "function": "Fine cohesive inhalation powder",
+      "url": "https://www.pharmaexcipients.com/product/excipure-dpi-223/"
     },
     {
       "product": "EXCIPURE DPI 231",
       "chemical": "alpha-Lactose monohydrate (milled, x50 73 um)",
-      "function": "Broad-distribution inhalation grade"
+      "function": "Broad-distribution inhalation grade",
+      "url": "https://www.pharmaexcipients.com/product/excipure-dpi-231/"
     }
   ],
   "Asahi Kasei": [
@@ -374,37 +371,44 @@
     {
       "product": "Klucel ELF Pharm",
       "chemical": "Hydroxypropylcellulose (HPC)",
-      "function": "Immediate-release binder"
+      "function": "Immediate-release binder",
+      "url": "https://www.pharmaexcipients.com/product/klucel-elf-pharm/"
     },
     {
       "product": "Klucel EF / EXF Pharm",
       "chemical": "Hydroxypropylcellulose (HPC)",
-      "function": "Binder, film coating"
+      "function": "Binder, film coating",
+      "url": "https://www.pharmaexcipients.com/product/klucel-ef-exf-pharm/"
     },
     {
       "product": "Klucel LF / LXF Pharm",
       "chemical": "Hydroxypropylcellulose (HPC)",
-      "function": "Binder, film coating"
+      "function": "Binder, film coating",
+      "url": "https://www.pharmaexcipients.com/product/klucel-lf-lxf-pharm/"
     },
     {
       "product": "Klucel JF / JXF Pharm",
       "chemical": "Hydroxypropylcellulose (HPC)",
-      "function": "Binder"
+      "function": "Binder",
+      "url": "https://www.pharmaexcipients.com/product/klucel-jf-jxf-pharm/"
     },
     {
       "product": "Klucel GF / GXF Pharm",
       "chemical": "Hydroxypropylcellulose (HPC)",
-      "function": "Binder, controlled-release matrix former"
+      "function": "Binder, controlled-release matrix former",
+      "url": "https://www.pharmaexcipients.com/product/klucel-gf-gxf-pharm/"
     },
     {
       "product": "Klucel MF / MXF Pharm",
       "chemical": "Hydroxypropylcellulose (HPC)",
-      "function": "Controlled-release matrix former"
+      "function": "Controlled-release matrix former",
+      "url": "https://www.pharmaexcipients.com/product/klucel-mf-mxf-pharm/"
     },
     {
       "product": "Klucel HF / HXF Pharm",
       "chemical": "Hydroxypropylcellulose (HPC)",
-      "function": "Controlled-release matrix former"
+      "function": "Controlled-release matrix former",
+      "url": "https://www.pharmaexcipients.com/product/klucel-hf-hxf-pharm/"
     },
     {
       "product": "Klucel Xtend",
@@ -435,7 +439,8 @@
     {
       "product": "Benecel K100LV PH PRM",
       "chemical": "Hypromellose (HPMC 2208)",
-      "function": "Binder, film coating"
+      "function": "Binder, film coating",
+      "url": "https://www.pharmaexcipients.com/product/benecel-k100lv-ph-prm/"
     },
     {
       "product": "Benecel K250 / K750 / K1500 PH PRM",
@@ -493,14 +498,12 @@
     {
       "product": "Aqualon EC T10 / N7 / N10 / N14 / N22 / N50 / N100 Pharm",
       "chemical": "Ethylcellulose (EC)",
-      "function": "Sustained-release coating, matrix former",
-      "url": "https://www.pharmaexcipients.com/product/aqualon-ec/"
+      "function": "Sustained-release coating, matrix former"
     },
     {
       "product": "Ashland EC N4 / N10 / N20 / N100 Pharm Ultra",
       "chemical": "Ethylcellulose (EC), ultra-purity",
-      "function": "Sustained-release coating",
-      "url": "https://www.pharmaexcipients.com/product/ashland-ec-n4/"
+      "function": "Sustained-release coating"
     },
     {
       "product": "Blanose 7H4XF / 7HF / 7H3SF / 7HOF / 7M31F / 7M8SF / 7M20F / 7MF / 7M1F / 7LF / 7LP PH",
@@ -530,8 +533,7 @@
     {
       "product": "Plasdone K-12 / K-17 / K-25 / K-29/32 / K-90",
       "chemical": "Povidone (PVP)",
-      "function": "Binder, solubilizer, solid dispersion carrier",
-      "url": "https://www.pharmaexcipients.com/product/plasdone-k-12/"
+      "function": "Binder, solubilizer, solid dispersion carrier"
     },
     {
       "product": "Plasdone Low Nitrite",
@@ -552,8 +554,7 @@
     {
       "product": "Plasdone S-630 Ultra",
       "chemical": "Copovidone (PVP-VA 60:40), ultra-purity",
-      "function": "Binder, solid dispersion carrier",
-      "url": "https://www.pharmaexcipients.com/product/plasdone-s-630/"
+      "function": "Binder, solid dispersion carrier"
     },
     {
       "product": "Polyplasdone XL / XL-10",
@@ -568,8 +569,7 @@
     {
       "product": "Polyplasdone INF-10",
       "chemical": "Crospovidone, fine particle",
-      "function": "Binder and disintegrant for pellets",
-      "url": "https://www.pharmaexcipients.com/product/polyplasdone-inf-10-type-b/"
+      "function": "Binder and disintegrant for pellets"
     },
     {
       "product": "Polyplasdone LN",
@@ -585,14 +585,12 @@
     {
       "product": "Aquarius Prime / Prime LS",
       "chemical": "Fully formulated cellulosic coating",
-      "function": "IR aesthetic coating",
-      "url": "https://www.pharmaexcipients.com/product/aquarius-prime/"
+      "function": "IR aesthetic coating"
     },
     {
       "product": "Aquarius Preferred",
       "chemical": "Cellulosic/copovidone coating blend",
-      "function": "IR aesthetic coating",
-      "url": "https://www.pharmaexcipients.com/product/aquarius-preferred-hsp/"
+      "function": "IR aesthetic coating"
     },
     {
       "product": "Aquarius PVA",
@@ -602,8 +600,7 @@
     {
       "product": "Aquarius TF / Nutra TF",
       "chemical": "TiO2-free coating blend",
-      "function": "IR coating (titanium dioxide-free)",
-      "url": "https://www.pharmaexcipients.com/product/aquarius-tf/"
+      "function": "IR coating (titanium dioxide-free)"
     },
     {
       "product": "Aquarius Organic",
@@ -646,39 +643,35 @@
     {
       "product": "Vialose Trehalose Dihydrate",
       "chemical": "Trehalose dihydrate (high purity)",
-      "function": "Lyoprotectant, protein stabilizer for biologics",
-      "url": "https://www.pharmaexcipients.com/product/vialose/"
+      "function": "Lyoprotectant, protein stabilizer for biologics"
     },
     {
       "product": "Vialose Sucrose",
       "chemical": "Sucrose (high purity)",
-      "function": "Lyoprotectant for parenteral formulations",
-      "url": "https://www.pharmaexcipients.com/product/vialose/"
+      "function": "Lyoprotectant for parenteral formulations"
     },
     {
       "product": "Viatel (70+ GMP grades)",
       "chemical": "PLGA and lactide/glycolide/caprolactone copolymers",
-      "function": "Controlled-release depot polymer for long-acting injectables",
-      "url": "https://www.pharmaexcipients.com/product/viatel/"
+      "function": "Controlled-release depot polymer for long-acting injectables"
     },
     {
       "product": "Pharmasolve NMP",
       "chemical": "N-methyl-2-pyrrolidone (NMP)",
-      "function": "Drug solubilizer, penetration enhancer"
+      "function": "Drug solubilizer, penetration enhancer",
+      "url": "https://www.pharmaexcipients.com/product/pharmasolve-nmp/"
     }
   ],
   "BASF": [
     {
       "product": "Kollidon 12 PF / 17 PF",
       "chemical": "Povidone (PVP), endotoxin-controlled",
-      "function": "Solubilizer, dispersant, crystallization inhibitor (injectables)",
-      "url": "https://www.pharmaexcipients.com/product/kollidon-12-pf/"
+      "function": "Solubilizer, dispersant, crystallization inhibitor (injectables)"
     },
     {
       "product": "Kollidon 25 / 30",
       "chemical": "Povidone (PVP)",
-      "function": "Binder, pore former, stabilizer, thickener, solubilizer",
-      "url": "https://www.pharmaexcipients.com/product/kollidon-25/"
+      "function": "Binder, pore former, stabilizer, thickener, solubilizer"
     },
     {
       "product": "Kollidon 30 LP",
@@ -689,20 +682,17 @@
     {
       "product": "Kollidon 90 F / 90 Evo",
       "chemical": "Povidone (PVP K90)",
-      "function": "Wet binder, stabilizer, thickener",
-      "url": "https://www.pharmaexcipients.com/product/kollidon-90-f/"
+      "function": "Wet binder, stabilizer, thickener"
     },
     {
       "product": "Kollidon VA 64 / VA 64 Fine / VA 64 NT",
       "chemical": "Copovidone (PVP-VA 6:4)",
-      "function": "Dry binder, matrix former for amorphous solid dispersions",
-      "url": "https://www.pharmaexcipients.com/product/kollidon-va-64/"
+      "function": "Dry binder, matrix former for amorphous solid dispersions"
     },
     {
       "product": "Kollidon CL / CL-F / CL-SF / CL-M",
       "chemical": "Crospovidone",
-      "function": "Super-disintegrant, dissolution enhancer",
-      "url": "https://www.pharmaexcipients.com/product/kollidon-cl/"
+      "function": "Super-disintegrant, dissolution enhancer"
     },
     {
       "product": "Kollidon SR",
@@ -731,20 +721,17 @@
     {
       "product": "Kollicoat MAE 30 DP / MAE 100 P / MAE 100-55",
       "chemical": "Methacrylic acid-ethyl acrylate copolymer",
-      "function": "Enteric coating (dissolves pH >5.5)",
-      "url": "https://www.pharmaexcipients.com/product/kollicoat-mae-30-dp/"
+      "function": "Enteric coating (dissolves pH >5.5)"
     },
     {
       "product": "Kollicoat Smartseal 30 D / 100 P",
       "chemical": "Methyl methacrylate-diethylaminoethyl methacrylate copolymer",
-      "function": "Taste masking, moisture barrier",
-      "url": "https://www.pharmaexcipients.com/product/kollicoat-smartseal-30-d/"
+      "function": "Taste masking, moisture barrier"
     },
     {
       "product": "Kolliphor EL / ELP",
       "chemical": "Polyoxyl 35 castor oil",
-      "function": "Solubilizer, emulsifier (ELP = parenteral grade)",
-      "url": "https://www.pharmaexcipients.com/product/kolliphor-el/"
+      "function": "Solubilizer, emulsifier (ELP = parenteral grade)"
     },
     {
       "product": "Kolliphor RH 40",
@@ -766,14 +753,12 @@
     {
       "product": "Kolliphor PS 20 / PS 60 / PS 80",
       "chemical": "Polysorbate 20 / 60 / 80",
-      "function": "Emulsifier, solubilizer",
-      "url": "https://www.pharmaexcipients.com/product/kolliphor-ps-20/"
+      "function": "Emulsifier, solubilizer"
     },
     {
       "product": "Kolliphor CS 12 / CS 20",
       "chemical": "Macrogol cetostearyl ether",
-      "function": "O/W emulsifier for topicals",
-      "url": "https://www.pharmaexcipients.com/product/kollidphor-cs-12/"
+      "function": "O/W emulsifier for topicals"
     },
     {
       "product": "Kolliphor SLS Fine",
@@ -784,8 +769,7 @@
     {
       "product": "Kolliphor P 188 / P 188 micro / P 188 Bio",
       "chemical": "Poloxamer 188",
-      "function": "Solubilizer, emulsifier, cell protectant",
-      "url": "https://www.pharmaexcipients.com/product/kolliphor-p188/"
+      "function": "Solubilizer, emulsifier, cell protectant"
     },
     {
       "product": "Kolliphor P 338",
@@ -801,8 +785,7 @@
     {
       "product": "Kollisolv PEG 300 / 400 / 400 G / 400 LA / 600 / 1000 / 1500 / 4000 / 6000 / 8000",
       "chemical": "Macrogol (PEG) various MW",
-      "function": "Solvent, co-solvent, plasticizer, suppository base",
-      "url": "https://www.pharmaexcipients.com/product/kolliphor-peg-300/"
+      "function": "Solvent, co-solvent, plasticizer, suppository base"
     },
     {
       "product": "Kollisolv PG",
@@ -831,14 +814,12 @@
     {
       "product": "Kolliwax S / S Fine",
       "chemical": "Stearic/palmitic acid (vegetable)",
-      "function": "Lubricant, matrix former, emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/kolliwax-s/"
+      "function": "Lubricant, matrix former, emulsifier"
     },
     {
       "product": "Kolliwax SA / SA Fine",
       "chemical": "Stearyl alcohol",
-      "function": "Viscosity regulator, co-emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/kolliwax-s/"
+      "function": "Viscosity regulator, co-emulsifier"
     },
     {
       "product": "Kolliwax CA",
@@ -855,8 +836,7 @@
     {
       "product": "Kolliwax CSA 50 / CSA 70",
       "chemical": "Cetostearyl alcohol",
-      "function": "Viscosity regulator, co-emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/kolliwax-csa-50/"
+      "function": "Viscosity regulator, co-emulsifier"
     },
     {
       "product": "Kolliwax GMS I / GMS II",
@@ -914,7 +894,7 @@
       "product": "Ludipress",
       "chemical": "Lactose + povidone + crospovidone",
       "function": "Direct compression excipient (filler-binder-disintegrant)",
-      "url": "https://www.pharmaexcipients.com/product/ludipress-lce/"
+      "url": "https://www.pharmaexcipients.com/product/ludipress/"
     },
     {
       "product": "Ludipress LCE",
@@ -984,13 +964,13 @@
       "product": "AquaPolish",
       "chemical": "HPMC-based premix (hypromellose + plasticizers + pigments)",
       "function": "General-purpose immediate-release film coating",
-      "url": "https://www.pharmaexcipients.com/product/aquapolish-tio2-free/"
+      "url": "https://www.pharmaexcipients.com/product/aquapolish/"
     },
     {
       "product": "AquaPolish C",
       "chemical": "HPMC-based premix (custom formulation)",
       "function": "Contract manufacturing film coating (client's registered formulation)",
-      "url": "https://www.pharmaexcipients.com/product/aquapolish/"
+      "url": "https://www.pharmaexcipients.com/product/aquapolish-c/"
     },
     {
       "product": "AquaPolish E",
@@ -1067,14 +1047,12 @@
     {
       "product": "BonuLac E",
       "chemical": "Shellac-based polymer + plasticizers + pigments",
-      "function": "Enteric coating system for tablets and capsules",
-      "url": "https://www.pharmaexcipients.com/product/bonulac/"
+      "function": "Enteric coating system for tablets and capsules"
     },
     {
       "product": "IsuPolish",
       "chemical": "Isomalt + pigments + excipients",
-      "function": "Sugar-free dragee coating",
-      "url": "https://www.pharmaexcipients.com/product/isupolish-fsc/"
+      "function": "Sugar-free dragee coating"
     },
     {
       "product": "IsuPolish FSC",
@@ -1102,7 +1080,7 @@
       "product": "CompactCel",
       "chemical": "PVP/NaCMC or HPC/NaCMC granulate",
       "function": "Dry binder for direct compression",
-      "url": "https://www.pharmaexcipients.com/product/compactcel-sr/"
+      "url": "https://www.pharmaexcipients.com/product/compactcel/"
     },
     {
       "product": "CompactCel SIL",
@@ -1143,8 +1121,7 @@
     {
       "product": "CompactCel FLO Organic",
       "chemical": "Certified organic flow agent",
-      "function": "Organic-certified flow aid/glidant",
-      "url": "https://www.pharmaexcipients.com/product/compactcel-flo/"
+      "function": "Organic-certified flow aid/glidant"
     },
     {
       "product": "CompactCel LUB",
@@ -1208,14 +1185,12 @@
     {
       "product": "Tylopur Xtend Nutra",
       "chemical": "Hypromellose (HPMC 2208, plant-derived)",
-      "function": "Extended/sustained release matrix agent",
-      "url": "https://www.pharmaexcipients.com/product/tylopur/"
+      "function": "Extended/sustained release matrix agent"
     },
     {
       "product": "Tylopur ClearCoat Nutra",
       "chemical": "Hypromellose (HPMC, plant-derived)",
-      "function": "Natural clear film coating for nutraceutical tablets",
-      "url": "https://www.pharmaexcipients.com/product/tylopur/"
+      "function": "Natural clear film coating for nutraceutical tablets"
     }
   ],
   "Captisol": [
@@ -1266,17 +1241,20 @@
     {
       "product": "VitiPure CO 35",
       "chemical": "Polyoxyl 35 Castor Oil",
-      "function": "Non-ionic solubilizer and emulsifier"
+      "function": "Non-ionic solubilizer and emulsifier",
+      "url": "https://www.pharmaexcipients.com/product/vitipure-co-35/"
     },
     {
       "product": "VitiPure CO 35 LEX",
       "chemical": "Polyoxyl 35 Castor Oil (Low Endotoxin)",
-      "function": "Solubilizer for parenteral/high-risk applications"
+      "function": "Solubilizer for parenteral/high-risk applications",
+      "url": "https://www.pharmaexcipients.com/product/vitipure-co-35-lex/"
     },
     {
       "product": "VitiPure CO 35 Superior",
       "chemical": "Polyoxyl 35 Castor Oil (Highly Purified)",
-      "function": "Ultra-pure solubilizer for parenteral formulations"
+      "function": "Ultra-pure solubilizer for parenteral formulations",
+      "url": "https://www.pharmaexcipients.com/product/vitipure-co-35-superior/"
     },
     {
       "product": "VitiPure HCO 40",
@@ -1310,22 +1288,26 @@
     {
       "product": "VitiPure LEX 300",
       "chemical": "Polyethylene Glycol 300 (Low Endotoxin)",
-      "function": "Co-solvent for sensitive/parenteral formulations"
+      "function": "Co-solvent for sensitive/parenteral formulations",
+      "url": "https://www.pharmaexcipients.com/product/vitipure-lex-300/"
     },
     {
       "product": "VitiPure LEX 400",
       "chemical": "Polyethylene Glycol 400 (Low Endotoxin)",
-      "function": "Co-solvent for sensitive/parenteral formulations"
+      "function": "Co-solvent for sensitive/parenteral formulations",
+      "url": "https://www.pharmaexcipients.com/product/vitipure-lex-400/"
     },
     {
       "product": "VitiPure LEX 3350 S",
       "chemical": "Polyethylene Glycol 3350 (Low Endotoxin, Flakes)",
-      "function": "Co-solvent for parenteral use"
+      "function": "Co-solvent for parenteral use",
+      "url": "https://www.pharmaexcipients.com/product/vitipure-lex-3350-s/"
     },
     {
       "product": "VitiPure LEX 4000 S",
       "chemical": "Polyethylene Glycol 4000 (Low Endotoxin, Flakes)",
-      "function": "Co-solvent for parenteral use"
+      "function": "Co-solvent for parenteral use",
+      "url": "https://www.pharmaexcipients.com/product/vitipure-lex-4000-s/"
     },
     {
       "product": "VitiPure Meglumine LEX",
@@ -1472,8 +1454,7 @@
     {
       "product": "Super Refined PEG 400 LTG",
       "chemical": "Polyethylene Glycol 400 (ChP grade)",
-      "function": "Solvent meeting Chinese Pharmacopeia monograph",
-      "url": "https://www.pharmaexcipients.com/product/super-refined-peg-400/"
+      "function": "Solvent meeting Chinese Pharmacopeia monograph"
     },
     {
       "product": "Super Refined PEG 600",
@@ -1633,8 +1614,7 @@
     {
       "product": "Tween 20 HP LSA",
       "chemical": "Polysorbate 20 (low sorbitan content)",
-      "function": "Ultra-high purity for biologic stabilization",
-      "url": "https://www.pharmaexcipients.com/product/tween-20-hp-lsa/"
+      "function": "Ultra-high purity for biologic stabilization"
     },
     {
       "product": "Tween 60 HP",
@@ -1656,8 +1636,7 @@
     {
       "product": "Tween 60 pharma",
       "chemical": "Polysorbate 60",
-      "function": "O/W emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/tween-60/"
+      "function": "O/W emulsifier"
     },
     {
       "product": "Tween 80 pharma",
@@ -1667,32 +1646,27 @@
     {
       "product": "Span 20 HP",
       "chemical": "Sorbitan monolaurate (high purity)",
-      "function": "Co-emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/span-20/"
+      "function": "Co-emulsifier"
     },
     {
       "product": "Span 80 HP",
       "chemical": "Sorbitan monooleate (high purity)",
-      "function": "W/O emulsifier, O/W stabilizer",
-      "url": "https://www.pharmaexcipients.com/product/span-80/"
+      "function": "W/O emulsifier, O/W stabilizer"
     },
     {
       "product": "Span 20 pharma",
       "chemical": "Sorbitan monolaurate",
-      "function": "Emulsifier for inhalers, ophthalmic, oral, topical",
-      "url": "https://www.pharmaexcipients.com/product/span-20/"
+      "function": "Emulsifier for inhalers, ophthalmic, oral, topical"
     },
     {
       "product": "Span 60 pharma",
       "chemical": "Sorbitan monostearate",
-      "function": "O/W emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/span-60/"
+      "function": "O/W emulsifier"
     },
     {
       "product": "Span 80 pharma",
       "chemical": "Sorbitan monooleate",
-      "function": "W/O emulsifier, dispersant",
-      "url": "https://www.pharmaexcipients.com/product/span-80/"
+      "function": "W/O emulsifier, dispersant"
     },
     {
       "product": "Span 83 pharma",
@@ -1702,8 +1676,7 @@
     {
       "product": "Span 85 pharma",
       "chemical": "Sorbitan trioleate",
-      "function": "W/O emulsifier for nasal sprays, metered dose inhalers",
-      "url": "https://www.pharmaexcipients.com/product/span-85/"
+      "function": "W/O emulsifier for nasal sprays, metered dose inhalers"
     },
     {
       "product": "Span 65",
@@ -2235,159 +2208,155 @@
       "url": "https://www.pharmaexcipients.com/product/biohale-trehalose-dihydrate/"
     }
   ],
-  "Excipio Chemicals": [
+  "Dow": [
     {
-      "product": "Calcium Carbonate",
-      "chemical": "Calcium carbonate",
-      "function": "Filler, diluent, buffering agent",
-      "url": "https://www.pharmaexcipients.com/product/calcium-carbonate-heavy/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 300 NF, Macrogol 300 Ph. Eur.",
+      "chemical": "Polyethylene glycol 300 (Macrogol 300)",
+      "function": "Solvent, co-solvent, plasticizer, vehicle, humectant (liquid PEG)",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-300-nf-macrogol-300-ph-eur/"
     },
     {
-      "product": "Calcium Phosphates",
-      "chemical": "Dicalcium phosphate / Tricalcium phosphate",
-      "function": "Filler, diluent (direct compression and wet granulation)"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 300 NF Low Aldehyde, Macrogol 300 Ph. Eur.",
+      "chemical": "Polyethylene glycol 300, low-aldehyde grade",
+      "function": "Solvent, plasticizer, vehicle; low-aldehyde grade for oxidation-sensitive APIs",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-300-nf-low-aldehyde-macrogol-300-ph-eur/"
     },
     {
-      "product": "Dextrose",
-      "chemical": "Dextrose monohydrate (D-glucose)",
-      "function": "Filler, sweetener, diluent",
-      "url": "https://www.pharmaexcipients.com/product/dextrose-monohydrate/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 400 NF, Macrogol 400 Ph. Eur.",
+      "chemical": "Polyethylene glycol 400 (Macrogol 400)",
+      "function": "Solvent, co-solvent, plasticizer, vehicle, humectant (liquid PEG)",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-400-nf-macrogol-400-ph-eur/"
     },
     {
-      "product": "Lactose",
-      "chemical": "Lactose monohydrate / anhydrous",
-      "function": "Filler, diluent",
-      "url": "https://www.pharmaexcipients.com/product/lactose-le/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 400 NF Low Aldehyde, Macrogol 400 Ph. Eur.",
+      "chemical": "Polyethylene glycol 400, low-aldehyde grade",
+      "function": "Solvent, plasticizer, vehicle; low-aldehyde grade for oxidation-sensitive APIs",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-400-nf-low-aldehyde-macrogol-400-ph-eur/"
     },
     {
-      "product": "Mannitol",
-      "chemical": "D-Mannitol",
-      "function": "Filler, diluent, sweetener (especially ODTs)",
-      "url": "https://www.pharmaexcipients.com/product/mannogem-xl-opal-spray-dried-mannitol/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 540 Blend (Inhibited)",
+      "chemical": "Polyethylene glycol 540 blend",
+      "function": "Semi-solid water-soluble ointment and suppository base, plasticizer",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-540-blend-inhibited/"
     },
     {
-      "product": "Sorbitol",
-      "chemical": "Sorbitol (D-glucitol)",
-      "function": "Filler, sweetener, humectant, plasticizer",
-      "url": "https://www.pharmaexcipients.com/product/parteck-si-400-lex-sorbitol/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 600 NF, Macrogol 600 Ph. Eur.",
+      "chemical": "Polyethylene glycol 600 (Macrogol 600)",
+      "function": "Solvent, plasticizer, vehicle, humectant (liquid to low-melting PEG)",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-600-nf-macrogol-600-ph-eur/"
     },
     {
-      "product": "Starch",
-      "chemical": "Corn / potato / wheat starch",
-      "function": "Filler, diluent, disintegrant",
-      "url": "https://www.pharmaexcipients.com/product/native-corn-maize-starch/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 600 NF Low Aldehyde, Macrogol 600 Ph. Eur.",
+      "chemical": "Polyethylene glycol 600, low-aldehyde grade",
+      "function": "Solvent, plasticizer, vehicle; low-aldehyde grade for oxidation-sensitive APIs",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-600-nf-low-aldehyde-macrogol-600-ph-eur/"
     },
     {
-      "product": "HPMC",
-      "chemical": "Hypromellose",
-      "function": "Binder, film-coating agent, controlled-release matrix former",
-      "url": "https://www.pharmaexcipients.com/product/hpmcp-hp-55s/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 1000 NF",
+      "chemical": "Polyethylene glycol 1000 (Macrogol 1000)",
+      "function": "Water-soluble ointment and suppository base, plasticizer",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-1000-nf/"
     },
     {
-      "product": "Hydroxypropyl Cellulose",
-      "chemical": "HPC",
-      "function": "Binder, film-coating agent"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 1450 NF Flake (Inhibited)",
+      "chemical": "Polyethylene glycol 1450",
+      "function": "Ointment and suppository base, plasticizer, lubricant",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-1450-nf-flake-inhibited/"
     },
     {
-      "product": "Methyl Cellulose",
-      "chemical": "Methylcellulose",
-      "function": "Binder, thickener, film former"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 3350 USP Flake (Inhibited), Macrogol 3350 Ph. Eur.",
+      "chemical": "Polyethylene glycol 3350 (Macrogol 3350), inhibited",
+      "function": "Water-soluble base, plasticizer, binder, coating aid",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-3350-usp-flake-inhibited-macrogol-3350-ph-eur/"
     },
     {
-      "product": "Povidone",
-      "chemical": "PVP (Polyvinylpyrrolidone)",
-      "function": "Binder (wet and dry granulation), solubilizer",
-      "url": "https://www.pharmaexcipients.com/product/polyplasdone-crospovidone/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 3350 USP Granular (Inhibited), Macrogol 3350 Ph. Eur.",
+      "chemical": "Polyethylene glycol 3350 (Macrogol 3350), inhibited",
+      "function": "Water-soluble base, plasticizer, binder, coating aid",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-3350-usp-granular-inhibited-macrogol-3350-ph-eur/"
     },
     {
-      "product": "Microcrystalline Cellulose",
-      "chemical": "MCC",
-      "function": "Binder, filler, disintegrant (direct compression)"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 3350 USP Powder (Inhibited), Macrogol 3350 Ph. Eur.",
+      "chemical": "Polyethylene glycol 3350 (Macrogol 3350), inhibited",
+      "function": "Water-soluble base, plasticizer, binder, coating aid",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-3350-usp-powder-inhibited-macrogol-3350-ph-eur/"
     },
     {
-      "product": "Powdered Cellulose",
-      "chemical": "Cellulose powder",
-      "function": "Filler, binder"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 3350 USP Granular (Uninhibited), Macrogol 3350 Ph. Eur.",
+      "chemical": "Polyethylene glycol 3350, uninhibited",
+      "function": "Osmotic laxative grade; water-soluble excipient base",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-3350-usp-granular-uninhibited-macrogol-3350-ph-eur-2/"
     },
     {
-      "product": "Croscarmellose Sodium",
-      "chemical": "Croscarmellose sodium (cross-linked CMC)",
-      "function": "Superdisintegrant"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 3350 USP Powder (Uninhibited), Macrogol 3350 Ph. Eur.",
+      "chemical": "Polyethylene glycol 3350, uninhibited",
+      "function": "Osmotic laxative grade; water-soluble excipient base",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-3350-usp-powder-uninhibited-macrogol-3350-ph-eur/"
     },
     {
-      "product": "Crospovidone",
-      "chemical": "Crospovidone (cross-linked PVP)",
-      "function": "Superdisintegrant",
-      "url": "https://www.pharmaexcipients.com/product/polyplasdone-crospovidone/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 4000 NF Flake (Inhibited), Macrogol 4000 Ph. Eur.",
+      "chemical": "Polyethylene glycol 4000 (Macrogol 4000), inhibited",
+      "function": "Solid water-soluble base, lubricant, binder, coating, plasticizer",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-4000-nf-flake-inhibited-macrogol-4000-ph-eur/"
     },
     {
-      "product": "Sodium Starch Glycolate",
-      "chemical": "Sodium starch glycolate",
-      "function": "Superdisintegrant"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 4000 NF, Powder (Uninhibited), Macrogol 4000 Ph. Eur.",
+      "chemical": "Polyethylene glycol 4000, uninhibited",
+      "function": "Solid water-soluble base, coating, vehicle",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-4000-nf-powder-uninhibited-macrogol-4000-ph-eur/"
     },
     {
-      "product": "Magnesium Stearate",
-      "chemical": "Magnesium stearate",
-      "function": "Lubricant",
-      "url": "https://www.pharmaexcipients.com/product/magnesium-stearate-drpaullohmann/"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 4000 NF, Powder (Uninhibited), Macrogol 4000 Ph. Eur. (laxative grade)",
+      "chemical": "Polyethylene glycol 4000, laxative grade",
+      "function": "Osmotic laxative"
     },
     {
-      "product": "Sodium Stearyl Fumarate",
-      "chemical": "Sodium stearyl fumarate",
-      "function": "Lubricant (alternative to magnesium stearate)"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 4600 NF Granular (Inhibited)",
+      "chemical": "Polyethylene glycol 4600",
+      "function": "Solid water-soluble base, lubricant, coating, tablet aid",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-4600-nf-granular-inhibited/"
     },
     {
-      "product": "Colloidal Silicon Dioxide",
-      "chemical": "Colloidal silicon dioxide (fumed silica)",
-      "function": "Glidant, anti-caking agent, adsorbent"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 8000 NF Flake (Inhibited), Macrogol 8000 Ph. Eur.",
+      "chemical": "Polyethylene glycol 8000 (Macrogol 8000)",
+      "function": "Solid water-soluble base, lubricant, binder, coating, film aid",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-8000-nf-flake-inhibited-macrogol-8000-ph-eur/"
     },
     {
-      "product": "Ethyl Cellulose",
-      "chemical": "Ethylcellulose",
-      "function": "Film coating, sustained-release coating, taste masking"
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 8000 NF Granular (Inhibited), Macrogol 8000 Ph. Eur.",
+      "chemical": "Polyethylene glycol 8000 (Macrogol 8000)",
+      "function": "Solid water-soluble base, lubricant, binder, coating, film aid",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-8000-nf-granular-inhibited-macrogol-8000-ph-eur/"
     },
     {
-      "product": "Polyethylene Glycol",
-      "chemical": "PEG (Macrogol)",
-      "function": "Plasticizer for film coatings, solubilizer, lubricant",
+      "product": "CARBOWAX SENTRY Polyethylene Glycol 8000 NF Powder (Inhibited), Macrogol 8000 Ph. Eur.",
+      "chemical": "Polyethylene glycol 8000 (Macrogol 8000)",
+      "function": "Solid water-soluble base, lubricant, binder, coating, film aid",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-polyethylene-glycol-8000-nf-powder-inhibited-macrogol-8000-ph-eur/"
+    },
+    {
+      "product": "CARBOWAX SENTRY Methoxypolyethylene Glycol 350 NF",
+      "chemical": "Methoxypolyethylene glycol 350 (PEG-6 methyl ether)",
+      "function": "Liquid plasticizer, solvent, film-coating component",
+      "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-methoxypolyethylene-glycol-350-nf/"
+    },
+    {
+      "product": "CARBOWAX SENTRY Methoxypolyethylene Glycol 550 NF",
+      "chemical": "Methoxypolyethylene glycol 550 (PEG methyl ether)",
+      "function": "Liquid plasticizer, solvent, film-coating component",
       "url": "https://www.pharmaexcipients.com/product/carbowax-sentry-methoxypolyethylene-glycol-550-nf/"
     },
     {
-      "product": "Carboxymethylcellulose",
-      "chemical": "CMC (Carmellose sodium)",
-      "function": "Thickener, binder, coating agent, disintegrant"
+      "product": "Propylene Glycol (PG)",
+      "chemical": "Propylene glycol (USP-NF / Ph. Eur.)",
+      "function": "Solvent, co-solvent, humectant, vehicle",
+      "url": "https://www.pharmaexcipients.com/product/propylene-glycol-pg-usp-ep/"
     },
     {
-      "product": "Iron Oxides",
-      "chemical": "Iron oxide (red, yellow, black)",
-      "function": "Colorant for coatings and capsules"
-    },
-    {
-      "product": "Co-Processed Excipients",
-      "chemical": "Pre-blended multi-component excipients (MCC-lactose, MCC-mannitol)",
-      "function": "Ready-to-use direct compression bases"
-    },
-    {
-      "product": "Spheres",
-      "chemical": "Sugar spheres / MCC spheres (nonpareils)",
-      "function": "Starter cores for pellet coating",
-      "url": "https://www.pharmaexcipients.com/product/instaspheres/"
-    },
-    {
-      "product": "Xanthan Gum",
-      "chemical": "Xanthan gum",
-      "function": "Controlled-release matrix agent, thickener, stabilizer",
-      "url": "https://www.pharmaexcipients.com/product/grindsted-xanthan-gum/"
-    },
-    {
-      "product": "Empty HPMC Capsules",
-      "chemical": "Hydroxypropyl methylcellulose capsule shells",
-      "function": "Vegetarian/vegan capsule dosage form"
-    },
-    {
-      "product": "Empty Gelatin Capsules",
-      "chemical": "Gelatin capsule shells",
-      "function": "Standard capsule dosage form"
+      "product": "VERSENE NA Chelating Agent",
+      "chemical": "Disodium edetate (disodium EDTA dihydrate)",
+      "function": "Chelating agent, stabilizer, antioxidant synergist",
+      "url": "https://www.pharmaexcipients.com/product/versene-na-chelating-agent/"
     }
   ],
   "Evonik": [
@@ -2406,7 +2375,8 @@
     {
       "product": "EUDRAGIT E 12.5",
       "chemical": "Amino methacrylate copolymer (same as E 100), 12.5% in solvent",
-      "function": "Immediate release film coating; taste/odor masking; moisture protection; soluble below pH 5.0 (organic solution)"
+      "function": "Immediate release film coating; taste/odor masking; moisture protection; soluble below pH 5.0 (organic solution)",
+      "url": "https://www.pharmaexcipients.com/product/eudragit-e-125/"
     },
     {
       "product": "EUDRAGIT E PO ReadyMix",
@@ -2441,7 +2411,8 @@
     {
       "product": "EUDRAGIT L 12.5",
       "chemical": "Methacrylic acid -- methyl methacrylate copolymer (1:1), 12.5% in solvent",
-      "function": "Enteric coating; dissolution above pH 6.0 (organic solution)"
+      "function": "Enteric coating; dissolution above pH 6.0 (organic solution)",
+      "url": "https://www.pharmaexcipients.com/product/eudragit-l-125/"
     },
     {
       "product": "EUDRAGIT S 100",
@@ -2452,7 +2423,8 @@
     {
       "product": "EUDRAGIT S 12.5",
       "chemical": "Methacrylic acid -- methyl methacrylate copolymer (1:2), 12.5% in solvent",
-      "function": "Enteric/colonic coating; dissolution above pH 7.0 (organic solution)"
+      "function": "Enteric/colonic coating; dissolution above pH 7.0 (organic solution)",
+      "url": "https://www.pharmaexcipients.com/product/eudragit-s-125/"
     },
     {
       "product": "EUDRAGIT FS 100",
@@ -2487,7 +2459,8 @@
     {
       "product": "EUDRAGIT RL 12.5",
       "chemical": "Ammonio methacrylate copolymer Type A, 12.5% in solvent",
-      "function": "Sustained release coating; high permeability (organic solution)"
+      "function": "Sustained release coating; high permeability (organic solution)",
+      "url": "https://www.pharmaexcipients.com/product/eudragit-rl-125/"
     },
     {
       "product": "EUDRAGIT RS 100",
@@ -2510,7 +2483,8 @@
     {
       "product": "EUDRAGIT RS 12.5",
       "chemical": "Ammonio methacrylate copolymer Type B, 12.5% in solvent",
-      "function": "Sustained release coating; low permeability (organic solution)"
+      "function": "Sustained release coating; low permeability (organic solution)",
+      "url": "https://www.pharmaexcipients.com/product/eudragit-rs-125/"
     },
     {
       "product": "EUDRAGIT NE 30 D",
@@ -2529,6 +2503,24 @@
       "chemical": "Poly(ethyl acrylate-co-methyl methacrylate), 30% dispersion",
       "function": "Sustained release coating; low permeability; highly flexible films; compatible with all API charges (aqueous dispersion)",
       "url": "https://www.pharmaexcipients.com/product/eudragit-nm-30-d/"
+    },
+    {
+      "product": "EUDRAGIT E PO",
+      "chemical": "Amino methacrylate copolymer",
+      "function": "Matrix polymer for amorphous solid dispersions via hot melt extrusion or spray drying",
+      "url": "https://www.pharmaexcipients.com/product/eudragit-e-po/"
+    },
+    {
+      "product": "EUDRAGIT L 100-55",
+      "chemical": "Methacrylic acid -- ethyl acrylate copolymer (1:1)",
+      "function": "Matrix polymer for amorphous solid dispersions",
+      "url": "https://www.pharmaexcipients.com/product/eudragit-l-100-55/"
+    },
+    {
+      "product": "EUDRAGIT L 100",
+      "chemical": "Methacrylic acid -- methyl methacrylate copolymer (1:1)",
+      "function": "Matrix polymer for amorphous solid dispersions",
+      "url": "https://www.pharmaexcipients.com/product/eudragit-l-100/"
     },
     {
       "product": "PlasACRYL HTP 20",
@@ -2583,428 +2575,357 @@
     {
       "product": "RESOMER R 202 H",
       "chemical": "Poly(D,L-lactide), acid end group, IV 0.16-0.24 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER R 202 S",
       "chemical": "Poly(D,L-lactide), ester end group, IV 0.16-0.24 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 9 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 9 months"
     },
     {
       "product": "RESOMER R 203 H",
       "chemical": "Poly(D,L-lactide), acid end group, IV 0.25-0.35 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER R 203 S",
       "chemical": "Poly(D,L-lactide), ester end group, IV 0.25-0.35 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 12 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 12 months"
     },
     {
       "product": "RESOMER R 205 S",
       "chemical": "Poly(D,L-lactide), ester end group, IV 0.55-0.75 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 18 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 18 months"
     },
     {
       "product": "RESOMER RG 501 H",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, acid end group, IV 0.08-0.16 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 502",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group, IV 0.16-0.24 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 502 H",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, acid end group, IV 0.16-0.24 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 503",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group, IV 0.32-0.44 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 503 H",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, acid end group, IV 0.32-0.44 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 504",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group, IV 0.45-0.60 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 504 H",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, acid end group, IV 0.45-0.60 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 505",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group, IV 0.61-0.74 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 653 H",
       "chemical": "Poly(D,L-lactide-co-glycolide) 65:35, acid end group, IV 0.32-0.44 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "RESOMER RG 750 S",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, ester end group, IV 0.8-1.2 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER RG 752 H",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, acid end group, IV 0.14-0.22 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER RG 752 S",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, ester end group, IV 0.16-0.24 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER RG 753 H",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, acid end group, IV 0.32-0.44 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER RG 753 S",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, ester end group, IV 0.32-0.44 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER RG 755 S",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, ester end group, IV 0.50-0.70 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER RG 756 S",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, ester end group, IV 0.71-1.0 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER RG 757 S",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, ester end group, IV 0.9-1.3 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "RESOMER RG 858 S",
       "chemical": "Poly(D,L-lactide-co-glycolide) 85:15, ester end group, IV 1.3-1.7 dL/g",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 9 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 9 months"
     },
     {
       "product": "RESOMER Condensate RG 50:50 Mn 800",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, Mn 700-900 g/mol",
-      "function": "Low molecular weight biodegradable polymer; tin-free synthesis",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Low molecular weight biodegradable polymer; tin-free synthesis"
     },
     {
       "product": "RESOMER Condensate RG 50:50 Mn 2300",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, Mn 2,000-2,500 g/mol",
-      "function": "Low molecular weight biodegradable polymer; tin-free synthesis",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Low molecular weight biodegradable polymer; tin-free synthesis"
     },
     {
       "product": "RESOMER RP d 155",
       "chemical": "Poly(D,L-lactide)-block-mPEG 5000, 15% PEG, IV 0.55-0.68 dL/g",
-      "function": "Amphiphilic biodegradable polymer for nanoparticle formation; degradation < 2 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Amphiphilic biodegradable polymer for nanoparticle formation; degradation < 2 months"
     },
     {
       "product": "RESOMER RP d 255",
       "chemical": "Poly(D,L-lactide)-block-mPEG 5000, 25% PEG, IV 0.39-0.49 dL/g",
-      "function": "Amphiphilic biodegradable polymer for nanoparticle formation; degradation < 2 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Amphiphilic biodegradable polymer for nanoparticle formation; degradation < 2 months"
     },
     {
       "product": "RESOMER RP d 335",
       "chemical": "Poly(D,L-lactide)-block-mPEG 5000, 33% PEG, IV 0.33-0.42 dL/g",
-      "function": "Amphiphilic biodegradable polymer for nanoparticle formation; degradation < 2 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Amphiphilic biodegradable polymer for nanoparticle formation; degradation < 2 months"
     },
     {
       "product": "RESOMER Select",
       "chemical": "Custom poly(D,L-lactide) or poly(D,L-lactide-co-glycolide)",
-      "function": "Custom biodegradable polymers with tailored MW, IV, ratio, and end group for optimized drug delivery",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Custom biodegradable polymers with tailored MW, IV, ratio, and end group for optimized drug delivery"
     },
     {
       "product": "RESOMER Precise",
       "chemical": "Custom PLGA/PLA with ultra-tight specifications (IV +/- 0.02 dL/g)",
-      "function": "Custom polymers with 4-10x tighter specifications than standard industry grades",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Custom polymers with 4-10x tighter specifications than standard industry grades"
     },
     {
       "product": "RESOMER Zero",
       "chemical": "Purified PLGA with residual tin < 1 ppm",
-      "function": "Ultra-low tin biodegradable polymer for sensitive APIs; proprietary purification process",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Ultra-low tin biodegradable polymer for sensitive APIs; proprietary purification process"
     },
     {
       "product": "RESOMER L 206 S",
       "chemical": "Poly(L-lactide), ester end group, IV 0.8-1.2 dL/g",
-      "function": "Bioresorbable polymer for implantable medical devices; degradation > 3 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for implantable medical devices; degradation > 3 years"
     },
     {
       "product": "RESOMER L 207 S",
       "chemical": "Poly(L-lactide), ester end group, IV 1.5-2.0 dL/g",
-      "function": "Bioresorbable polymer for implantable medical devices; degradation > 3 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for implantable medical devices; degradation > 3 years"
     },
     {
       "product": "RESOMER L 209 S",
       "chemical": "Poly(L-lactide), ester end group, IV 2.6-3.2 dL/g",
-      "function": "Bioresorbable polymer for implantable medical devices; degradation > 3 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for implantable medical devices; degradation > 3 years"
     },
     {
       "product": "RESOMER L 210 S",
       "chemical": "Poly(L-lactide), ester end group, IV 3.3-4.3 dL/g",
-      "function": "Bioresorbable polymer for implantable medical devices; degradation > 3 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for implantable medical devices; degradation > 3 years"
     },
     {
       "product": "RESOMER R 207 S",
       "chemical": "Poly(D,L-lactide), ester end group, IV 1.3-1.7 dL/g",
-      "function": "Bioresorbable polymer for medical devices; degradation 1-2 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for medical devices; degradation 1-2 years"
     },
     {
       "product": "RESOMER LG 824 S",
       "chemical": "Poly(L-lactide-co-glycolide) 82:18, ester end group, IV 1.7-2.6 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation 1-2 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation 1-2 years"
     },
     {
       "product": "RESOMER LG 855 S",
       "chemical": "Poly(L-lactide-co-glycolide) 85:15, ester end group, IV 2.5-3.5 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation 1-2 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation 1-2 years"
     },
     {
       "product": "RESOMER LG 857 S",
       "chemical": "Poly(L-lactide-co-glycolide) 85:15, ester end group, IV 5.0-7.0 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation 1-2 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation 1-2 years"
     },
     {
       "product": "RESOMER LR 704 S",
       "chemical": "Poly(L-lactide-co-D,L-lactide) 70:30, ester end group, IV 2.0-2.8 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation 2-3 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation 2-3 years"
     },
     {
       "product": "RESOMER LR 706 S",
       "chemical": "Poly(L-lactide-co-D,L-lactide) 70:30, ester end group, IV 3.3-4.2 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation 2-3 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation 2-3 years"
     },
     {
       "product": "RESOMER LR 708",
       "chemical": "Poly(L-lactide-co-D,L-lactide) 70:30, IV 5.7-6.5 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation 2-3 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation 2-3 years"
     },
     {
       "product": "RESOMER G 205 S",
       "chemical": "Poly(glycolide), ester end group, IV 1.05-1.25 dL/g",
-      "function": "Bioresorbable polymer for medical devices; degradation < 5 weeks",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for medical devices; degradation < 5 weeks"
     },
     {
       "product": "RESOMER GC 753 S",
       "chemical": "Poly(glycolide-co-caprolactone), ester end group, IV 1.15-1.55 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation < 4 weeks",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation < 4 weeks"
     },
     {
       "product": "RESOMER GL 903 S",
       "chemical": "Poly(glycolide-co-L-lactide) 90:10, ester end group, IV 1.05-1.25 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation < 5 weeks",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation < 5 weeks"
     },
     {
       "product": "RESOMER GT 643 S",
       "chemical": "Poly(glycolide-co-trimethylene carbonate) 64:36, ester end group, IV 1.0-1.4 dL/g",
-      "function": "Bioresorbable copolymer for medical devices; degradation < 8 weeks",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices; degradation < 8 weeks"
     },
     {
       "product": "RESOMER LC 703 S",
       "chemical": "Poly(L-lactide-co-caprolactone) 70:30, ester end group, IV 1.3-1.8 dL/g",
-      "function": "Bioresorbable copolymer for medical devices",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices"
     },
     {
       "product": "RESOMER LT 706 S",
       "chemical": "Poly(L-lactide-co-trimethylene carbonate) 70:30, ester end group, IV 1.2-1.6 dL/g",
-      "function": "Bioresorbable copolymer for medical devices",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable copolymer for medical devices"
     },
     {
       "product": "RESOMER C 202",
       "chemical": "Poly(caprolactone), IV 0.20-0.26 dL/g",
-      "function": "Bioresorbable polymer for medical devices",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for medical devices"
     },
     {
       "product": "RESOMER C 203",
       "chemical": "Poly(caprolactone), IV 0.35-0.43 dL/g",
-      "function": "Bioresorbable polymer for medical devices",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for medical devices"
     },
     {
       "product": "RESOMER C 209",
       "chemical": "Poly(caprolactone), IV 0.8-1.0 dL/g",
-      "function": "Bioresorbable polymer for medical devices; degradation > 2 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for medical devices; degradation > 2 years"
     },
     {
       "product": "RESOMER C 212",
       "chemical": "Poly(caprolactone), IV 1.13-1.38 dL/g",
-      "function": "Bioresorbable polymer for medical devices; degradation > 2 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for medical devices; degradation > 2 years"
     },
     {
       "product": "RESOMER C 217",
       "chemical": "Poly(caprolactone), IV 1.53-1.87 dL/g",
-      "function": "Bioresorbable polymer for medical devices; degradation > 2 years",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for medical devices; degradation > 2 years"
     },
     {
       "product": "RESOMER X 206 S",
       "chemical": "Poly(p-dioxanone), IV 1.5-2.2 dL/g",
-      "function": "Bioresorbable polymer for sutures, clips, membranes; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/resomer-evonik/"
+      "function": "Bioresorbable polymer for sutures, clips, membranes; degradation < 6 months"
     },
     {
       "product": "LACTEL 50:50 DL-PLGE IV 0.15-0.25",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "LACTEL 50:50 DL-PLGE IV 0.26-0.54",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "LACTEL 50:50 DL-PLGE IV 0.55-0.75",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "LACTEL 50:50 DL-PLGE IV 0.76-0.94",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "LACTEL 50:50 DL-PLGE IV 0.95-1.20",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "LACTEL 65:35 DL-PLGE IV 0.55-0.75",
       "chemical": "Poly(D,L-lactide-co-glycolide) 65:35, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 4 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 4 months"
     },
     {
       "product": "LACTEL 75:25 DL-PLGE IV 0.55-0.75",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "LACTEL 75:25 DL-PLGE IV 0.80-1.20",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "LACTEL 85:15 DL-PLGE IV 0.55-0.75",
       "chemical": "Poly(D,L-lactide-co-glycolide) 85:15, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 9 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 9 months"
     },
     {
       "product": "LACTEL 85:15 DL-PLGE IV 0.76-0.85",
       "chemical": "Poly(D,L-lactide-co-glycolide) 85:15, ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 12 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 12 months"
     },
     {
       "product": "LACTEL 50:50 DL-PLGA IV 0.15-0.25",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, acid end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "LACTEL 50:50 DL-PLGA IV 0.55-0.75",
       "chemical": "Poly(D,L-lactide-co-glycolide) 50:50, acid end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 3 months"
     },
     {
       "product": "LACTEL 75:25 DL-PLGA IV 0.70-0.90",
       "chemical": "Poly(D,L-lactide-co-glycolide) 75:25, acid end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "LACTEL DL-PLE IV 0.26-0.54",
       "chemical": "Poly(D,L-lactide), ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 12 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 12 months"
     },
     {
       "product": "LACTEL DL-PLE IV 0.55-0.75",
       "chemical": "Poly(D,L-lactide), ester end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 18 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 18 months"
     },
     {
       "product": "LACTEL DL-PLA (Acid) IV 0.16-0.25",
       "chemical": "Poly(D,L-lactide), acid end group",
-      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Biodegradable polymer for parenteral controlled release; degradation < 6 months"
     },
     {
       "product": "LACTEL 55:45 DL-PLG-Glu IV 0.40-0.60",
       "chemical": "Poly(D,L-lactide-co-glycolide) 55:45, glucose-initiated, hydroxyl end group",
-      "function": "Branched (star) biodegradable polymer for parenteral controlled release",
-      "url": "https://www.pharmaexcipients.com/product/lactel-evonik/"
+      "function": "Branched (star) biodegradable polymer for parenteral controlled release"
     },
     {
       "product": "PhytoChol",
@@ -3024,7 +2945,8 @@
     {
       "product": "MaxiPure Polysorbate 80",
       "chemical": "Polysorbate 80, ultra-high purity (oleic acid content >= 98%)",
-      "function": "Ultra-high purity surfactant for injectables and biopharma; protein stabilization; Ph. Eur./USP-NF/JP/CP compliant"
+      "function": "Ultra-high purity surfactant for injectables and biopharma; protein stabilization; Ph. Eur./USP-NF/JP/CP compliant",
+      "url": "https://www.pharmaexcipients.com/product/maxipure-polysorbate-80/"
     },
     {
       "product": "REXIM Glycine",
@@ -3140,18 +3062,25 @@
       "product": "REXIM Glycyl-L-Tyrosine",
       "chemical": "Glycyl-L-tyrosine",
       "function": "Parenteral nutrition; stable tyrosine source for infusion"
+    },
+    {
+      "product": "LIPEX Flow Extruder",
+      "chemical": "N/A (equipment)",
+      "function": "High-pressure extruder for liposome manufacturing at all scales"
     }
   ],
   "Fuji Chemical Industries": [
     {
       "product": "Neusilin US2",
       "chemical": "Magnesium aluminometasilicate (amorphous, neutral, granule, 106 um)",
-      "function": "Oil/lipid adsorption carrier (up to 300% w/w), solid dispersion carrier (HME, SMEDDS), DC filler-binder, flow enhancer"
+      "function": "Oil/lipid adsorption carrier (up to 300% w/w), solid dispersion carrier (HME, SMEDDS), DC filler-binder, flow enhancer",
+      "url": "https://www.pharmaexcipients.com/product/neusilin-us2/"
     },
     {
       "product": "Neusilin UFL2",
       "chemical": "Magnesium aluminometasilicate (amorphous, neutral, powder, fine)",
-      "function": "Fine-particle oil/water adsorbent (up to 330% w/w), anti-caking agent, flow improver, odor adsorber"
+      "function": "Fine-particle oil/water adsorbent (up to 330% w/w), anti-caking agent, flow improver, odor adsorber",
+      "url": "https://www.pharmaexcipients.com/product/neusilin-ufl2/"
     },
     {
       "product": "Neusilin S1",
@@ -3161,7 +3090,8 @@
     {
       "product": "Neusilin S2",
       "chemical": "Magnesium aluminometasilicate (amorphous, alkaline, granule, 106 um)",
-      "function": "Binder, hardness enhancer, disintegration aid"
+      "function": "Binder, hardness enhancer, disintegration aid",
+      "url": "https://www.pharmaexcipients.com/product/neusilin-s2/"
     },
     {
       "product": "Neusilin FH1",
@@ -3201,17 +3131,20 @@
     {
       "product": "Fujicalin",
       "chemical": "Dibasic calcium phosphate anhydrous (spray-dried, spherical)",
-      "function": "DC filler-binder with superior flowability and compressibility vs. conventional DCPA; oil adsorption; non-abrasive; nitrosamine impurity mitigation"
+      "function": "DC filler-binder with superior flowability and compressibility vs. conventional DCPA; oil adsorption; non-abrasive; nitrosamine impurity mitigation",
+      "url": "https://www.pharmaexcipients.com/product/fujicalin/"
     },
     {
       "product": "F-MELT Type C",
       "chemical": "Co-processed: mannitol, xylitol, DCPA (Fujicalin), crospovidone, MCC",
-      "function": "Ready-to-use DC excipient for ODTs; disintegration <30 seconds; no licensing fees"
+      "function": "Ready-to-use DC excipient for ODTs; disintegration <30 seconds; no licensing fees",
+      "url": "https://www.pharmaexcipients.com/product/f-melt-type-c/"
     },
     {
       "product": "F-MELT Type M",
       "chemical": "Co-processed: mannitol, xylitol, magnesium aluminometasilicate (Neusilin), crospovidone, MCC",
-      "function": "Ready-to-use DC excipient for ODTs; higher API loading capacity"
+      "function": "Ready-to-use DC excipient for ODTs; higher API loading capacity",
+      "url": "https://www.pharmaexcipients.com/product/f-melt-type-m/"
     },
     {
       "product": "F-MELT Type F1",
@@ -3280,7 +3213,7 @@
       "product": "ProBlend",
       "chemical": "Silicified Microcrystalline Cellulose (MCC + colloidal SiO2)",
       "function": "Diluent and binder for direct compression",
-      "url": "https://www.pharmaexcipients.com/product/problend-hd/"
+      "url": "https://www.pharmaexcipients.com/product/problend/"
     },
     {
       "product": "Starlose",
@@ -3337,8 +3270,7 @@
     {
       "product": "Mpressol",
       "chemical": "Mannitol",
-      "function": "Diluent, filler, sweetener",
-      "url": "https://www.pharmaexcipients.com/product/compressol-protab/"
+      "function": "Diluent, filler, sweetener"
     },
     {
       "product": "Ristar",
@@ -3499,8 +3431,7 @@
     {
       "product": "Transcutol V",
       "chemical": "Diethylene glycol monoethyl ether",
-      "function": "Solvent for veterinary oral, topical, and parenteral applications",
-      "url": "https://www.pharmaexcipients.com/product/transcutol-v-veterinary/"
+      "function": "Solvent for veterinary oral, topical, and parenteral applications"
     },
     {
       "product": "Compritol 888 ATO",
@@ -3541,8 +3472,7 @@
     {
       "product": "Geleol Mono and Diglycerides NF",
       "chemical": "Glycerol monostearate 40-55 (Type I)",
-      "function": "Modified release matrix; taste-masking coating; film-coating plasticizer; GRAS",
-      "url": "https://www.pharmaexcipients.com/product/geleol-mono-and-diglycerides/"
+      "function": "Modified release matrix; taste-masking coating; film-coating plasticizer; GRAS"
     },
     {
       "product": "Geleol N MB",
@@ -3637,7 +3567,8 @@
     {
       "product": "Suppocire BM",
       "chemical": "Hard fat",
-      "function": "Suppository base; excellent chemical compatibility"
+      "function": "Suppository base; excellent chemical compatibility",
+      "url": "https://www.pharmaexcipients.com/product/suppocire-bm/"
     },
     {
       "product": "Suppocire BS2X",
@@ -3681,8 +3612,7 @@
     {
       "product": "Suppocire NAI 25",
       "chemical": "Hard fat",
-      "function": "High-hardness suppository base",
-      "url": "https://www.pharmaexcipients.com/product/suppocire-nai-25a/"
+      "function": "High-hardness suppository base"
     },
     {
       "product": "Suppocire NAI 25 A",
@@ -3800,8 +3730,7 @@
     {
       "product": "IMWITOR 372 P",
       "chemical": "Glyceryl Stearate Citrate (HLB 10-12)",
-      "function": "O/W emulsifier, viscosity enhancer for topical",
-      "url": "https://www.pharmaexcipients.com/product/imwitor-372/"
+      "function": "O/W emulsifier, viscosity enhancer for topical"
     },
     {
       "product": "IMWITOR 491",
@@ -4132,14 +4061,12 @@
     {
       "product": "VIVAPUR MCC Spheres",
       "chemical": "Microcrystalline cellulose spheres",
-      "function": "Pellet carrier for drug layering, sustained release",
-      "url": "https://www.pharmaexcipients.com/product/vivapur-mcc-spheres-1000/"
+      "function": "Pellet carrier for drug layering, sustained release"
     },
     {
       "product": "VIVAPUR MCG",
       "chemical": "Microcrystalline cellulose / sodium carboxymethylcellulose co-processed",
-      "function": "Stabilizer, thickener (suspensions, emulsions)",
-      "url": "https://www.pharmaexcipients.com/product/vivapur-mcg-811-p/"
+      "function": "Stabilizer, thickener (suspensions, emulsions)"
     },
     {
       "product": "PROSOLV SMCC 50",
@@ -4168,8 +4095,7 @@
     {
       "product": "PROSOLV EASYtab Nutra",
       "chemical": "Co-processed direct compression excipient",
-      "function": "Ready-to-use direct compression (nutraceutical grade)",
-      "url": "https://www.pharmaexcipients.com/product/prosolv-easytab-nutra-gm/"
+      "function": "Ready-to-use direct compression (nutraceutical grade)"
     },
     {
       "product": "PROSOLV ODT G2",
@@ -4193,7 +4119,7 @@
       "product": "EXPLOTAB",
       "chemical": "Sodium starch glycolate (from potato starch)",
       "function": "Superdisintegrant",
-      "url": "https://www.pharmaexcipients.com/product/explotab-low-ph/"
+      "url": "https://www.pharmaexcipients.com/product/explotab/"
     },
     {
       "product": "EXPLOTAB CLV",
@@ -4211,7 +4137,7 @@
       "product": "VIVASOL",
       "chemical": "Croscarmellose sodium",
       "function": "Superdisintegrant",
-      "url": "https://www.pharmaexcipients.com/product/vivasol-gf-lm/"
+      "url": "https://www.pharmaexcipients.com/product/vivasol/"
     },
     {
       "product": "EMCOSOY",
@@ -4229,7 +4155,7 @@
       "product": "LUBRITAB",
       "chemical": "Hydrogenated vegetable oil",
       "function": "Tablet lubricant",
-      "url": "https://www.pharmaexcipients.com/product/lubritab-rbw/"
+      "url": "https://www.pharmaexcipients.com/product/lubritab/"
     },
     {
       "product": "LUBRITAB RBW",
@@ -4241,7 +4167,7 @@
       "product": "EMCOMPRESS",
       "chemical": "Dibasic calcium phosphate dihydrate",
       "function": "Filler, direct compression diluent",
-      "url": "https://www.pharmaexcipients.com/product/emcompress-tcp-powder/"
+      "url": "https://www.pharmaexcipients.com/product/emcompress/"
     },
     {
       "product": "EMCOMPRESS Anhydrous",
@@ -4270,8 +4196,7 @@
     {
       "product": "ARBOCEL",
       "chemical": "Powdered cellulose",
-      "function": "Filler, flow aid",
-      "url": "https://www.pharmaexcipients.com/product/arbocel-a300/"
+      "function": "Filler, flow aid"
     },
     {
       "product": "VIVAPHARM PVP K17",
@@ -4304,24 +4229,24 @@
     {
       "product": "VIVAPHARM PVPP (XL)",
       "chemical": "Crospovidone (cross-linked PVP)",
-      "function": "Superdisintegrant, adsorbent"
+      "function": "Superdisintegrant, adsorbent",
+      "url": "https://www.pharmaexcipients.com/product/vivapharm-pvpp-xl/"
     },
     {
       "product": "VIVAPHARM PVPP (XL-10)",
       "chemical": "Crospovidone (cross-linked PVP, fine)",
-      "function": "Superdisintegrant"
+      "function": "Superdisintegrant",
+      "url": "https://www.pharmaexcipients.com/product/vivapharm-pvpp-xl-10/"
     },
     {
       "product": "VIVACOAT",
       "chemical": "HPMC-based film coating system",
-      "function": "Immediate release tablet coating",
-      "url": "https://www.pharmaexcipients.com/product/vivacoat-free/"
+      "function": "Immediate release tablet coating"
     },
     {
       "product": "VIVACOAT protect",
       "chemical": "Enteric/protective coating system",
-      "function": "Delayed release, moisture protection",
-      "url": "https://www.pharmaexcipients.com/product/vivacoat-protect-e/"
+      "function": "Delayed release, moisture protection"
     },
     {
       "product": "VIVACOAT free",
@@ -4332,8 +4257,7 @@
     {
       "product": "VIVAPHARM HPMC",
       "chemical": "Hypromellose (hydroxypropyl methylcellulose)",
-      "function": "Film former, coating agent",
-      "url": "https://www.pharmaexcipients.com/product/vivapharm-hpmc-e-50/"
+      "function": "Film former, coating agent"
     },
     {
       "product": "VIVAPHARM Alginic Acid",
@@ -4387,14 +4311,13 @@
     {
       "product": "SheffCoat (HPMC-based)",
       "chemical": "Hypromellose-based film coating system",
-      "function": "Immediate release tablet coating (clear or colored)",
-      "url": "https://www.pharmaexcipients.com/product/sheffcoat/"
+      "function": "Immediate release tablet coating (clear or colored)"
     },
     {
       "product": "SheffCoat PVA",
       "chemical": "Polyvinyl alcohol-based film coating system",
       "function": "Immediate release coating (improved slip, lower weight gain)",
-      "url": "https://www.pharmaexcipients.com/product/sheffcoat-pva/"
+      "url": "https://www.pharmaexcipients.com/product/sheffcoat-pva-plus/"
     },
     {
       "product": "SheffCoat TF",
@@ -4405,8 +4328,7 @@
     {
       "product": "SheffCoat TF Plus",
       "chemical": "Titanium dioxide-free film coating system (enhanced)",
-      "function": "Immediate release coating (TiO2-free, improved performance)",
-      "url": "https://www.pharmaexcipients.com/product/sheffcoat-tf/"
+      "function": "Immediate release coating (TiO2-free, improved performance)"
     },
     {
       "product": "SheffCoat PlusC",
@@ -4435,8 +4357,7 @@
     {
       "product": "SheffCoat EC",
       "chemical": "Ethylcellulose-based film coating system",
-      "function": "Non-aqueous coating (moisture barrier, taste masking)",
-      "url": "https://www.pharmaexcipients.com/product/sheffcoat/"
+      "function": "Non-aqueous coating (moisture barrier, taste masking)"
     }
   ],
   "KLK Oleo Life Science": [
@@ -4584,8 +4505,7 @@
     {
       "product": "Capsugel Enprotect",
       "chemical": "HPMC bi-layered enteric capsule",
-      "function": "Enteric capsule targeting distal small intestine (acid-resistant to pH 6.0)",
-      "url": "https://www.pharmaexcipients.com/product/capsugel-enprotect/"
+      "function": "Enteric capsule targeting distal small intestine (acid-resistant to pH 6.0)"
     },
     {
       "product": "Capsugel Zephyr (HPMC)",
@@ -4801,92 +4721,77 @@
     {
       "product": "Carbopol 71G NF",
       "chemical": "Carbomer homopolymer type A (granular)",
-      "function": "Tablet binder, controlled release matrix (oral solid dose)",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-71g-nf-polymer/"
+      "function": "Tablet binder, controlled release matrix (oral solid dose)"
     },
     {
       "product": "Carbopol 971P NF",
       "chemical": "Carbomer homopolymer type A (powder)",
-      "function": "Controlled release, mucoadhesive, oral liquids, suspensions",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-971p-nf-polymer/"
+      "function": "Controlled release, mucoadhesive, oral liquids, suspensions"
     },
     {
       "product": "Carbopol 974P NF",
       "chemical": "Carbomer homopolymer type B (powder)",
-      "function": "Controlled release, gel former, mucoadhesive",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-974p-nf-polymer/"
+      "function": "Controlled release, gel former, mucoadhesive"
     },
     {
       "product": "Carbopol 980 NF",
       "chemical": "Carbomer homopolymer type C (powder)",
-      "function": "Thickener, gel former (clear aqueous/hydroalcoholic gels)",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-980-nf-polymer/"
+      "function": "Thickener, gel former (clear aqueous/hydroalcoholic gels)"
     },
     {
       "product": "Carbopol 981 NF",
       "chemical": "Carbomer homopolymer type C (powder, lower viscosity)",
-      "function": "Thickener, gel former",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-981-nf-polymer/"
+      "function": "Thickener, gel former"
     },
     {
       "product": "Carbopol 5984 EP",
       "chemical": "Carbomer (EP monograph)",
-      "function": "Pharmaceutical excipient (European pharmacopoeia)",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-5984-ep-polymer/"
+      "function": "Pharmaceutical excipient (European pharmacopoeia)"
     },
     {
       "product": "Carbopol Ultrez 10 NF",
       "chemical": "Carbomer homopolymer type C (self-wetting)",
-      "function": "Thickener, gel former (easy dispersion, self-wetting)",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-ultrez-10-nf-polymer/"
+      "function": "Thickener, gel former (easy dispersion, self-wetting)"
     },
     {
       "product": "Carbopol 934 NF",
       "chemical": "Carbomer homopolymer type A",
-      "function": "Rheology modifier, gel former, mucoadhesive",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-934-nf-polymer/"
+      "function": "Rheology modifier, gel former, mucoadhesive"
     },
     {
       "product": "Carbopol 934P NF",
       "chemical": "Carbomer homopolymer type A (pharmaceutical grade)",
-      "function": "Rheology modifier, suspension stabilizer",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-934p-nf-polymer/"
+      "function": "Rheology modifier, suspension stabilizer"
     },
     {
       "product": "Carbopol 940 NF",
       "chemical": "Carbomer homopolymer type B",
-      "function": "Gel former, thickener, bioavailability enhancer",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-940-nf-polymer/"
+      "function": "Gel former, thickener, bioavailability enhancer"
     },
     {
       "product": "Carbopol 941 NF",
       "chemical": "Carbomer homopolymer type C",
-      "function": "Rheology modifier (lower viscosity)",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-941-nf-polymer/"
+      "function": "Rheology modifier (lower viscosity)"
     },
     {
       "product": "Carbopol 1342 NF",
       "chemical": "Carbomer interpolymer type A",
-      "function": "Gel former, emulsion stabilizer",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-1342-nf-polymer/"
+      "function": "Gel former, emulsion stabilizer"
     },
     {
       "product": "Carbopol ETD 2020 NF",
       "chemical": "Carbomer copolymer type A (electrolyte tolerant)",
-      "function": "Thickener in electrolyte-containing formulations",
-      "url": "https://www.pharmaexcipients.com/product/carbopol-etd-2020-nf-polymer/"
+      "function": "Thickener in electrolyte-containing formulations"
     },
     {
       "product": "Pemulen TR-1 NF",
       "chemical": "Acrylates/C10-30 alkyl acrylate crosspolymer",
-      "function": "Primary O/W emulsifier (low surfactant emulsions)",
-      "url": "https://www.pharmaexcipients.com/product/pemulen-tr-1-nf-polymer/"
+      "function": "Primary O/W emulsifier (low surfactant emulsions)"
     },
     {
       "product": "Pemulen TR-2 NF",
       "chemical": "Acrylates/C10-30 alkyl acrylate crosspolymer",
-      "function": "Primary O/W emulsifier, gel former (higher oil phase)",
-      "url": "https://www.pharmaexcipients.com/product/pemulen-tr-2-nf-polymer/"
+      "function": "Primary O/W emulsifier, gel former (higher oil phase)"
     },
     {
       "product": "Noveon AA-1 Polycarbophil USP",
@@ -4902,8 +4807,7 @@
     {
       "product": "Apisolex",
       "chemical": "Polyacrylic acid derivative",
-      "function": "Solubility-enhancing excipient",
-      "url": "https://www.pharmaexcipients.com/product/apisolex-polymer/"
+      "function": "Solubility-enhancing excipient"
     }
   ],
   "MAGNESIA": [
@@ -5178,7 +5082,7 @@
       "function": "Sweetener, diluent"
     }
   ],
-  "MEGGLE": [
+  "MEGGLE Excipients & Technology": [
     {
       "product": "PrismaLac 40",
       "chemical": "alpha-Lactose monohydrate (sieved)",
@@ -5212,8 +5116,7 @@
     {
       "product": "GranuLac 70 US",
       "chemical": "alpha-Lactose monohydrate (milled, US-manufactured)",
-      "function": "Filler/binder for wet and dry granulation",
-      "url": "https://www.pharmaexcipients.com/product/granulac-70/"
+      "function": "Filler/binder for wet and dry granulation"
     },
     {
       "product": "GranuLac 80",
@@ -5230,8 +5133,7 @@
     {
       "product": "GranuLac 140 US",
       "chemical": "alpha-Lactose monohydrate (milled, US-manufactured)",
-      "function": "Filler/binder for wet and dry granulation",
-      "url": "https://www.pharmaexcipients.com/product/granulac-140/"
+      "function": "Filler/binder for wet and dry granulation"
     },
     {
       "product": "GranuLac 200",
@@ -5242,14 +5144,12 @@
     {
       "product": "GranuLac 200 US",
       "chemical": "alpha-Lactose monohydrate (milled, US-manufactured)",
-      "function": "Filler/binder for wet and dry granulation",
-      "url": "https://www.pharmaexcipients.com/product/granulac-200/"
+      "function": "Filler/binder for wet and dry granulation"
     },
     {
       "product": "GranuLac 200 Low Nitrite",
       "chemical": "alpha-Lactose monohydrate (milled, low nitrite)",
-      "function": "Filler/binder; reduced nitrosamine risk",
-      "url": "https://www.pharmaexcipients.com/product/granulac-200/"
+      "function": "Filler/binder; reduced nitrosamine risk"
     },
     {
       "product": "GranuLac 230",
@@ -5260,8 +5160,7 @@
     {
       "product": "GranuLac 230 Low Nitrite",
       "chemical": "alpha-Lactose monohydrate (milled, low nitrite)",
-      "function": "Filler/binder; reduced nitrosamine risk",
-      "url": "https://www.pharmaexcipients.com/product/granulac-230/"
+      "function": "Filler/binder; reduced nitrosamine risk"
     },
     {
       "product": "SorboLac 400",
@@ -5290,18 +5189,19 @@
     {
       "product": "Tablettose 100 Low Nitrite",
       "chemical": "alpha-Lactose monohydrate (agglomerated, low nitrite)",
-      "function": "Filler/binder for direct compression; reduced nitrosamine risk",
-      "url": "https://www.pharmaexcipients.com/product/tablettose-100/"
+      "function": "Filler/binder for direct compression; reduced nitrosamine risk"
     },
     {
       "product": "FlowLac 90",
       "chemical": "alpha-Lactose monohydrate (spray-dried)",
-      "function": "Filler/binder for direct compression; excellent flowability"
+      "function": "Filler/binder for direct compression; excellent flowability",
+      "url": "https://www.pharmaexcipients.com/product/flowlac-90/"
     },
     {
       "product": "FlowLac 100",
       "chemical": "alpha-Lactose monohydrate (spray-dried)",
-      "function": "Filler/binder for direct compression; superior compactability"
+      "function": "Filler/binder for direct compression; superior compactability",
+      "url": "https://www.pharmaexcipients.com/product/flowlac-100/"
     },
     {
       "product": "FlowLac 100 Low Nitrite",
@@ -5336,7 +5236,7 @@
       "product": "StarLac",
       "chemical": "85% lactose monohydrate / 15% native corn starch",
       "function": "Filler/binder/disintegrant",
-      "url": "https://www.pharmaexcipients.com/product/starlac/"
+      "url": "https://www.pharmaexcipients.com/product/starlac-roquette/"
     },
     {
       "product": "CombiLac",
@@ -5438,20 +5338,17 @@
     {
       "product": "SOLBIOTE Trehalose SG",
       "chemical": "Trehalose dihydrate (non-reducing disaccharide, low endotoxin)",
-      "function": "Protein/antibody stabilizer, cryoprotectant, lyoprotectant (parenteral)",
-      "url": "https://www.pharmaexcipients.com/product/trehalose-sg/"
+      "function": "Protein/antibody stabilizer, cryoprotectant, lyoprotectant (parenteral)"
     },
     {
       "product": "SOLBIOTE Maltose PH",
       "chemical": "Maltose monohydrate (reducing disaccharide, low endotoxin)",
-      "function": "Stabilizer for immunoglobulins, solubility enhancer (parenteral)",
-      "url": "https://www.pharmaexcipients.com/product/maltose-ph/"
+      "function": "Stabilizer for immunoglobulins, solubility enhancer (parenteral)"
     },
     {
       "product": "SOLBIOTE Sucrose SG",
       "chemical": "Sucrose (non-reducing disaccharide, low endotoxin)",
-      "function": "Stabilizer for mRNA vaccines, LNP cryoprotectant (parenteral)",
-      "url": "https://www.pharmaexcipients.com/product/sucrose-sg/"
+      "function": "Stabilizer for mRNA vaccines, LNP cryoprotectant (parenteral)"
     },
     {
       "product": "Trehalose 100PH",
@@ -5485,14 +5382,12 @@
     {
       "product": "PURA Series Super Flow 100",
       "chemical": "Microcrystalline cellulose (MCC, spherical, ~100 um)",
-      "function": "Filler for capsule filling; enhanced blending and dissolution",
-      "url": "https://www.pharmaexcipients.com/product/pura-series-super-flow-100/"
+      "function": "Filler for capsule filling; enhanced blending and dissolution"
     },
     {
       "product": "PURA Series Super Flow 125",
       "chemical": "Microcrystalline cellulose (MCC, spherical, ~125 um)",
-      "function": "Filler for capsule filling; improved flowability",
-      "url": "https://www.pharmaexcipients.com/product/pura-series-super-flow-125/"
+      "function": "Filler for capsule filling; improved flowability"
     },
     {
       "product": "PURA Series Super Flow 150",
@@ -5509,22 +5404,26 @@
     {
       "product": "PURA Series Universal Premium 15",
       "chemical": "Microcrystalline cellulose (MCC, ~15 um)",
-      "function": "Binder, filler, anti-caking agent, stabilizer"
+      "function": "Binder, filler, anti-caking agent, stabilizer",
+      "url": "https://www.pharmaexcipients.com/product/pura-series-universal-premium-15/"
     },
     {
       "product": "PURA Series Universal Premium 45",
       "chemical": "Microcrystalline cellulose (MCC, ~45 um)",
-      "function": "Binder, filler, anti-caking agent, stabilizer"
+      "function": "Binder, filler, anti-caking agent, stabilizer",
+      "url": "https://www.pharmaexcipients.com/product/pura-series-universal-premium-45/"
     },
     {
       "product": "PURA Series Universal Premium 65",
       "chemical": "Microcrystalline cellulose (MCC, ~65 um)",
-      "function": "Binder, filler, anti-caking agent, stabilizer"
+      "function": "Binder, filler, anti-caking agent, stabilizer",
+      "url": "https://www.pharmaexcipients.com/product/pura-series-universal-premium-65/"
     },
     {
       "product": "PURA Series Universal Premium 95",
       "chemical": "Microcrystalline cellulose (MCC, ~95 um)",
-      "function": "Binder, filler for direct compression tablets"
+      "function": "Binder, filler for direct compression tablets",
+      "url": "https://www.pharmaexcipients.com/product/pura-series-universal-premium-95/"
     },
     {
       "product": "PURA Series MCC Spheres",
@@ -5691,8 +5590,7 @@
     {
       "product": "Xylitol/Calcium Carbonate Globuli",
       "chemical": "Xylitol / calcium carbonate",
-      "function": "Sugar-free carrier for homeopathic preparations",
-      "url": "https://www.pharmaexcipients.com/product/calcium-carbonate-heavy/"
+      "function": "Sugar-free carrier for homeopathic preparations"
     }
   ],
   "Pharma Line": [
@@ -5726,38 +5624,32 @@
     {
       "product": "ISODEL Vitamin E TPGS 200",
       "chemical": "D-alpha-tocopheryl polyethylene glycol 200 succinate",
-      "function": "Solubilizer, absorption enhancer, emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/tpgs-200/"
+      "function": "Solubilizer, absorption enhancer, emulsifier"
     },
     {
       "product": "ISODEL Vitamin E TPGS 300",
       "chemical": "D-alpha-tocopheryl polyethylene glycol 300 succinate",
-      "function": "Solubilizer, absorption enhancer, emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/tpgs-300/"
+      "function": "Solubilizer, absorption enhancer, emulsifier"
     },
     {
       "product": "ISODEL Vitamin E TPGS 400",
       "chemical": "D-alpha-tocopheryl polyethylene glycol 400 succinate",
-      "function": "Solubilizer, absorption enhancer, emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/tpgs-400/"
+      "function": "Solubilizer, absorption enhancer, emulsifier"
     },
     {
       "product": "ISODEL Vitamin E TPGS 1500",
       "chemical": "D-alpha-tocopheryl polyethylene glycol 1500 succinate",
-      "function": "Solubilizer, absorption enhancer, emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/tpgs-1500/"
+      "function": "Solubilizer, absorption enhancer, emulsifier"
     },
     {
       "product": "ISODEL Vitamin E TPGS 2000",
       "chemical": "D-alpha-tocopheryl polyethylene glycol 2000 succinate",
-      "function": "Solubilizer, absorption enhancer, emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/tpgs-2000/"
+      "function": "Solubilizer, absorption enhancer, emulsifier"
     },
     {
       "product": "ISODEL Vitamin E TPGS 4000",
       "chemical": "D-alpha-tocopheryl polyethylene glycol 4000 succinate",
-      "function": "Solubilizer, absorption enhancer, emulsifier",
-      "url": "https://www.pharmaexcipients.com/product/tpgs-400/"
+      "function": "Solubilizer, absorption enhancer, emulsifier"
     },
     {
       "product": "ISODEL TPGS MCC",
@@ -5829,20 +5721,17 @@
     {
       "product": "PEARLITOL 25 C",
       "chemical": "D-Mannitol (crystalline, ~25 um)",
-      "function": "Filler, wet granulation diluent",
-      "url": "https://www.pharmaexcipients.com/product/pearlitol-25-cmannitol-25/"
+      "function": "Filler, wet granulation diluent"
     },
     {
       "product": "PEARLITOL 50 C",
       "chemical": "D-Mannitol (crystalline, ~50 um)",
-      "function": "Filler, wet granulation diluent",
-      "url": "https://www.pharmaexcipients.com/product/pearlitol-50-cmannitol-35/"
+      "function": "Filler, wet granulation diluent"
     },
     {
       "product": "PEARLITOL 160 C",
       "chemical": "D-Mannitol (crystalline, ~160 um)",
-      "function": "Filler, wet granulation diluent",
-      "url": "https://www.pharmaexcipients.com/product/pearlitol-160-c-mannitol-60/"
+      "function": "Filler, wet granulation diluent"
     },
     {
       "product": "PEARLITOL 100 SD",
@@ -5906,8 +5795,7 @@
     {
       "product": "PEARLITOL PF",
       "chemical": "D-Mannitol (pyrogen-free)",
-      "function": "Bulking agent, isotonic agent for injectables and lyophilization",
-      "url": "https://www.pharmaexcipients.com/product/pearlitol-pf-mannitol-pfg/"
+      "function": "Bulking agent, isotonic agent for injectables and lyophilization"
     },
     {
       "product": "PEARLITOL 200 INH",
@@ -6096,8 +5984,7 @@
     {
       "product": "KLEPTOSE HP BioPharma Grade",
       "chemical": "Hydroxypropyl-beta-cyclodextrin (low endotoxin)",
-      "function": "Protein stabilizer for biologics",
-      "url": "https://www.pharmaexcipients.com/product/kleptose/"
+      "function": "Protein stabilizer for biologics"
     },
     {
       "product": "KLEPTOSE HPB Oral Grade",
@@ -6114,8 +6001,7 @@
     {
       "product": "KLEPTOSE HPB BioPharma Grade",
       "chemical": "Hydroxypropyl-beta-cyclodextrin (low endotoxin)",
-      "function": "Protein stabilizer for biologics",
-      "url": "https://www.pharmaexcipients.com/product/kleptose/"
+      "function": "Protein stabilizer for biologics"
     },
     {
       "product": "KLEPTOSE HPB-LB Parenteral Grade",
@@ -6126,8 +6012,7 @@
     {
       "product": "KLEPTOSE Crysmeb",
       "chemical": "Methyl-beta-cyclodextrin",
-      "function": "Solubilizer, stabilizer (oral and parenteral)",
-      "url": "https://www.pharmaexcipients.com/product/kleptose/"
+      "function": "Solubilizer, stabilizer (oral and parenteral)"
     },
     {
       "product": "MICROCEL MC-101",
@@ -6156,8 +6041,7 @@
     {
       "product": "MICROCEL MC-302 SD",
       "chemical": "Microcrystalline cellulose (spray-dried, high density)",
-      "function": "Filler/binder, direct compression",
-      "url": "https://www.pharmaexcipients.com/product/microcel-mc-302/"
+      "function": "Filler/binder, direct compression"
     },
     {
       "product": "MICROCEL MC-12",
@@ -6228,8 +6112,7 @@
     {
       "product": "Maize Starch 5% (Overdried)",
       "chemical": "Maize starch (low moisture)",
-      "function": "Disintegrant, filler for moisture-sensitive formulations",
-      "url": "https://www.pharmaexcipients.com/product/maize-starch-5/"
+      "function": "Disintegrant, filler for moisture-sensitive formulations"
     },
     {
       "product": "Wheat Starch TB",
@@ -6240,14 +6123,12 @@
     {
       "product": "Potato Starch",
       "chemical": "Potato starch (native)",
-      "function": "Disintegrant, filler",
-      "url": "https://www.pharmaexcipients.com/product/potato-starch-supra-np/"
+      "function": "Disintegrant, filler"
     },
     {
       "product": "Pea Starch",
       "chemical": "Pea starch (native)",
-      "function": "Disintegrant, filler",
-      "url": "https://www.pharmaexcipients.com/product/pea-starch-n-735/"
+      "function": "Disintegrant, filler"
     },
     {
       "product": "Amylomaize Starch",
@@ -6291,20 +6172,17 @@
     {
       "product": "GLUCIDEX 12",
       "chemical": "Maize maltodextrin (DE 12)",
-      "function": "Filler/binder",
-      "url": "https://www.pharmaexcipients.com/product/glucidex-12-d/"
+      "function": "Filler/binder"
     },
     {
       "product": "GLUCIDEX 17",
       "chemical": "Maize maltodextrin (DE 17)",
-      "function": "Filler/binder",
-      "url": "https://www.pharmaexcipients.com/product/glucidex-17-d/"
+      "function": "Filler/binder"
     },
     {
       "product": "GLUCIDEX 19",
       "chemical": "Maize maltodextrin (DE 19)",
-      "function": "Filler/binder",
-      "url": "https://www.pharmaexcipients.com/product/glucidex-19-d/"
+      "function": "Filler/binder"
     },
     {
       "product": "GLUCIDEX IT 6",
@@ -6403,8 +6281,7 @@
     {
       "product": "ReadiLYCOAT",
       "chemical": "HPMC/PVA-based ready-to-use film coating system",
-      "function": "Complete film coating system (white, clear, colored)",
-      "url": "https://www.pharmaexcipients.com/product/readilycoat-xc/"
+      "function": "Complete film coating system (white, clear, colored)"
     },
     {
       "product": "ReadiLYCOAT XC",
@@ -6434,7 +6311,7 @@
       "product": "GLYCOLYS",
       "chemical": "Sodium starch glycolate (potato)",
       "function": "Superdisintegrant",
-      "url": "https://www.pharmaexcipients.com/product/glycolys-maize/"
+      "url": "https://www.pharmaexcipients.com/product/glycolys/"
     },
     {
       "product": "GLYCOLYS LV",
@@ -6463,8 +6340,7 @@
     {
       "product": "Dextrose Monohydrate GD-SGD",
       "chemical": "Dextrose monohydrate (granulated)",
-      "function": "Filler/binder",
-      "url": "https://www.pharmaexcipients.com/product/dextrose-monohydrate/"
+      "function": "Filler/binder"
     },
     {
       "product": "Dextrose Monohydrate G",
@@ -6475,8 +6351,7 @@
     {
       "product": "Dextrose Monohydrate GC",
       "chemical": "Dextrose monohydrate (coarse granulated)",
-      "function": "Filler/binder",
-      "url": "https://www.pharmaexcipients.com/product/dextrose-monohydrate/"
+      "function": "Filler/binder"
     },
     {
       "product": "Dextrose Anhydrous C",
@@ -6488,7 +6363,7 @@
       "product": "StarLac",
       "chemical": "Co-processed lactose monohydrate (85%) / maize starch (15%)",
       "function": "Filler/binder/disintegrant, direct compression",
-      "url": "https://www.pharmaexcipients.com/product/starlac/"
+      "url": "https://www.pharmaexcipients.com/product/starlac-roquette/"
     },
     {
       "product": "CLEARGUM CO 03",
@@ -6504,8 +6379,7 @@
     {
       "product": "TACKIDEX",
       "chemical": "Potato dextrin",
-      "function": "Filler/binder, coating agent, adhesive",
-      "url": "https://www.pharmaexcipients.com/product/tackidex-b-147/"
+      "function": "Filler/binder, coating agent, adhesive"
     },
     {
       "product": "Quali-G",
@@ -6646,8 +6520,7 @@
     {
       "product": "Sepifilm PW TF",
       "chemical": "Hypromellose-based film coating (TiO2-free)",
-      "function": "Titanium dioxide-free colored film coating",
-      "url": "https://www.pharmaexcipients.com/product/sepifilm-pw/"
+      "function": "Titanium dioxide-free colored film coating"
     },
     {
       "product": "Sepifilm White TF",
@@ -6681,8 +6554,7 @@
     {
       "product": "Sepisperse Dry",
       "chemical": "Hypromellose-based pigment concentrate",
-      "function": "Coloring for aqueous film coating",
-      "url": "https://www.pharmaexcipients.com/product/sepisperse-dry-range/"
+      "function": "Coloring for aqueous film coating"
     },
     {
       "product": "Sepisperse AS",
@@ -6791,8 +6663,7 @@
     {
       "product": "PHARMACOAT SB-4",
       "chemical": "Hypromellose 2208 (4 mPa.s)",
-      "function": "Sugar coating binder",
-      "url": "https://www.pharmaexcipients.com/product/pharmacoat/"
+      "function": "Sugar coating binder"
     },
     {
       "product": "METOLOSE 60SH-50",
@@ -6803,8 +6674,7 @@
     {
       "product": "METOLOSE 60SH-4000",
       "chemical": "Hypromellose 2910 (4,000 mPa.s)",
-      "function": "Binder, thickener, sustained release",
-      "url": "https://www.pharmaexcipients.com/product/metolose/"
+      "function": "Binder, thickener, sustained release"
     },
     {
       "product": "METOLOSE 60SH-10000",
@@ -6851,26 +6721,22 @@
     {
       "product": "METOLOSE SR 90SH-100SR",
       "chemical": "Hypromellose 2208 (100 mPa.s)",
-      "function": "Hydrophilic matrix sustained release",
-      "url": "https://www.pharmaexcipients.com/product/metolose-sr/"
+      "function": "Hydrophilic matrix sustained release"
     },
     {
       "product": "METOLOSE SR 90SH-4000SR",
       "chemical": "Hypromellose 2208 (4,000 mPa.s)",
-      "function": "Hydrophilic matrix sustained release",
-      "url": "https://www.pharmaexcipients.com/product/metolose-sr/"
+      "function": "Hydrophilic matrix sustained release"
     },
     {
       "product": "METOLOSE SR 90SH-15000SR",
       "chemical": "Hypromellose 2208 (15,000 mPa.s)",
-      "function": "Hydrophilic matrix sustained release",
-      "url": "https://www.pharmaexcipients.com/product/metolose-sr/"
+      "function": "Hydrophilic matrix sustained release"
     },
     {
       "product": "METOLOSE SR 90SH-100000SR",
       "chemical": "Hypromellose 2208 (100,000 mPa.s)",
-      "function": "Hydrophilic matrix sustained release",
-      "url": "https://www.pharmaexcipients.com/product/metolose-sr/"
+      "function": "Hydrophilic matrix sustained release"
     },
     {
       "product": "TYLOPUR 603",
@@ -6899,26 +6765,22 @@
     {
       "product": "TYLOPUR SR 90SH-100SR",
       "chemical": "Hypromellose 2208 (100 mPa.s)",
-      "function": "Extended release matrix tablets",
-      "url": "https://www.pharmaexcipients.com/product/tylopur-sr/"
+      "function": "Extended release matrix tablets"
     },
     {
       "product": "TYLOPUR SR 90SH-4000SR",
       "chemical": "Hypromellose 2208 (4,000 mPa.s)",
-      "function": "Extended release matrix tablets",
-      "url": "https://www.pharmaexcipients.com/product/tylopur-sr/"
+      "function": "Extended release matrix tablets"
     },
     {
       "product": "TYLOPUR SR 90SH-15000SR",
       "chemical": "Hypromellose 2208 (15,000 mPa.s)",
-      "function": "Extended release matrix tablets",
-      "url": "https://www.pharmaexcipients.com/product/tylopur-sr/"
+      "function": "Extended release matrix tablets"
     },
     {
       "product": "TYLOPUR SR 90SH-100000SR",
       "chemical": "Hypromellose 2208 (100,000 mPa.s)",
-      "function": "Extended release matrix tablets",
-      "url": "https://www.pharmaexcipients.com/product/tylopur-sr/"
+      "function": "Extended release matrix tablets"
     },
     {
       "product": "METOLOSE SM-4",
@@ -7362,50 +7224,42 @@
     {
       "product": "PureCoat FCA-H",
       "chemical": "HPMC-based film coating (aqueous)",
-      "function": "Immediate-release film coating",
-      "url": "https://www.pharmaexcipients.com/product/purecoat/"
+      "function": "Immediate-release film coating"
     },
     {
       "product": "PureCoat FCA-P",
       "chemical": "PVA-based film coating (aqueous)",
-      "function": "Immediate-release film coating",
-      "url": "https://www.pharmaexcipients.com/product/purecoat/"
+      "function": "Immediate-release film coating"
     },
     {
       "product": "PureCoat MPA",
       "chemical": "PVA-based moisture protection (aqueous)",
-      "function": "Moisture barrier coating",
-      "url": "https://www.pharmaexcipients.com/product/purecoat/"
+      "function": "Moisture barrier coating"
     },
     {
       "product": "PureCoat ECA-C",
       "chemical": "Methacrylic acid copolymer type C (aqueous)",
-      "function": "Delayed-release / enteric coating",
-      "url": "https://www.pharmaexcipients.com/product/purecoat/"
+      "function": "Delayed-release / enteric coating"
     },
     {
       "product": "PureCoat ECS-A",
       "chemical": "Methacrylic acid copolymer type A (non-aqueous)",
-      "function": "Delayed-release / enteric coating",
-      "url": "https://www.pharmaexcipients.com/product/purecoat/"
+      "function": "Delayed-release / enteric coating"
     },
     {
       "product": "UltraMod SR L",
       "chemical": "HPMC / sodium CMC",
-      "function": "Sustained-release matrix (low-solubility APIs)",
-      "url": "https://www.pharmaexcipients.com/product/ultramod/"
+      "function": "Sustained-release matrix (low-solubility APIs)"
     },
     {
       "product": "UltraMod SR M",
       "chemical": "HPMC / sodium CMC",
-      "function": "Sustained-release matrix (medium-solubility APIs)",
-      "url": "https://www.pharmaexcipients.com/product/ultramod/"
+      "function": "Sustained-release matrix (medium-solubility APIs)"
     },
     {
       "product": "UltraMod SR H",
       "chemical": "HPMC / sodium CMC",
-      "function": "Sustained-release matrix (high-solubility APIs)",
-      "url": "https://www.pharmaexcipients.com/product/ultramod/"
+      "function": "Sustained-release matrix (high-solubility APIs)"
     }
   ],
   "SPI Pharma": [
@@ -7424,44 +7278,37 @@
     {
       "product": "Mannogem Granular",
       "chemical": "D-Mannitol (granular)",
-      "function": "Filler/binder for wet granulation and DC",
-      "url": "https://www.pharmaexcipients.com/product/mannogem-granular-mannitol/"
+      "function": "Filler/binder for wet granulation and DC"
     },
     {
       "product": "Mannogem Powder",
       "chemical": "D-Mannitol (crystalline powder)",
-      "function": "Filler/diluent (granulations, capsules)",
-      "url": "https://www.pharmaexcipients.com/product/mannogem-powder-mannitol/"
+      "function": "Filler/diluent (granulations, capsules)"
     },
     {
       "product": "Mannogem XL",
       "chemical": "D-Mannitol (DC spray-dried, high-performance)",
-      "function": "Self-disintegrating binder/filler for ODTs, chewables",
-      "url": "https://www.pharmaexcipients.com/product/mannogem-xl-mannitol/"
+      "function": "Self-disintegrating binder/filler for ODTs, chewables"
     },
     {
       "product": "Mannogem XL Opal",
       "chemical": "D-Mannitol (DC spray-dried, 160 um)",
-      "function": "DC filler/binder for ODTs, chewables",
-      "url": "https://www.pharmaexcipients.com/product/mannogem-xl-opal-spray-dried-mannitol/"
+      "function": "DC filler/binder for ODTs, chewables"
     },
     {
       "product": "Mannogem XL Ruby",
       "chemical": "D-Mannitol (DC granular, 300 um)",
-      "function": "DC filler/binder for chewables, swallow tablets",
-      "url": "https://www.pharmaexcipients.com/product/mannogem-xl-ruby-granular-mannitol/"
+      "function": "DC filler/binder for chewables, swallow tablets"
     },
     {
       "product": "Mannogem Emerald",
       "chemical": "D-Mannitol (powder, 25 um)",
-      "function": "Filler/diluent for wet granulation, roller compaction",
-      "url": "https://www.pharmaexcipients.com/product/mannogem-emerald-powder-mannitol/"
+      "function": "Filler/diluent for wet granulation, roller compaction"
     },
     {
       "product": "Mannogem Onyx",
       "chemical": "D-Mannitol (powder, 50 um)",
-      "function": "Filler/diluent for wet granulation",
-      "url": "https://www.pharmaexcipients.com/product/mannogem-onyx-powder-mannitol/"
+      "function": "Filler/diluent for wet granulation"
     },
     {
       "product": "Compressol SM",
@@ -7581,38 +7428,32 @@
     {
       "product": "TAP 200 (100-350 um)",
       "chemical": "Tartaric acid spheres",
-      "function": "Acid-releasing starter core (weakly basic APIs)",
-      "url": "https://www.pharmaexcipients.com/product/tap-200/"
+      "function": "Acid-releasing starter core (weakly basic APIs)"
     },
     {
       "product": "TAP 300 (200-355 um)",
       "chemical": "Tartaric acid spheres",
-      "function": "Acid-releasing starter core",
-      "url": "https://www.pharmaexcipients.com/product/tap-300/"
+      "function": "Acid-releasing starter core"
     },
     {
       "product": "TAP 400 (300-500 um)",
       "chemical": "Tartaric acid spheres",
-      "function": "Acid-releasing starter core",
-      "url": "https://www.pharmaexcipients.com/product/tap-400/"
+      "function": "Acid-releasing starter core"
     },
     {
       "product": "TAP 500 (400-600 um)",
       "chemical": "Tartaric acid spheres",
-      "function": "Acid-releasing starter core",
-      "url": "https://www.pharmaexcipients.com/product/tap-500/"
+      "function": "Acid-releasing starter core"
     },
     {
       "product": "TAP 600 (500-700 um)",
       "chemical": "Tartaric acid spheres",
-      "function": "Acid-releasing starter core",
-      "url": "https://www.pharmaexcipients.com/product/tap-600/"
+      "function": "Acid-releasing starter core"
     },
     {
       "product": "TAP 700 (600-800 um)",
       "chemical": "Tartaric acid spheres",
-      "function": "Acid-releasing starter core",
-      "url": "https://www.pharmaexcipients.com/product/tap-700/"
+      "function": "Acid-releasing starter core"
     },
     {
       "product": "CS90",
@@ -7622,14 +7463,12 @@
     {
       "product": "CM90",
       "chemical": "DC calcium carbonate / maltodextrin",
-      "function": "DC filler for swallow tablets (high density)",
-      "url": "https://www.pharmaexcipients.com/product/cm90-calcarb-granulation/"
+      "function": "DC filler for swallow tablets (high density)"
     },
     {
       "product": "Vitasmooth",
       "chemical": "DC calcium carbonate preformulated",
-      "function": "DC filler for smooth meltaway chewable tablets",
-      "url": "https://www.pharmaexcipients.com/product/vitasmooth-041/"
+      "function": "DC filler for smooth meltaway chewable tablets"
     },
     {
       "product": "MS90",
@@ -7645,8 +7484,7 @@
     {
       "product": "Valens AH 2.0 HA",
       "chemical": "Aluminum hydroxide adjuvant (2% Al2O3, high adsorption)",
-      "function": "High-adsorption alum adjuvant for human vaccines",
-      "url": "https://www.pharmaexcipients.com/product/valens-ah-2-0/"
+      "function": "High-adsorption alum adjuvant for human vaccines"
     }
   ],
   "Sudzucker": [
@@ -7673,8 +7511,7 @@
     {
       "product": "Extra White Sugar -- Ph.Eur./USP-NF",
       "chemical": "Sucrose (crystalline, EU Grade 1, extra-refined, beet-derived)",
-      "function": "Filler, binder, sweetener, taste masking. Maximum purity and brightness. Available in S, C, M, F, XF, XXF granulometries",
-      "url": "https://www.pharmaexcipients.com/product/extra-white-sugar/"
+      "function": "Filler, binder, sweetener, taste masking. Maximum purity and brightness. Available in S, C, M, F, XF, XXF granulometries"
     },
     {
       "product": "Higher Grade White Sugar",
@@ -7843,8 +7680,7 @@
     {
       "product": "DRCOAT FCA",
       "chemical": "HPMC-based film coating system (powder, aqueous)",
-      "function": "Immediate release film coating",
-      "url": "https://www.pharmaexcipients.com/product/drcoat-fca-iii-vikram-thermo/"
+      "function": "Immediate release film coating"
     },
     {
       "product": "DRCOAT FCA II",
@@ -7868,7 +7704,7 @@
       "product": "DRCOAT HSP",
       "chemical": "PVA-based film coating system (powder, aqueous)",
       "function": "Immediate release film coating",
-      "url": "https://www.pharmaexcipients.com/product/drcoat-hsp/"
+      "url": "https://www.pharmaexcipients.com/product/drcoat-hsp-plus/"
     },
     {
       "product": "DRCOAT SEAL",

@@ -446,6 +446,18 @@
       font-size: 14.5px;
     }
 
+    .unavailable-note {
+      padding: 28px 24px;
+      text-align: center;
+      background: var(--blue-light);
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      color: var(--text-light);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .unavailable-note strong { color: var(--text); }
+
     @media (max-width: 480px) {
       .supplier-row-btns {
         flex-direction: column;
@@ -565,45 +577,10 @@
   </footer>
 
 <script>
-const SUPPLIER_URLS = {
-  "ADM": "https://www.pharmaexcipients.com/excipient-suppliers-list/adm-pharmaceutical-ingredients/",
-  "Antares Health Products": "https://www.pharmaexcipients.com/excipient-suppliers-list/antares-health-products/",
-  "Armor Pharma": "https://www.pharmaexcipients.com/excipient-suppliers-list/armor-pharma-lactose/",
-  "Asahi Kasei": "https://www.pharmaexcipients.com/asahi-kasei/",
-  "Ashland": "https://www.pharmaexcipients.com/excipient-suppliers-list/ashland/",
-  "BASF": "https://www.pharmaexcipients.com/basf/",
-  "BENEO (galenIQ)": "https://www.pharmaexcipients.com/excipient-suppliers-list/pharma-excipients-d5/",
-  "Biogrund": "https://www.pharmaexcipients.com/excipient-suppliers-list/film-coating-excellence/",
-  "Captisol": "https://www.pharmaexcipients.com/excipient-suppliers-list/captisol-cyclodextrin/",
-  "Clariant": "https://www.pharmaexcipients.com/excipient-suppliers-list/clariant-health-care/",
-  "Croda": "https://www.pharmaexcipients.com/excipient-suppliers-list/croda/",
-  "DFE Pharma": "https://www.pharmaexcipients.com/excipient-suppliers-list/dfe-pharma/",
-  "Evonik": "https://www.pharmaexcipients.com/evonik/",
-  "Fuji Chemical Industries": "https://www.pharmaexcipients.com/excipient-suppliers-list/fuji-chemical-industries/",
-  "Gangwal Healthcare": "https://www.pharmaexcipients.com/excipient-suppliers-list/gangwal-healthcare/",
-  "Gattefosse": "https://www.pharmaexcipients.com/excipient-suppliers-list/gattefosse-lipid-excipients/",
-  "IOI Oleochemical": "https://www.pharmaexcipients.com/excipient-suppliers-list/ioi-oleochemical/",
-  "JRS Pharma": "https://www.pharmaexcipients.com/jrs-pharma/",
-  "Kerry": "https://www.pharmaexcipients.com/excipient-suppliers-list/downloads-kerry-documents/",
-  "KLK Oleo Life Science": "https://www.pharmaexcipients.com/excipient-suppliers-list/klk-kolb/",
-  "Lonza Capsugel": "https://www.pharmaexcipients.com/excipient-suppliers-list/lonza/",
-  "Lactalis Ingredients Pharma": "https://www.pharmaexcipients.com/excipient-suppliers-list/lactalis/",
-  "Lipoid": "https://www.pharmaexcipients.com/excipient-suppliers-list/lipoid/",
-  "Lubrizol Life Science Health (LLS Health)": "https://www.pharmaexcipients.com/excipient-suppliers-list/lubrizol/",
-  "MAGNESIA": "https://www.pharmaexcipients.com/excipient-suppliers-list/magnesia/",
-  "MEGGLE": "https://www.pharmaexcipients.com/excipient-suppliers-list/meggle/",
-  "Nagase Viita": "https://www.pharmaexcipients.com/excipient-suppliers-list/nagase-viita/",
-  "Nordic Bioproducts Group": "https://www.pharmaexcipients.com/nordic-bioproducts-group/",
-  "pharm-a-spheres": "https://www.pharmaexcipients.com/excipient-suppliers-list/pharm-a-spheres-documents/",
-  "PMC Isochem": "https://www.pharmaexcipients.com/excipient-suppliers-list/pmc-isochem/",
-  "Roquette": "https://www.pharmaexcipients.com/excipient-suppliers-list/roquette/",
-  "Seppic": "https://www.pharmaexcipients.com/seppic-5/",
-  "ShinEtsu": "https://www.pharmaexcipients.com/excipient-suppliers-list/shin-etsu/",
-  "Sigachi": "https://www.pharmaexcipients.com/excipient-suppliers-list/sigachi-group/",
-  "SPI Pharma": "https://www.pharmaexcipients.com/excipient-suppliers-list/spi-pharma/",
-  "Sudzucker": "https://www.pharmaexcipients.com/excipient-suppliers-list/suedzucker-ag/",
-  "Vikram Thermo": "https://www.pharmaexcipients.com/excipient-suppliers-list/vikram-thermo/"
-};
+// Supplier page URLs now live on each supplier in excipients.json (link field),
+// generated from data-for-reoccurring-tasks/supplier-page-urls.md by build-data.py.
+// This map is kept only as an optional override and is intentionally empty.
+const SUPPLIER_URLS = {};
 
 const ARROW_SVG = '<svg class="supplier-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13L13 5M13 5H6.5M13 5V11.5"/></svg>';
 
@@ -879,9 +856,10 @@ function renderExcipients(container) {
     btn.className = 'nav-btn blue animate-in';
     btn.style.animationDelay = (i + 1) * 35 + 'ms';
     var n = exc.suppliers ? exc.suppliers.length : 0;
+    var meta = n > 0 ? (n + ' ' + plural(n, 'supplier')) : 'Currently unavailable';
     btn.innerHTML =
       '<span class="btn-label">' + exc.name + '</span>' +
-      '<span class="btn-meta">' + n + ' ' + plural(n, 'supplier') + '</span>';
+      '<span class="btn-meta">' + meta + '</span>';
     btn.onclick = function() { selectExcipient(exc); };
     grid.appendChild(btn);
   });
@@ -893,6 +871,19 @@ function renderSuppliers(container) {
   });
   var routeName = state.route.name.replace(' Excipients', '');
   var excName = state.excipient.name;
+
+  if (suppliers.length === 0) {
+    container.innerHTML =
+      '<div class="stage-header animate-in">' +
+        '<h2>Available Suppliers</h2>' +
+        '<span class="item-count">0 suppliers</span>' +
+      '</div>' +
+      '<div class="unavailable-note animate-in" style="animation-delay:50ms">' +
+        '<strong>' + excName + '</strong> is currently unavailable on PharmaExcipients.com.<br>' +
+        'No supplier currently lists this excipient on the portal.' +
+      '</div>';
+    return;
+  }
 
   container.innerHTML =
     '<div class="stage-header animate-in">' +
