@@ -16,11 +16,18 @@ Run from the project folder: python3 build-data.py
 import csv
 import html
 import json
+import os
 import re
 import sys
 from pathlib import Path
 
-DATA = Path("/Users/eliasschiffbauer/Library/CloudStorage/GoogleDrive-elias.schiffbauer@gmail.com/My Drive/ai-executive-assistants/ea-work/data-for-reoccurring-tasks")
+# Source files live in ea-work/data-for-reoccurring-tasks, two levels up from this
+# project folder. Resolved relative to this script so it works on any machine.
+# Override with the PE_DATA_DIR environment variable if your layout differs.
+DATA = Path(os.environ.get(
+    "PE_DATA_DIR",
+    Path(__file__).resolve().parents[2] / "data-for-reoccurring-tasks",
+))
 OUT = Path(__file__).parent
 
 STRUCT_MD = DATA / "excipients-landscape-structure-suppliers.md"
