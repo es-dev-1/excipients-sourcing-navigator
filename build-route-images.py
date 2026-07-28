@@ -38,6 +38,9 @@ BACKDROP = np.array([196, 206, 255], dtype=np.float32)
 # the alpha ramps, which keeps hair and glass edges soft.
 SOLID, CLEAR = 10.0, 46.0
 
+# The header mark, which lives in the same source folder as the route photos.
+MARK_FILE = "Excipient Sourcing Navigator Logo.jpg"
+
 # Source file -> output slug. Output names follow the project's kebab-case rule.
 FILES = {
     "Oral.jpg": "oral",
@@ -109,6 +112,37 @@ def fade_left_edge(im):
     return Image.fromarray(arr.astype(np.uint8), mode="RGBA")
 
 
+def build_navigator_mark():
+    """Header mark: key the white outside the rounded badge to transparent.
+
+    The badge keeps its own blue. Only white that reaches the image border is
+    removed, so the white molecule and compass inside the badge stay solid.
+    """
+    src = SRC / MARK_FILE
+    if not src.exists():
+        print(f"  skipped navigator mark, no source at {src}")
+        return
+
+    rgb = np.asarray(Image.open(src).convert("RGB"), dtype=np.float32)
+    near_white = np.linalg.norm(rgb - 255.0, axis=2) < 40
+    labels, _ = ndimage.label(near_white)
+    border = np.concatenate([labels[0, :], labels[-1, :], labels[:, 0], labels[:, -1]])
+    outside = np.isin(labels, np.unique(border[border > 0]))
+
+    alpha = np.where(outside, 0.0, 255.0)
+    im = Image.fromarray(np.dstack([rgb, alpha]).astype(np.uint8), mode="RGBA")
+    bbox = im.getbbox()
+    if bbox:
+        im = im.crop(bbox)
+    w, h = im.size
+    im = im.resize((max(1, round(w * 144 / h)), 144), Image.LANCZOS)  # 3x of 48px
+
+    dest = Path(__file__).parent / "assets" / "navigator-mark.webp"
+    im.save(dest, "WEBP", quality=90, method=6)
+    print(f"  {MARK_FILE[:30]:30s} -> assets/navigator-mark.webp  "
+          f"{im.size[0]}x{im.size[1]}  {dest.stat().st_size // 1024} KB")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     print(f"source: {SRC}")
@@ -126,7 +160,8 @@ def main():
         print(f"  {src_name:30s} -> assets/routes/{slug}.webp  "
               f"{im.size[0]}x{im.size[1]}  {dest.stat().st_size // 1024} KB  "
               f"{kept}% of frame opaque")
-    print(f"\n  {len(FILES)} images, {total // 1024} KB total")
+    print(f"\n  {len(FILES)} route images, {total // 1024} KB total")
+    build_navigator_mark()
 
 
 if __name__ == "__main__":
