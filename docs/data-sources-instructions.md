@@ -8,11 +8,11 @@ All sources live in `ea-work/data-for-reoccurring-tasks/`.
 
 | File | Drives | What it provides |
 |------|--------|------------------|
-| `excipients-landscape-structure-suppliers.md` | Stages 2-5 | The full tree: route (`#`) > category (`##`) > excipient (`-`), with suppliers after an em dash per excipient line |
-| `excipient-suppliers-list.md` | Stage 5 | Canonical roster of the 39 supplier names; used to normalize naming so it matches across files |
+| `excipients-landscape-structure-v2.md` | Stages 2-4 | Route (`#`) > category (`##`) > excipient (`- `). Nothing else; no suppliers on these lines |
+| `excipient-products-tree.md` | Stages 5-6 | Excipient (`##`) > supplier (`###`) > product bullets, with the e-shop links already matched in |
 | `supplier-page-urls.md` | Stage 5 | Each supplier's PharmaExcipients.com page link |
-| `excipient-products-by-supplier.md` | Stage 6 | Products per supplier (product name, chemical/generic name, function) |
-| `pe-shop-products-complete.csv` | Stage 6 | Shop export (`name`, `url` columns); product links come from matching product names here |
+
+The two files join on the **exact excipient name**: every `- Excipient` line in the structure file must have a matching `## Excipient` heading in the product tree.
 
 ## Stages
 
@@ -21,12 +21,12 @@ All sources live in `ea-work/data-for-reoccurring-tasks/`.
 3. Functional category
 4. Excipient
 5. Supplier (with a link to the supplier's PharmaExcipients.com page)
-6. Products for that excipient and supplier (linked to the shop where a match exists)
+6. Products for that excipient and supplier, linked to the e-shop
 
 ## How the files combine
 
-- `excipients.json` (stages 2-5) is built from `excipients-landscape-structure-suppliers.md`, `excipient-suppliers-list.md`, and `supplier-page-urls.md`.
-- `products.json` (stage 6) is built from `excipient-products-by-supplier.md` and `pe-shop-products-complete.csv`.
+- `excipients.json` (stages 2-5) takes the taxonomy from the structure file. Each excipient's supplier list is whoever has a `###` section under that excipient in the product tree, with the portal link looked up in `supplier-page-urls.md`.
+- `products.json` (stage 6) is the product tree, keyed excipient > supplier. Because products are filed under a specific excipient at source, stage 6 is a direct lookup and the browser does no matching.
 
 ## Regenerating the data
 
@@ -36,15 +36,26 @@ After updating any source file, run from the project folder:
 python3 build-data.py
 ```
 
-This rewrites `excipients.json` and `products.json` and prints a summary (route, category, excipient, and product counts, the list of currently unavailable excipients, the shop-URL match rate, and any unresolved supplier names). If a supplier name cannot be resolved to the canonical roster, the script exits with an error so the mismatch gets fixed before the data ships.
+This rewrites `excipients.json` and `products.json` and prints a summary: route, category, excipient, supplier, and product counts, the e-shop link rate, the primary-versus-minor split, the suppliers with no portal page, and the excipients with no supplier. Any product bullet the script cannot parse, or any tree excipient with no place in the taxonomy, is reported as a warning and the script exits non-zero so it gets fixed before the data ships.
 
 ## Format conventions to keep so future updates stay parseable
 
-- **No supplier:** write the excipient as `Excipient Name — (none in supplier list)`. That triggers the "currently unavailable" note instead of supplier buttons.
-- **No portal page for a supplier:** put `--` in the URL column of `supplier-page-urls.md`. That supplier then shows no "Supplier Page" button.
-- **Supplier naming:** use the exact name from `excipient-suppliers-list.md`. A unique shorthand still resolves (for example `MEGGLE` maps to `MEGGLE Excipients & Technology`), but exact names are safest.
-- **Product links:** matched by exact (normalized) product name against the shop CSV. Products with no match still display, just without a clickable link. The match rate is roughly half, because the products file lists specific grades from broad web research while the shop lists generic names; exact matching is deliberate to avoid mis-linking grades.
+- **Product bullet format** in `excipient-products-tree.md`:
+  ```
+  - Product name — chemical/generic name — [n] involvement tag — function → [Shop label](url), [Shop label](url)
+  ```
+  Four fields separated by ` — ` (space, em dash, space), then the links after ` → `. The links are optional. All four fields are required; the build rejects any bullet that does not match.
+- **Involvement tags** drive the stage 6 ordering. Tags 1, 2, and 3 mean the excipient is the substance or a primary component, and those products are listed first. Tags 4, 5, and 6 mean it is a minor or derived component, listed after.
+- **No supplier for an excipient:** give the excipient a `##` heading with no `###` sections under it, or leave it out of the tree entirely. Either way the tool shows the "currently unavailable" note.
+- **No portal page for a supplier:** put `--` in the URL column of `supplier-page-urls.md`, or leave the supplier out of that file. The supplier still appears in the tool, just without the Supplier Page button.
+- **Supplier naming:** use one spelling per company. Two aliases are currently corrected in `build-data.py` (`ShinEtsu` to `Shin-Etsu`, `Sudzucker` to `Südzucker AG`). Add to `SUPPLIER_ALIASES` there if another variant appears, or fix it at source.
+- **Excluded sections:** `Unknown Supplier` and the tree's `Unclassified` excipient are dropped by the build. Both lists are at the top of `build-data.py`.
+- **New excipient names** must match between the two files exactly. If they drift, the excipient shows as unavailable and the build warns about an orphaned tree section.
+
+## No longer used
+
+The v1 pipeline read `excipients-landscape-structure-suppliers.md`, `excipient-suppliers-list.md`, `excipient-products-by-supplier.md`, and `pe-shop-products-complete.csv`, and matched shop URLs by normalized product name. The product tree now carries the chemical name, function, and e-shop links inline, so none of those files are part of the build.
 
 ## Last updated
 
-2026-06-27
+2026-07-27

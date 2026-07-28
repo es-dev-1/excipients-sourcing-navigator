@@ -4,21 +4,25 @@ Regenerate excipients.json (stages 2-5) and products.json (stage 6) for the
 Excipient Sourcing Navigator from the source files in
 ea-work/data-for-reoccurring-tasks/.
 
-Sources:
-  - excipients-landscape-structure-suppliers.md  -> route > category > excipient > suppliers
-  - excipient-suppliers-list.md                  -> canonical 39 supplier names
-  - supplier-page-urls.md                        -> supplier -> supplier page URL
-  - excipient-products-by-supplier.md            -> supplier -> products
-  - pe-shop-products-complete.csv                -> product name -> shop URL
+Sources (v2 pipeline, 2026-07-27):
+  - excipients-landscape-structure-v2.md  -> route (#) > category (##) > excipient (-)
+  - excipient-products-tree.md            -> excipient (##) > supplier (###) > product bullets
+  - supplier-page-urls.md                 -> supplier -> PharmaExcipients supplier page URL
+
+The product tree carries everything stage 6 needs, including the e-shop links,
+so the old shop CSV matching and the per-supplier products file are no longer
+part of the build.
+
+Product bullet format expected in the tree:
+  - Product name — chemical/generic name — [n] involvement tag — function → [Shop label](url), [...]
 
 Run from the project folder: python3 build-data.py
 """
-import csv
-import html
 import json
 import os
 import re
 import sys
+from collections import Counter, OrderedDict
 from pathlib import Path
 
 # Source files live in ea-work/data-for-reoccurring-tasks, two levels up from this
@@ -30,58 +34,52 @@ DATA = Path(os.environ.get(
 ))
 OUT = Path(__file__).parent
 
-STRUCT_MD = DATA / "excipients-landscape-structure-suppliers.md"
-SUPPLIERS_MD = DATA / "excipient-suppliers-list.md"
+STRUCT_MD = DATA / "excipients-landscape-structure-v2.md"
+TREE_MD = DATA / "excipient-products-tree.md"
 URLS_MD = DATA / "supplier-page-urls.md"
-PRODUCTS_MD = DATA / "excipient-products-by-supplier.md"
-SHOP_CSV = DATA / "pe-shop-products-complete.csv"
 
-NONE_MARKER = "(none in supplier list)"
+# Supplier sections in the tree that must never reach the tool.
+EXCLUDED_SUPPLIERS = {"Unknown Supplier"}
+
+# Same company written two ways in the tree. Left side maps to the canonical
+# spelling on the right (the spelling the tool displays).
+SUPPLIER_ALIASES = {
+    "ShinEtsu": "Shin-Etsu",
+    "Sudzucker": "Südzucker AG",
+}
+
+# Excipient sections in the tree with no home in the route/category taxonomy.
+EXCLUDED_EXCIPIENTS = {"Unclassified"}
+
+# Involvement tag -> short label shown on the product card, and whether the
+# excipient is a primary part of the product (drives the stage 6 grouping).
+TAGS = {
+    1: ("sole substance", True),
+    2: ("form / grade variant", True),
+    3: ("co-processed, primary component", True),
+    4: ("co-processed, minor component", False),
+    5: ("carrier / substrate", False),
+    6: ("formulated system", False),
+}
+
+BULLET_RE = re.compile(r"^\[(\d)\]")
+LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)]+)\)")
+
+warnings = []
 
 
 def norm_supplier(name):
     """Normalize a supplier name for matching across files."""
-    n = name.lower()
-    n = re.sub(r"\([^)]*\)", "", n)        # drop parentheticals e.g. (LLS Health)
-    n = re.sub(r"[^a-z0-9]+", " ", n)       # punctuation -> space
-    return re.sub(r"\s+", " ", n).strip()
+    n = name.lower().replace("ü", "u").replace("ö", "o").replace("ä", "a")
+    n = re.sub(r"\([^)]*\)", "", n)          # drop parentheticals e.g. (LLS Health)
+    return re.sub(r"[^a-z0-9]+", "", n)      # punctuation and spaces out entirely
 
 
-def norm_product(name):
-    """Normalize a product name for matching md <-> shop CSV."""
-    n = html.unescape(name)
-    n = n.lower()
-    n = n.replace("™", "").replace("®", "").replace("℠", "")  # tm, (r), sm
-    n = re.sub(r"[‐-―−]", "-", n)   # all dash variants -> hyphen
-    n = re.sub(r"[^a-z0-9]+", " ", n)
-    return re.sub(r"\s+", " ", n).strip()
+def canonical(name):
+    return SUPPLIER_ALIASES.get(name, name)
 
 
-# ---- 1. canonical supplier names ----
-canon = []
-for line in SUPPLIERS_MD.read_text().splitlines():
-    m = re.match(r"^\|\s*\d+\s*\|\s*(.+?)\s*\|", line)
-    if m:
-        canon.append(m.group(1).strip())
-canon_lookup = {norm_supplier(c): c for c in canon}
-assert len(canon) == len(canon_lookup), "duplicate normalized canonical names"
-
-
-def to_canonical(name, source, errors):
-    key = norm_supplier(name)
-    if key in canon_lookup:
-        return canon_lookup[key]
-    # fallback: unique token-boundary prefix match (handles shorthand e.g. "MEGGLE")
-    cands = [c for k, c in canon_lookup.items() if k.startswith(key + " ")]
-    if len(cands) == 1:
-        return cands[0]
-    errors.append(f"  UNKNOWN supplier '{name}' (in {source})")
-    return name  # keep raw so it is visible, but flagged
-
-
-errors = []
-
-# ---- 2. supplier page URLs ----
+# ---- 1. supplier page URLs ----
 supplier_url = {}
 for line in URLS_MD.read_text().splitlines():
     m = re.match(r"^\|\s*(.+?)\s*\|\s*(\S.*?)\s*\|", line)
@@ -92,121 +90,148 @@ for line in URLS_MD.read_text().splitlines():
         continue
     if url == "--" or not url.startswith("http"):
         url = None
-    key = norm_supplier(company)
-    if key in canon_lookup:
-        supplier_url[canon_lookup[key]] = url
+    # Key on the canonical spelling so a row written the other way round
+    # (e.g. "Sudzucker" for "Südzucker AG") still resolves.
+    supplier_url[norm_supplier(canonical(company))] = url
 
-# ---- 3. structure: routes > categories > excipients > suppliers ----
+
+def page_url(supplier):
+    """Supplier page URL, or None when the supplier has no portal page."""
+    return supplier_url.get(norm_supplier(supplier))
+
+
+# ---- 2. product tree: excipient > supplier > products ----
+tree = OrderedDict()
+excipient = supplier = None
+dupes = 0
+malformed = []
+
+for lineno, raw in enumerate(TREE_MD.read_text().splitlines(), 1):
+    line = raw.rstrip()
+    if line.startswith("## ") and not line.startswith("### "):
+        excipient = line[3:].strip()
+        tree.setdefault(excipient, OrderedDict())
+        supplier = None
+    elif line.startswith("### ") and excipient:
+        supplier = canonical(line[4:].strip())
+        tree[excipient].setdefault(supplier, [])
+    elif line.startswith("- ") and excipient and supplier:
+        body = line[2:].strip()
+        head, _, tail = body.partition(" → ")
+        links = [{"label": lbl.strip(), "url": url}
+                 for lbl, url in LINK_RE.findall(tail)] if tail else []
+        fields = [f.strip() for f in head.split(" — ")]
+        if len(fields) != 4 or not BULLET_RE.match(fields[2]):
+            malformed.append(f"  L{lineno}: {excipient} > {supplier} | {body[:110]}")
+            continue
+        name, chemical, tag_raw, function = fields
+        tag = int(BULLET_RE.match(tag_raw).group(1))
+        label, primary = TAGS[tag]
+        entry = {
+            "product": name,
+            "chemical": chemical,
+            "tag": tag,
+            "tagLabel": label,
+            "primary": primary,
+            "function": function,
+            "links": links,
+        }
+        bucket = tree[excipient][supplier]
+        # Collapse bullets that repeat verbatim within one excipient > supplier
+        # section, merging their shop links.
+        twin = next((e for e in bucket
+                     if (e["product"], e["chemical"], e["tag"], e["function"])
+                     == (name, chemical, tag, function)), None)
+        if twin:
+            seen = {l["url"] for l in twin["links"]}
+            twin["links"].extend(l for l in links if l["url"] not in seen)
+            dupes += 1
+        else:
+            bucket.append(entry)
+
+# Drop excluded suppliers and any section left empty by the exclusions.
+for exc in list(tree):
+    for sup in list(tree[exc]):
+        if sup in EXCLUDED_SUPPLIERS or not tree[exc][sup]:
+            del tree[exc][sup]
+for exc in EXCLUDED_EXCIPIENTS:
+    tree.pop(exc, None)
+
+# Stage 6 order: excipient-is-primary products first, minor and derivative after.
+for exc, sups in tree.items():
+    for sup, items in sups.items():
+        items.sort(key=lambda e: 0 if e["primary"] else 1)
+
+# ---- 3. structure: routes > categories > excipients ----
 routes = []
 route = cat = None
-unavailable = []
 for raw in STRUCT_MD.read_text().splitlines():
     line = raw.rstrip()
     if line.startswith("# ") and not line.startswith("## "):
         route = {"name": line[2:].strip(), "children": []}
         routes.append(route)
         cat = None
-    elif line.startswith("## "):
+    elif line.startswith("## ") and route is not None:
         cat = {"name": line[3:].strip(), "children": []}
         route["children"].append(cat)
-    elif line.startswith("- "):
-        body = line[2:].strip()
-        parts = body.split("—", 1)          # split on first em-dash
-        exc_name = parts[0].strip()
-        sup_str = parts[1].strip() if len(parts) > 1 else ""
-        suppliers = []
-        if sup_str and sup_str.lower() != NONE_MARKER:
-            for s in sup_str.split(","):
-                s = s.strip()
-                if not s:
-                    continue
-                cname = to_canonical(s, f"structure '{exc_name}'", errors)
-                suppliers.append({"name": cname, "link": supplier_url.get(cname)})
-        if not suppliers:
-            unavailable.append(f"{route['name']} > {cat['name']} > {exc_name}")
-        cat["children"].append({"name": exc_name, "suppliers": suppliers})
+    elif line.startswith("- ") and cat is not None:
+        name = line[2:].strip()
+        suppliers = [{"name": s, "link": page_url(s)}
+                     for s in sorted(tree.get(name, {}), key=str.lower)]
+        cat["children"].append({"name": name, "suppliers": suppliers})
 
-# ---- 4. products by supplier ----
-products = {}
-cur = None
-for raw in PRODUCTS_MD.read_text().splitlines():
-    line = raw.rstrip()
-    mh = re.match(r"^##\s+(?:\d+\.\s*)?(.+)$", line)
-    if mh:
-        title = mh.group(1).strip()
-        if re.match(r"^\d", line[3:].strip()):  # numbered -> a supplier section
-            cur = to_canonical(title, "products md header", errors)
-            products.setdefault(cur, [])
-        else:
-            cur = None  # e.g. "## Progress"
-        continue
-    if cur and line.startswith("|"):
-        cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) < 3:
-            continue
-        if set(cells[0]) <= set("-: "):            # separator row
-            continue
-        if cells[0].lower() in ("product name", "product"):  # header row
-            continue
-        products[cur].append({
-            "product": cells[0],
-            "chemical": cells[1],
-            "function": cells[2],
-        })
+# The file's own title is an H1 too; it collects no categories, so it drops out.
+routes = [r for r in routes if r["children"]]
 
-# ---- 5. shop URLs ----
-shop = {}
-with open(SHOP_CSV, newline="") as f:
-    for row in csv.DictReader(f):
-        name = (row.get("name") or "").strip()
-        url = (row.get("url") or "").strip()
-        if not name or not url:
-            continue
-        shop.setdefault(norm_product(name), url)
+# ---- 4. validation ----
+struct_names = {e["name"] for r in routes for c in r["children"] for e in c["children"]}
+unavailable = sorted(n for n in struct_names if not tree.get(n))
+orphans = sorted(set(tree) - struct_names)
+for o in orphans:
+    warnings.append(f"  tree excipient with no place in the taxonomy: {o}")
+for m in malformed:
+    warnings.append(m)
 
-matched = unmatched = 0
-for sup, items in products.items():
-    for p in items:
-        url = shop.get(norm_product(p["product"]))
-        if url:
-            p["url"] = url
-            matched += 1
-        else:
-            unmatched += 1
-
-# ---- 6. validation: every structure supplier must have a products entry ----
-struct_suppliers = {s["name"] for r in routes for c in r["children"]
-                    for e in c["children"] for s in e["suppliers"]}
-missing_products = sorted(struct_suppliers - set(products))
+# products.json only needs excipients the taxonomy can actually reach.
+products = OrderedDict((e, tree[e]) for e in tree if e in struct_names and tree[e])
 
 # ---- write ----
-(OUT / "excipients.json").write_text(json.dumps(routes, indent=2, ensure_ascii=False) + "\n")
-(OUT / "products.json").write_text(json.dumps(products, indent=2, ensure_ascii=False) + "\n")
+(OUT / "excipients.json").write_text(
+    json.dumps(routes, indent=2, ensure_ascii=False) + "\n")
+(OUT / "products.json").write_text(
+    json.dumps(products, indent=2, ensure_ascii=False) + "\n")
 
 # ---- report ----
-n_routes = len(routes)
 n_cats = sum(len(r["children"]) for r in routes)
-n_exc = sum(len(c["children"]) for r in routes for c in r["children"])
-n_prod = sum(len(v) for v in products.values())
+n_slots = len(struct_names and [e for r in routes for c in r["children"] for e in c["children"]])
+all_sup = sorted({s for v in products.values() for s in v}, key=str.lower)
+no_page = [s for s in all_sup if not page_url(s)]
+n_prod = sum(len(i) for v in products.values() for i in v.values())
+n_linked = sum(1 for v in products.values() for i in v.values() for p in i if p["links"])
+n_primary = sum(1 for v in products.values() for i in v.values() for p in i if p["primary"])
+
 print("=== BUILD SUMMARY ===")
-print(f"Routes:      {n_routes}")
+print(f"Routes:      {len(routes)}")
 print(f"Categories:  {n_cats}")
-print(f"Excipients:  {n_exc}  (of which {len(unavailable)} currently unavailable)")
-print(f"Suppliers:   {len(products)} sections, {len(struct_suppliers)} referenced in structure")
-print(f"Products:    {n_prod}  | shop URLs matched: {matched}, unmatched: {unmatched} ({matched*100//max(n_prod,1)}%)")
+print(f"Excipients:  {len(struct_names)} distinct in {n_slots} route/category slots "
+      f"({len(unavailable)} with no supplier)")
+print(f"Suppliers:   {len(all_sup)}  ({len(no_page)} without a portal page, shown without the Supplier Page button)")
+print(f"Products:    {n_prod}  | with e-shop link: {n_linked} ({n_linked * 100 // max(n_prod, 1)}%)"
+      f" | excipient is primary: {n_primary}, minor or derived: {n_prod - n_primary}")
+if dupes:
+    print(f"Duplicates:  {dupes} repeated bullets collapsed")
 print()
-print(f"Unavailable excipients ({len(unavailable)}):")
+print(f"Suppliers without a portal page ({len(no_page)}):")
+for s in no_page:
+    print("  -", s)
+print()
+print(f"Excipients with no supplier, shown as currently unavailable ({len(unavailable)}):")
 for u in unavailable:
     print("  -", u)
 print()
-if missing_products:
-    print("Suppliers referenced in structure but with NO products section:")
-    for m in missing_products:
-        print("  -", m)
-    print()
-if errors:
-    print("!!! NAME ERRORS (must fix) !!!")
-    for e in sorted(set(errors)):
-        print(e)
+if warnings:
+    print("!!! WARNINGS !!!")
+    for w in warnings:
+        print(w)
     sys.exit(1)
-print("OK: all supplier names resolved to the canonical list.")
+print("OK: every product bullet parsed, every excipient placed.")

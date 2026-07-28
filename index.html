@@ -238,6 +238,100 @@
       margin: 0 auto;
     }
 
+    /* ── Route Cards (Stage 2) ── */
+    .route-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .route-card {
+      position: relative;
+      display: block;
+      width: 100%;
+      min-height: 128px;
+      padding: 0;
+      border: 1px solid var(--blue);
+      border-radius: 8px;
+      background: var(--blue);
+      overflow: hidden;
+      cursor: pointer;
+      font-family: 'Outfit', sans-serif;
+      text-align: left;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* The photo. Backdrops are keyed out, so the card's blue shows through. */
+    .route-card .route-media {
+      position: absolute;
+      inset: 0;
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: auto 118%;
+      transition: transform 0.45s cubic-bezier(0.22, 0.8, 0.3, 1);
+    }
+
+    /* Slightly transparent blue over the photo: near-solid where the label
+       sits, opening up towards the image so the subject stays readable. */
+    .route-card .route-veil {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(100deg,
+        rgba(43, 96, 153, 0.98) 0%,
+        rgba(43, 96, 153, 0.95) 40%,
+        rgba(43, 96, 153, 0.66) 72%,
+        rgba(43, 96, 153, 0.36) 100%);
+      transition: opacity 0.25s ease;
+    }
+
+    /* Keep the label in the near-solid left band so it never fights the photo. */
+    .route-card .route-body {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 18px 20px;
+      max-width: 76%;
+    }
+
+    .route-card .route-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      text-shadow: 0 1px 3px rgba(15, 35, 60, 0.35);
+    }
+
+    .route-card .route-meta {
+      font-size: 12.5px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.78);
+      text-shadow: 0 1px 3px rgba(15, 35, 60, 0.35);
+    }
+
+    .route-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px var(--blue-glow);
+    }
+
+    .route-card:hover .route-media { transform: scale(1.05); }
+    .route-card:hover .route-veil { opacity: 0.88; }
+    .route-card:active { transform: translateY(0); }
+
+    /* Oral carries far more of the landscape than any other route. */
+    .route-card.hero {
+      grid-column: 1 / -1;
+      min-height: 158px;
+    }
+
+    .route-card.hero .route-media { background-size: auto 132%; }
+    .route-card.hero .route-body { padding: 22px 26px; max-width: 58%; }
+    .route-card.hero .route-name { font-size: 21px; letter-spacing: -0.02em; }
+    .route-card.hero .route-meta { font-size: 13.5px; }
+
     /* ── Excipient Buttons (blue variant) ── */
     .nav-btn.blue {
       background: var(--blue);
@@ -432,11 +526,83 @@
       font-size: 12.5px;
       color: var(--text-light);
       margin-bottom: 2px;
+      overflow-wrap: anywhere;
     }
 
     .product-function {
       font-size: 12px;
       color: var(--text-muted);
+      overflow-wrap: anywhere;
+    }
+
+    .tag-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-light);
+      background: var(--blue-light);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 7px;
+      margin-left: 6px;
+      white-space: nowrap;
+      vertical-align: 1px;
+    }
+
+    .tag-badge.minor {
+      background: var(--bg);
+      color: var(--text-muted);
+    }
+
+    /* ── Shop links for grouped product variants ── */
+    .product-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .shop-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--dark);
+      background: #CDEBFF;
+      border: 1px solid #B0DEFF;
+      border-radius: 5px;
+      padding: 5px 10px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .shop-chip:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: var(--white);
+    }
+
+    /* ── Stage 6 group divider ── */
+    .group-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin: 4px 0 2px;
+    }
+
+    .group-label::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .group-label.secondary {
+      margin-top: 18px;
     }
 
     .no-products {
@@ -529,6 +695,12 @@
       .btn-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+      .route-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .route-card { min-height: 116px; }
+      .route-card.hero { min-height: 150px; }
+      .route-card.hero .route-name { font-size: 19px; }
       .supplier-grid {
         grid-template-columns: 1fr;
       }
@@ -541,6 +713,13 @@
       .btn-grid {
         grid-template-columns: 1fr;
       }
+      .route-grid {
+        grid-template-columns: 1fr;
+      }
+      .route-card, .route-card.hero { min-height: 122px; }
+      .route-card .route-media, .route-card.hero .route-media { background-size: auto 112%; }
+      .route-card.hero .route-body { padding: 18px 20px; }
+      .route-card.hero .route-name { font-size: 17px; }
       .header-inner { padding: 0 16px; gap: 12px; }
       main { padding: 20px 16px 48px; }
       .breadcrumb { padding: 14px 16px 0; }
@@ -611,20 +790,30 @@ function plural(n, singular, pluralForm) {
   return n === 1 ? singular : (pluralForm || singular + 's');
 }
 
+// Chemical and function strings are long free text straight from the source
+// file, so escape anything going into innerHTML.
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 function computeStats() {
-  let routes = 0, categories = 0, excipients = 0;
+  let routes = 0, categories = 0;
+  // An excipient appears under several routes, so count distinct names.
+  const excipients = new Set();
   const suppliers = new Set();
   state.data.forEach(function(r) {
     routes++;
     (r.children || []).forEach(function(c) {
       categories++;
       (c.children || []).forEach(function(e) {
-        excipients++;
+        excipients.add(e.name);
         (e.suppliers || []).forEach(function(s) { suppliers.add(s.name); });
       });
     });
   });
-  return { routes: routes, categories: categories, excipients: excipients, suppliers: suppliers.size };
+  return { routes: routes, categories: categories, excipients: excipients.size, suppliers: suppliers.size };
 }
 
 function startExploring() {
@@ -665,58 +854,14 @@ function goBack(toStage) {
   render();
 }
 
-function matchProducts(supplierName, excipientName) {
-  if (!state.products || !state.products[supplierName]) return [];
-  var allProducts = state.products[supplierName];
-  var lower = excipientName.toLowerCase();
-  var terms = [lower];
-
-  var parenMatch = excipientName.match(/\(([^)]+)\)/);
-  var nameClean = lower.replace(/\s*\([^)]+\)\s*/g, '').trim();
-  terms.push(nameClean);
-
-  if (parenMatch) {
-    var parenContent = parenMatch[1].toLowerCase();
-    terms.push(parenContent);
-    parenContent.split(/[,\/]/).forEach(function(part) {
-      var t = part.trim();
-      if (t.length > 3 && t !== 'pre-blended') terms.push(t);
-    });
-  }
-
-  var broader = nameClean.replace(/\s+(systems?|formers?|agents?|shells?)$/i, '').trim();
-  if (broader !== nameClean && broader.length > 3) terms.push(broader);
-
-  if (nameClean.indexOf('/') !== -1) {
-    nameClean.split('/').forEach(function(part) {
-      var t = part.trim();
-      if (t.length > 3) terms.push(t);
-    });
-  }
-
-  var seen = {};
-  terms = terms.filter(function(t) { if (seen[t]) return false; seen[t] = true; return true; });
-
-  var broaderWords = (broader !== nameClean && broader.indexOf(' ') !== -1)
-    ? broader.split(/\s+/) : null;
-
-  console.log('matchProducts:', supplierName, excipientName);
-  console.log('  terms:', terms);
-  console.log('  broader:', broader, '| broaderWords:', broaderWords);
-  console.log('  allProducts count:', allProducts.length);
-
-  var results = allProducts.filter(function(p) {
-    var chem = (p.chemical || '').toLowerCase();
-    var func = (p['function'] || '').toLowerCase();
-    var combined = chem + ' ' + func;
-    if (terms.some(function(t) { return chem.indexOf(t) !== -1 || func.indexOf(t) !== -1; })) return true;
-    if (broaderWords) {
-      return broaderWords.every(function(w) { return new RegExp('\\b' + w + '\\b').test(combined); });
-    }
-    return false;
-  });
-  console.log('  matches:', results.length);
-  return results;
+// Products are filed under excipient > supplier in products.json, so stage 6 is
+// a direct lookup. No keyword guessing: every product shown is one the source
+// tree explicitly lists for this excipient.
+function getProducts(excipientName, supplierName) {
+  if (!state.products) return [];
+  var bySupplier = state.products[excipientName];
+  if (!bySupplier || !bySupplier[supplierName]) return [];
+  return bySupplier[supplierName];
 }
 
 function renderBreadcrumb() {
@@ -737,27 +882,27 @@ function renderBreadcrumb() {
     var rn = state.route.name.replace(' Excipients', '');
     html += '<span class="sep">/</span>';
     html += stage > 2
-      ? '<span class="crumb clickable" onclick="goBack(2)">' + rn + '</span>'
-      : '<span class="crumb current">' + rn + '</span>';
+      ? '<span class="crumb clickable" onclick="goBack(2)">' + esc(rn) + '</span>'
+      : '<span class="crumb current">' + esc(rn) + '</span>';
   }
 
   if (stage >= 3 && state.category) {
     html += '<span class="sep">/</span>';
     html += stage > 3
-      ? '<span class="crumb clickable" onclick="goBack(3)">' + state.category.name + '</span>'
-      : '<span class="crumb current">' + state.category.name + '</span>';
+      ? '<span class="crumb clickable" onclick="goBack(3)">' + esc(state.category.name) + '</span>'
+      : '<span class="crumb current">' + esc(state.category.name) + '</span>';
   }
 
   if (stage >= 4 && state.excipient) {
     html += '<span class="sep">/</span>';
     html += stage > 4
-      ? '<span class="crumb clickable" onclick="goBack(4)">' + state.excipient.name + '</span>'
-      : '<span class="crumb current">' + state.excipient.name + '</span>';
+      ? '<span class="crumb clickable" onclick="goBack(4)">' + esc(state.excipient.name) + '</span>'
+      : '<span class="crumb current">' + esc(state.excipient.name) + '</span>';
   }
 
   if (stage >= 5 && state.supplier) {
     html += '<span class="sep">/</span>';
-    html += '<span class="crumb current">' + state.supplier.name + '</span>';
+    html += '<span class="crumb current">' + esc(state.supplier.name) + '</span>';
   }
 
   bc.innerHTML = html;
@@ -795,6 +940,18 @@ function renderWelcome(container) {
     '</div>';
 }
 
+// Route photo files in assets/routes/, keyed to transparent backgrounds by
+// build-route-images.py. A route with no image just renders as a plain blue card.
+const ROUTE_IMAGES = {
+  'Oral Excipients': 'oral',
+  'Injectable Excipients': 'injectable',
+  'Inhalation / Pulmonary Excipients': 'inhalation-pulmonary',
+  'Nasal Excipients': 'nasal',
+  'Topical Excipients': 'topical',
+  'Ocular Excipients': 'ocular',
+  'Rectal & Vaginal Excipients': 'rectal-vaginal'
+};
+
 function renderRoutes(container) {
   var items = state.data;
   container.innerHTML =
@@ -802,17 +959,29 @@ function renderRoutes(container) {
       '<h2>Select Route of Administration</h2>' +
       '<span class="item-count">' + items.length + ' routes</span>' +
     '</div>' +
-    '<div class="btn-grid single-col" id="btn-grid"></div>';
+    '<div class="route-grid" id="route-grid"></div>';
 
-  var grid = document.getElementById('btn-grid');
+  var grid = document.getElementById('route-grid');
   items.forEach(function(route, i) {
     var btn = document.createElement('button');
-    btn.className = 'nav-btn animate-in';
-    btn.style.animationDelay = (i + 1) * 50 + 'ms';
+    // Oral leads the landscape by a wide margin, so it gets the full-width card.
+    btn.className = 'route-card animate-in' + (i === 0 ? ' hero' : '');
+    btn.style.animationDelay = (i + 1) * 55 + 'ms';
+    btn.setAttribute('aria-label', route.name);
+
     var n = route.children ? route.children.length : 0;
+    var slug = ROUTE_IMAGES[route.name];
+    var media = slug
+      ? '<span class="route-media" style="background-image:url(&quot;assets/routes/' + slug + '.webp&quot;)"></span>'
+      : '';
+
     btn.innerHTML =
-      '<span class="btn-label">' + route.name + '</span>' +
-      '<span class="btn-meta">' + n + ' ' + plural(n, 'category', 'categories') + '</span>';
+      media +
+      '<span class="route-veil"></span>' +
+      '<span class="route-body">' +
+        '<span class="route-name">' + esc(route.name) + '</span>' +
+        '<span class="route-meta">' + n + ' ' + plural(n, 'category', 'categories') + '</span>' +
+      '</span>';
     btn.onclick = function() { selectRoute(route); };
     grid.appendChild(btn);
   });
@@ -834,7 +1003,7 @@ function renderCategories(container) {
     btn.style.animationDelay = (i + 1) * 35 + 'ms';
     var n = cat.children ? cat.children.length : 0;
     btn.innerHTML =
-      '<span class="btn-label">' + cat.name + '</span>' +
+      '<span class="btn-label">' + esc(cat.name) + '</span>' +
       '<span class="btn-meta">' + n + ' ' + plural(n, 'excipient') + '</span>';
     btn.onclick = function() { selectCategory(cat); };
     grid.appendChild(btn);
@@ -858,7 +1027,7 @@ function renderExcipients(container) {
     var n = exc.suppliers ? exc.suppliers.length : 0;
     var meta = n > 0 ? (n + ' ' + plural(n, 'supplier')) : 'Currently unavailable';
     btn.innerHTML =
-      '<span class="btn-label">' + exc.name + '</span>' +
+      '<span class="btn-label">' + esc(exc.name) + '</span>' +
       '<span class="btn-meta">' + meta + '</span>';
     btn.onclick = function() { selectExcipient(exc); };
     grid.appendChild(btn);
@@ -879,7 +1048,7 @@ function renderSuppliers(container) {
         '<span class="item-count">0 suppliers</span>' +
       '</div>' +
       '<div class="unavailable-note animate-in" style="animation-delay:50ms">' +
-        '<strong>' + excName + '</strong> is currently unavailable on PharmaExcipients.com.<br>' +
+        '<strong>' + esc(excName) + '</strong> is currently unavailable on PharmaExcipients.com.<br>' +
         'No supplier currently lists this excipient on the portal.' +
       '</div>';
     return;
@@ -891,7 +1060,7 @@ function renderSuppliers(container) {
       '<span class="item-count">' + suppliers.length + ' ' + plural(suppliers.length, 'supplier') + '</span>' +
     '</div>' +
     '<p class="supplier-context animate-in" style="animation-delay:50ms">' +
-      'Suppliers of <strong>' + excName + '</strong> for <strong>' + routeName + '</strong> formulations' +
+      'Suppliers of <strong>' + esc(excName) + '</strong> for <strong>' + esc(routeName) + '</strong> formulations' +
     '</p>' +
     '<div class="supplier-grid" id="supplier-grid"></div>';
 
@@ -922,7 +1091,7 @@ function renderSuppliers(container) {
 
     var prodBtn = document.createElement('button');
     prodBtn.className = 'supplier-btn supplier-btn-products';
-    prodBtn.innerHTML = '<span>' + excName + ' by ' + sup.name + '</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg>';
+    prodBtn.innerHTML = '<span>' + esc(excName) + ' by ' + esc(sup.name) + '</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg>';
     prodBtn.onclick = (function(s) { return function() { selectSupplier(s); }; })(sup);
     btns.appendChild(prodBtn);
 
@@ -931,14 +1100,52 @@ function renderSuppliers(container) {
   });
 }
 
+function buildProductCard(p, delay) {
+  var links = p.links || [];
+  var single = links.length === 1 ? links[0] : null;
+  var card;
+
+  // One shop page: the whole card is the link. Several (grouped grade variants):
+  // the card stays static and each variant gets its own chip.
+  if (single) {
+    card = document.createElement('a');
+    card.href = single.url;
+    card.target = '_blank';
+    card.rel = 'noopener noreferrer';
+  } else {
+    card = document.createElement('div');
+  }
+  card.className = 'product-card animate-in';
+  card.style.animationDelay = delay + 'ms';
+
+  var badgeClass = p.primary ? 'tag-badge' : 'tag-badge minor';
+  var html =
+    '<div class="product-name">' + esc(p.product) + (single ? ' ' + ARROW_SVG : '') + '</div>' +
+    '<div class="product-chemical">' + esc(p.chemical) +
+      '<span class="' + badgeClass + '">' + esc(p.tagLabel) + '</span></div>' +
+    '<div class="product-function">' + esc(p.function) + '</div>';
+
+  if (links.length > 1) {
+    html += '<div class="product-links">' + links.map(function(l) {
+      return '<a class="shop-chip" href="' + esc(l.url) + '" target="_blank" rel="noopener noreferrer">' +
+        esc(l.label) + ARROW_SVG + '</a>';
+    }).join('') + '</div>';
+  }
+
+  card.innerHTML = html;
+  return card;
+}
+
 function renderProducts(container) {
   var supplierName = state.supplier.name;
   var excName = state.excipient.name;
-  var products = matchProducts(supplierName, excName);
+  var products = getProducts(excName, supplierName);
+  var primary = products.filter(function(p) { return p.primary; });
+  var secondary = products.filter(function(p) { return !p.primary; });
 
   container.innerHTML =
     '<div class="stage-header animate-in">' +
-      '<h2>' + excName + ' by ' + supplierName + '</h2>' +
+      '<h2>' + esc(excName) + ' by ' + esc(supplierName) + '</h2>' +
       '<span class="item-count">' + products.length + ' ' + plural(products.length, 'product') + '</span>' +
     '</div>' +
     '<div class="product-grid" id="product-grid"></div>';
@@ -950,25 +1157,27 @@ function renderProducts(container) {
     return;
   }
 
-  products.forEach(function(p, i) {
-    var card;
-    if (p.url) {
-      card = document.createElement('a');
-      card.href = p.url;
-      card.target = '_blank';
-      card.rel = 'noopener noreferrer';
-    } else {
-      card = document.createElement('div');
+  var i = 0;
+  function addGroup(items, label, cls) {
+    if (!items.length) return;
+    if (label) {
+      var head = document.createElement('div');
+      head.className = 'group-label animate-in ' + cls;
+      head.style.animationDelay = (i + 1) * 40 + 'ms';
+      head.textContent = label;
+      grid.appendChild(head);
     }
-    card.className = 'product-card animate-in';
-    card.style.animationDelay = (i + 1) * 40 + 'ms';
-    var linkIcon = p.url ? ' ' + ARROW_SVG : '';
-    card.innerHTML =
-      '<div class="product-name">' + p.product + linkIcon + '</div>' +
-      '<div class="product-chemical">' + p.chemical + '</div>' +
-      '<div class="product-function">' + p.function + '</div>';
-    grid.appendChild(card);
-  });
+    items.forEach(function(p) {
+      grid.appendChild(buildProductCard(p, ++i * 40));
+    });
+  }
+
+  // Products built on the excipient first; ones where it is only a minor or
+  // derived component after, so the most relevant results stay on top.
+  var split = primary.length > 0 && secondary.length > 0;
+  addGroup(primary, split ? 'Based on ' + excName : null, 'primary');
+  addGroup(secondary, split ? excName + ' as a minor or derived component'
+                            : 'Contains ' + excName, 'secondary');
 }
 
 async function init() {
