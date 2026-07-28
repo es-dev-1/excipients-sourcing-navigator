@@ -28,6 +28,8 @@ The two files join on the **exact excipient name**: every `- Excipient` line in 
 - `excipients.json` (stages 2-5) takes the taxonomy from the structure file. Each excipient's supplier list is whoever has a `###` section under that excipient in the product tree, with the portal link looked up in `supplier-page-urls.md`.
 - `products.json` (stage 6) is the product tree, keyed excipient > supplier. Because products are filed under a specific excipient at source, stage 6 is a direct lookup and the browser does no matching.
 
+The search bar is built from `excipients.json` in the browser, one node per route, per category occurrence, and per excipient occurrence. It needs no separate source and no separate build step: anything added to the structure file becomes searchable the moment `build-data.py` has been run. See the Search section in `README.md` for how hits are ranked and where each one jumps to.
+
 ## Regenerating the data
 
 After updating any source file, run from the project folder:
@@ -45,6 +47,8 @@ This rewrites `excipients.json` and `products.json` and prints a summary: route,
   - Product name — chemical/generic name — [n] involvement tag — function → [Shop label](url), [Shop label](url)
   ```
   Four fields separated by ` — ` (space, em dash, space), then the links after ` → `. The links are optional. All four fields are required; the build rejects any bullet that does not match.
+- **Source order does not matter, except for routes.** `build-data.py` sorts categories, excipients, suppliers, and products alphabetically, so those can sit in whatever order is convenient to edit. Do not hand-sort them.
+- **Route order does matter.** The `#` headings in `excipients-landscape-structure-v2.md` are kept exactly as written, because stage 2 orders routes by relevance rather than by name and gives the first one a full-width card. Reordering those headings is how you change both the order and which route gets the big card.
 - **Involvement tags** drive the stage 6 ordering. Tags 1, 2, and 3 mean the excipient is the substance or a primary component, and those products are listed first. Tags 4, 5, and 6 mean it is a minor or derived component, listed after.
 - **No supplier for an excipient:** give the excipient a `##` heading with no `###` sections under it, or leave it out of the tree entirely. Either way the tool shows the "currently unavailable" note.
 - **No portal page for a supplier:** put `--` in the URL column of `supplier-page-urls.md`, or leave the supplier out of that file. The supplier still appears in the tool, just without the Supplier Page button.
@@ -58,4 +62,4 @@ The v1 pipeline read `excipients-landscape-structure-suppliers.md`, `excipient-s
 
 ## Last updated
 
-2026-07-27
+2026-07-28

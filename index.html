@@ -87,7 +87,6 @@
       height: 48px;
       width: auto;
       flex-shrink: 0;
-      opacity: 0.87;
     }
 
     /* ── Breadcrumb ── */
@@ -132,6 +131,156 @@
       user-select: none;
     }
 
+    /* ── Search ── */
+    .searchbar {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 16px 28px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .searchbar[hidden] { display: none; }
+
+    .search-shell {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .search-field {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      height: 42px;
+      padding: 0 11px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .search-field:focus-within {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px var(--blue-glow);
+    }
+
+    .search-field > svg {
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 0;
+      border: none;
+      outline: none;
+      background: none;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14.5px;
+      color: var(--dark);
+    }
+
+    .search-input::placeholder { color: var(--text-muted); }
+
+    .search-clear {
+      flex-shrink: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-family: 'Outfit', sans-serif;
+      font-size: 19px;
+      line-height: 1;
+      padding: 2px 5px;
+      border-radius: 4px;
+      transition: color 0.15s ease, background 0.15s ease;
+    }
+
+    .search-clear[hidden] { display: none; }
+
+    .search-clear:hover {
+      color: var(--text);
+      background: var(--blue-light);
+    }
+
+    /* Sits above the page but below the sticky header, which it never overlaps. */
+    .search-results {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      right: 0;
+      z-index: 90;
+      padding: 4px;
+      max-height: 348px;
+      overflow-y: auto;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .search-results[hidden] { display: none; }
+
+    .search-option {
+      display: block;
+      width: 100%;
+      padding: 9px 11px;
+      border: none;
+      border-radius: 6px;
+      background: none;
+      text-align: left;
+      cursor: pointer;
+      font-family: 'Outfit', sans-serif;
+      transition: background 0.12s ease;
+    }
+
+    .search-option:hover,
+    .search-option.active { background: var(--blue-light); }
+
+    .search-path {
+      display: block;
+      font-size: 14px;
+      line-height: 1.35;
+      color: var(--text-light);
+    }
+
+    /* The node itself, always last in the path and never followed by anything
+       from a deeper stage. */
+    .search-path .leaf {
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    .search-path .step-sep {
+      color: var(--text-muted);
+      font-size: 13px;
+      padding: 0 6px;
+    }
+
+    .search-path mark {
+      background: rgba(43, 96, 153, 0.15);
+      color: inherit;
+      border-radius: 2px;
+      padding: 0 1px;
+    }
+
+    .search-meta {
+      display: block;
+      margin-top: 2px;
+      font-size: 11.5px;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+
+    .search-note {
+      padding: 12px 11px;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
     /* ── Main ── */
     main {
       max-width: 920px;
@@ -141,12 +290,14 @@
     }
 
     /* ── Welcome ── */
+    /* Small top padding: the search bar sits directly above this on the landing
+       page, and the two read as one block rather than two stacked ones. */
     .welcome {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 80px 20px 60px;
+      padding: 12px 20px 60px;
     }
 
     .welcome h2 {
@@ -330,7 +481,9 @@
     .route-card:hover .route-veil { opacity: 0.88; }
     .route-card:active { transform: translateY(0); }
 
-    /* Oral carries far more of the landscape than any other route. */
+    /* The lead route gets a full-width card, leaving the other six as two rows
+       of three. Routes are ordered by relevance, not alphabetically, so this is
+       always the most relevant one. */
     .route-card.hero {
       grid-column: 1 / -1;
       min-height: 158px;
@@ -713,7 +866,7 @@
       .supplier-grid {
         grid-template-columns: 1fr;
       }
-      .welcome { padding: 52px 16px 40px; }
+      .welcome { padding: 8px 16px 40px; }
       .welcome h2 { font-size: 26px; }
       .header-title { font-size: 15px; }
     }
@@ -732,13 +885,16 @@
       .header-inner { padding: 0 16px; gap: 12px; }
       main { padding: 20px 16px 48px; }
       .breadcrumb { padding: 14px 16px 0; }
+      .searchbar { padding: 12px 16px 0; }
+      .search-results { max-height: 300px; }
       .welcome h2 { font-size: 23px; }
       .welcome p { font-size: 15px; }
       .stage-header h2 { font-size: 19px; }
       .logo { height: 28px; }
-      /* Bigger than before, but small enough that the title still wraps to
-         two lines rather than three in the fixed-height header. */
-      .navigator-mark { height: 32px; }
+      /* Sized by width, not height: the mark is ~1.94:1, and anything wider
+         than about 56px pushes "Excipient Sourcing Navigator" from two wrapped
+         lines to three, which overflows the fixed 68px header. */
+      .navigator-mark { height: 28px; }
     }
   </style>
 </head>
@@ -754,6 +910,26 @@
   </header>
 
   <nav id="breadcrumb" class="breadcrumb"></nav>
+
+  <!-- Skip forward to a route, category, or excipient. Sits between the
+       breadcrumb and the stage title, and lives outside #app so it survives
+       every stage render and stays in one place. Hidden until data loads. -->
+  <div class="searchbar" id="searchbar" hidden>
+    <div class="search-shell" id="search-shell">
+      <div class="search-field">
+        <svg width="17" height="17" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="7.75" cy="7.75" r="5.5"/><path d="M11.9 11.9L16 16"/>
+        </svg>
+        <input id="search-input" class="search-input" type="text"
+               placeholder="Jump to route of administration, functional category, or excipient"
+               autocomplete="off" spellcheck="false"
+               role="combobox" aria-expanded="false" aria-autocomplete="list"
+               aria-controls="search-results" aria-label="Search the navigator">
+        <button type="button" id="search-clear" class="search-clear" aria-label="Clear search" hidden>&times;</button>
+      </div>
+      <div id="search-results" class="search-results" role="listbox" aria-label="Search results" hidden></div>
+    </div>
+  </div>
 
   <main id="app">
     <div class="loading">
@@ -883,13 +1059,15 @@ function renderBreadcrumb() {
 
   if (stage === 0) { bc.innerHTML = ''; return; }
 
-  var html = '';
+  // Home is the landing screen and is always one click away from stages 2 to 6.
+  // The route list is its own crumb after it, so no single label stands for two
+  // different screens.
+  var html = '<span class="crumb clickable" onclick="goBack(0)">Home</span>';
 
-  if (stage > 1) {
-    html += '<span class="crumb clickable" onclick="goBack(1)">Home</span>';
-  } else {
-    html += '<span class="crumb current">Home</span>';
-  }
+  html += '<span class="sep">/</span>';
+  html += stage > 1
+    ? '<span class="crumb clickable" onclick="goBack(1)">Routes</span>'
+    : '<span class="crumb current">Routes</span>';
 
   if (stage >= 2 && state.route) {
     var rn = state.route.name.replace(' Excipients', '');
@@ -977,7 +1155,9 @@ function renderRoutes(container) {
   var grid = document.getElementById('route-grid');
   items.forEach(function(route, i) {
     var btn = document.createElement('button');
-    // Oral leads the landscape by a wide margin, so it gets the full-width card.
+    // Routes come from the data in relevance order, not alphabetically, so the
+    // first one is the most relevant and takes the full-width card. The other
+    // six then fall into two clean rows of three.
     btn.className = 'route-card animate-in' + (i === 0 ? ' hero' : '');
     btn.style.animationDelay = (i + 1) * 55 + 'ms';
     btn.setAttribute('aria-label', route.name);
@@ -1048,9 +1228,8 @@ function renderExcipients(container) {
 }
 
 function renderSuppliers(container) {
-  var suppliers = (state.excipient.suppliers || []).slice().sort(function(a, b) {
-    return a.name.localeCompare(b.name);
-  });
+  // Already alphabetical: build-data.py sorts every list the tool renders.
+  var suppliers = state.excipient.suppliers || [];
   var routeName = state.route.name.replace(' Excipients', '');
   var excName = state.excipient.name;
 
@@ -1193,14 +1372,324 @@ function renderProducts(container) {
                             : 'Contains ' + excName, 'secondary');
 }
 
+// ── Search ────────────────────────────────────────────────────────────────
+// Every route, every functional category, and every excipient is its own
+// searchable node, so an excipient filed under two categories is two separate
+// hits that jump to two different places, and a category that repeats across
+// routes is one hit per route. A node never reaches past its own stage: a
+// category node names its route and itself, never the excipients inside it.
+//
+// Picking a hit is the same as having clicked through to it by hand. From
+// there the user browses on manually, so nothing else about the flow changes.
+
+const TYPE_ORDER = { Route: 0, Category: 1, Excipient: 2 };
+const MIN_QUERY = 2;
+const MAX_RESULTS = 24;
+
+const searchUI = { index: [], results: [], active: -1, query: '' };
+
+// The full placeholder needs about 416px. The field has ~510px at 980px wide
+// but only ~308px on a phone, where the text would cut off mid-word, so a short
+// version takes over below 560px. The HTML carries the full text, which is what
+// shows if this never runs.
+const PLACEHOLDER_FULL = 'Jump to route of administration, functional category, or excipient';
+const PLACEHOLDER_SHORT = 'Jump to a route, category, or excipient';
+
+function fitPlaceholder() {
+  document.getElementById('search-input').placeholder =
+    window.innerWidth < 560 ? PLACEHOLDER_SHORT : PLACEHOLDER_FULL;
+}
+
+// Lower-cased, accent-stripped copy of a string, used for matching. For the
+// characters in this data it comes out the same length as the source, which is
+// what lets highlight() map match positions back onto the original text.
+function fold(s) {
+  return String(s == null ? '' : s)
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+function buildSearchIndex() {
+  var nodes = [];
+
+  function add(node) {
+    node.labelFold = fold(node.label);
+    nodes.push(node);
+  }
+
+  state.data.forEach(function(route, ri) {
+    // Same short form the breadcrumb uses. The full name still matches, so
+    // "oral excipients" finds the route even though the hit reads "Oral".
+    var rn = route.name.replace(' Excipients', '');
+    var cats = route.children || [];
+
+    add({
+      type: 'Route', label: rn, trail: [], order: [ri, -1, -1],
+      meta: cats.length + ' ' + plural(cats.length, 'category', 'categories'),
+      hay: fold(rn + ' ' + route.name),
+      route: route, category: null, excipient: null
+    });
+
+    cats.forEach(function(cat, ci) {
+      var excs = cat.children || [];
+      add({
+        type: 'Category', label: cat.name, trail: [rn], order: [ri, ci, -1],
+        meta: excs.length + ' ' + plural(excs.length, 'excipient'),
+        hay: fold(cat.name + ' ' + rn),
+        route: route, category: cat, excipient: null
+      });
+
+      excs.forEach(function(exc, ei) {
+        var n = (exc.suppliers || []).length;
+        add({
+          type: 'Excipient', label: exc.name, trail: [rn, cat.name], order: [ri, ci, ei],
+          meta: n ? n + ' ' + plural(n, 'supplier') : 'Currently unavailable',
+          hay: fold(exc.name + ' ' + rn + ' ' + cat.name),
+          route: route, category: cat, excipient: exc
+        });
+      });
+    });
+  });
+
+  return nodes;
+}
+
+// 0 the label starts with the query, 1 a word in it does, 2 it appears
+// somewhere in the label, 3 only the route or category above it matched.
+function labelRank(labelFold, q) {
+  var i = labelFold.indexOf(q);
+  if (i === -1) return 3;
+  if (i === 0) return 0;
+  while (i !== -1) {
+    if (!/[a-z0-9]/.test(labelFold.charAt(i - 1))) return 1;
+    i = labelFold.indexOf(q, i + 1);
+  }
+  return 2;
+}
+
+function searchNodes(query) {
+  var q = fold(query).trim().replace(/\s+/g, ' ');
+  if (q.length < MIN_QUERY) return [];
+
+  var tokens = q.split(' ');
+  var hits = [];
+
+  searchUI.index.forEach(function(node) {
+    var matches = tokens.every(function(t) { return node.hay.indexOf(t) !== -1; });
+    if (matches) hits.push({ node: node, rank: labelRank(node.labelFold, q) });
+  });
+
+  hits.sort(function(a, b) {
+    if (a.rank !== b.rank) return a.rank - b.rank;
+    var ta = TYPE_ORDER[a.node.type], tb = TYPE_ORDER[b.node.type];
+    if (ta !== tb) return ta - tb;
+    if (a.node.label.length !== b.node.label.length) return a.node.label.length - b.node.label.length;
+    var byLabel = a.node.label.localeCompare(b.node.label);
+    if (byLabel !== 0) return byLabel;
+    // Same name in several places: fall back to the order the stages use, so
+    // the hits read in the same sequence the user would meet them browsing.
+    for (var i = 0; i < 3; i++) {
+      if (a.node.order[i] !== b.node.order[i]) return a.node.order[i] - b.node.order[i];
+    }
+    return 0;
+  });
+
+  return hits.map(function(h) { return h.node; });
+}
+
+// Wrap each occurrence of the query in <mark>. Offsets come from the folded
+// copy, so bail out to plain escaped text if folding changed the length and
+// those offsets no longer line up with the original.
+function highlight(text, q) {
+  var lf = fold(text);
+  if (!q || lf.length !== text.length) return esc(text);
+
+  var out = '', from = 0, i = lf.indexOf(q);
+  while (i !== -1) {
+    out += esc(text.slice(from, i)) + '<mark>' + esc(text.slice(i, i + q.length)) + '</mark>';
+    from = i + q.length;
+    i = lf.indexOf(q, from);
+  }
+  return out + esc(text.slice(from));
+}
+
+function renderSearchResults() {
+  var box = document.getElementById('search-results');
+  var input = document.getElementById('search-input');
+  var results = searchUI.results;
+  var q = searchUI.query;
+
+  box.innerHTML = '';
+
+  if (q.length < MIN_QUERY) {
+    box.hidden = true;
+    input.setAttribute('aria-expanded', 'false');
+    input.removeAttribute('aria-activedescendant');
+    return;
+  }
+
+  if (results.length === 0) {
+    box.innerHTML = '<div class="search-note">No route, category, or excipient matches that.</div>';
+  }
+
+  results.slice(0, MAX_RESULTS).forEach(function(node, i) {
+    var opt = document.createElement('button');
+    opt.type = 'button';
+    opt.className = 'search-option' + (i === searchUI.active ? ' active' : '');
+    opt.id = 'search-option-' + i;
+    opt.setAttribute('role', 'option');
+    opt.setAttribute('aria-selected', i === searchUI.active ? 'true' : 'false');
+
+    // A chevron, not the breadcrumb's slash: several category names contain a
+    // slash of their own ("Starter Cores / Spheres"), which would read as an
+    // extra level here.
+    var trail = node.trail.map(function(step) {
+      return highlight(step, q) + '<span class="step-sep">&rsaquo;</span>';
+    }).join('');
+
+    opt.innerHTML =
+      '<span class="search-path">' + trail +
+        '<span class="leaf">' + highlight(node.label, q) + '</span></span>' +
+      '<span class="search-meta">' + esc(node.type) + ' &middot; ' + esc(node.meta) + '</span>';
+
+    // mousedown, not click: the input's blur would close the list first.
+    opt.addEventListener('mousedown', function(e) { e.preventDefault(); goToNode(node); });
+    box.appendChild(opt);
+  });
+
+  if (results.length > MAX_RESULTS) {
+    var note = document.createElement('div');
+    note.className = 'search-note';
+    note.textContent = (results.length - MAX_RESULTS) + ' more matches. Keep typing to narrow it down.';
+    box.appendChild(note);
+  }
+
+  box.hidden = false;
+  input.setAttribute('aria-expanded', 'true');
+  if (searchUI.active >= 0) {
+    input.setAttribute('aria-activedescendant', 'search-option-' + searchUI.active);
+  } else {
+    input.removeAttribute('aria-activedescendant');
+  }
+}
+
+function runSearch() {
+  var input = document.getElementById('search-input');
+  searchUI.query = fold(input.value).trim().replace(/\s+/g, ' ');
+  searchUI.results = searchNodes(input.value);
+  searchUI.active = -1;
+  document.getElementById('search-clear').hidden = input.value.length === 0;
+  renderSearchResults();
+}
+
+function moveSearchActive(step) {
+  var shown = Math.min(searchUI.results.length, MAX_RESULTS);
+  if (shown === 0) return;
+  // Slots run 0..shown, where slot 0 is "nothing highlighted" (active -1), so
+  // arrowing past either end cycles back through the input rather than sticking.
+  var slot = (searchUI.active + 1 + step + shown + 1) % (shown + 1);
+  searchUI.active = slot - 1;
+  renderSearchResults();
+  var el = document.getElementById('search-option-' + searchUI.active);
+  if (el) el.scrollIntoView({ block: 'nearest' });
+}
+
+function closeSearch(clearInput) {
+  var input = document.getElementById('search-input');
+  if (clearInput) {
+    input.value = '';
+    searchUI.query = '';
+    document.getElementById('search-clear').hidden = true;
+  }
+  searchUI.results = [];
+  searchUI.active = -1;
+  document.getElementById('search-results').hidden = true;
+  input.setAttribute('aria-expanded', 'false');
+  input.removeAttribute('aria-activedescendant');
+}
+
+// Land on the node exactly where clicking through by hand would have landed:
+// a route opens its categories, a category opens its excipients, an excipient
+// opens its suppliers.
+function goToNode(node) {
+  state.started = true;
+  state.route = node.route;
+  state.category = node.category;
+  state.excipient = node.excipient;
+  state.supplier = null;
+  closeSearch(true);
+  document.getElementById('search-input').blur();
+  render();
+}
+
+function initSearch() {
+  searchUI.index = buildSearchIndex();
+
+  var bar = document.getElementById('searchbar');
+  var shell = document.getElementById('search-shell');
+  var input = document.getElementById('search-input');
+
+  fitPlaceholder();
+  window.addEventListener('resize', fitPlaceholder);
+
+  input.addEventListener('input', runSearch);
+  input.addEventListener('focus', function() { if (input.value) runSearch(); });
+
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowDown') { e.preventDefault(); moveSearchActive(1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); moveSearchActive(-1); }
+    else if (e.key === 'Enter') {
+      var node = searchUI.results[searchUI.active >= 0 ? searchUI.active : 0];
+      if (node) { e.preventDefault(); goToNode(node); }
+    } else if (e.key === 'Escape') {
+      e.preventDefault();
+      closeSearch(true);
+      input.blur();
+    }
+  });
+
+  document.getElementById('search-clear').addEventListener('click', function() {
+    closeSearch(true);
+    input.focus();
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!shell.contains(e.target)) closeSearch(false);
+  });
+
+  // "/" focuses the box, the way it does on most search-first pages.
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    e.preventDefault();
+    input.focus();
+    input.select();
+  });
+
+  bar.hidden = false;
+}
+
+// Both files are regenerated by build-data.py whenever the source data changes,
+// and they are served with no Cache-Control, so a browser is free to hold on to
+// a stale copy and quietly show yesterday's landscape. cache: 'no-cache' forces
+// a revalidation on every load: unchanged data comes back as a 304 and costs
+// nothing, changed data always arrives.
+function loadJSON(file) {
+  return fetch(file, { cache: 'no-cache' }).then(function(r) {
+    if (!r.ok) throw new Error(file + ': HTTP ' + r.status);
+    return r.json();
+  });
+}
+
 async function init() {
   try {
     var results = await Promise.all([
-      fetch('excipients.json').then(function(r) { return r.json(); }),
-      fetch('products.json').then(function(r) { return r.json(); })
+      loadJSON('excipients.json'),
+      loadJSON('products.json')
     ]);
     state.data = results[0];
     state.products = results[1];
+    initSearch();
     render();
   } catch (err) {
     document.getElementById('app').innerHTML =

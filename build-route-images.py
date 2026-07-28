@@ -39,7 +39,13 @@ BACKDROP = np.array([196, 206, 255], dtype=np.float32)
 SOLID, CLEAR = 10.0, 46.0
 
 # The header mark, which lives in the same source folder as the route photos.
-MARK_FILE = "Excipient Sourcing Navigator Logo.jpg"
+MARK_FILE = "Excipients Sourcing Navigator.jpg"
+
+# The mark is blue line art on white. Same keying idea as the photos, with white
+# as the backdrop instead of lavender, and a tighter ramp because the edges are
+# vector-clean rather than photographic.
+MARK_SOLID, MARK_CLEAR = 8.0, 60.0
+MARK_H = 144          # 3x the 48px the header renders it at
 
 # Source file -> output slug. Output names follow the project's kebab-case rule.
 FILES = {
@@ -113,10 +119,12 @@ def fade_left_edge(im):
 
 
 def build_navigator_mark():
-    """Header mark: key the white outside the rounded badge to transparent.
+    """Header mark: blue line art on white, with all the white keyed out.
 
-    The badge keeps its own blue. Only white that reaches the image border is
-    removed, so the white molecule and compass inside the badge stay solid.
+    Every white pixel goes, not just the ones reaching the image border, so the
+    holes inside the molecule's nodes and the gap inside the compass ring become
+    transparent too. That leaves pure blue line art that sits correctly on any
+    background rather than only on a white header.
     """
     src = SRC / MARK_FILE
     if not src.exists():
@@ -124,23 +132,27 @@ def build_navigator_mark():
         return
 
     rgb = np.asarray(Image.open(src).convert("RGB"), dtype=np.float32)
-    near_white = np.linalg.norm(rgb - 255.0, axis=2) < 40
-    labels, _ = ndimage.label(near_white)
-    border = np.concatenate([labels[0, :], labels[-1, :], labels[:, 0], labels[:, -1]])
-    outside = np.isin(labels, np.unique(border[border > 0]))
+    dist = np.linalg.norm(rgb - 255.0, axis=2)
+    alpha = np.clip((dist - MARK_SOLID) / (MARK_CLEAR - MARK_SOLID), 0.0, 1.0)
 
-    alpha = np.where(outside, 0.0, 255.0)
-    im = Image.fromarray(np.dstack([rgb, alpha]).astype(np.uint8), mode="RGBA")
+    # Unmix white out of the anti-aliased edge pixels so no pale fringe survives.
+    a = alpha[..., None]
+    with np.errstate(divide="ignore", invalid="ignore"):
+        colour = np.where(a > 0.004, (rgb - (1 - a) * 255.0) / np.maximum(a, 1e-6), rgb)
+    colour = np.clip(colour, 0, 255)
+
+    im = Image.fromarray(np.dstack([colour, alpha * 255.0]).astype(np.uint8), mode="RGBA")
     bbox = im.getbbox()
     if bbox:
         im = im.crop(bbox)
     w, h = im.size
-    im = im.resize((max(1, round(w * 144 / h)), 144), Image.LANCZOS)  # 3x of 48px
+    im = im.resize((max(1, round(w * MARK_H / h)), MARK_H), Image.LANCZOS)
 
     dest = Path(__file__).parent / "assets" / "navigator-mark.webp"
     im.save(dest, "WEBP", quality=90, method=6)
     print(f"  {MARK_FILE[:30]:30s} -> assets/navigator-mark.webp  "
-          f"{im.size[0]}x{im.size[1]}  {dest.stat().st_size // 1024} KB")
+          f"{im.size[0]}x{im.size[1]}  {dest.stat().st_size // 1024} KB  "
+          f"renders {round(im.size[0] / 3)}x{MARK_H // 3} in the header")
 
 
 def main():

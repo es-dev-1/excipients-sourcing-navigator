@@ -22,6 +22,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from collections import Counter, OrderedDict
 from pathlib import Path
 
@@ -66,6 +67,18 @@ BULLET_RE = re.compile(r"^\[(\d)\]")
 LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^)]+)\)")
 
 warnings = []
+
+
+def sort_key(name):
+    """Alphabetical key for everything the tool renders as a button.
+
+    Case-insensitive and accent-folded, so "Südzucker AG" files under S-u-d
+    rather than after every z. The source files list things in their own
+    editorial order, which is not alphabetical; this is what makes the tool's
+    order independent of that.
+    """
+    decomposed = unicodedata.normalize("NFD", name)
+    return "".join(c for c in decomposed if not unicodedata.combining(c)).casefold()
 
 
 def norm_supplier(name):
@@ -157,10 +170,11 @@ for exc in list(tree):
 for exc in EXCLUDED_EXCIPIENTS:
     tree.pop(exc, None)
 
-# Stage 6 order: excipient-is-primary products first, minor and derivative after.
+# Stage 6 order: excipient-is-primary products first, minor and derivative
+# after, and alphabetical inside each of those two groups.
 for exc, sups in tree.items():
     for sup, items in sups.items():
-        items.sort(key=lambda e: 0 if e["primary"] else 1)
+        items.sort(key=lambda e: (0 if e["primary"] else 1, sort_key(e["product"])))
 
 # ---- 3. structure: routes > categories > excipients ----
 routes = []
@@ -177,11 +191,24 @@ for raw in STRUCT_MD.read_text().splitlines():
     elif line.startswith("- ") and cat is not None:
         name = line[2:].strip()
         suppliers = [{"name": s, "link": page_url(s)}
-                     for s in sorted(tree.get(name, {}), key=str.lower)]
+                     for s in sorted(tree.get(name, {}), key=sort_key)]
         cat["children"].append({"name": name, "suppliers": suppliers})
 
 # The file's own title is an H1 too; it collects no categories, so it drops out.
 routes = [r for r in routes if r["children"]]
+
+# Categories, excipients, suppliers, and products are alphabetical, regardless of
+# the order the source files happen to use.
+#
+# Routes are the deliberate exception: they keep the structure file's own order,
+# which ranks them by relevance rather than by name. Stage 2 gives the first one
+# a full-width card, so whichever route leads this list is the one that gets it.
+# Reordering the H1 headings in excipients-landscape-structure-v2.md is how you
+# change either.
+for r in routes:
+    r["children"].sort(key=lambda c: sort_key(c["name"]))
+    for c in r["children"]:
+        c["children"].sort(key=lambda e: sort_key(e["name"]))
 
 # ---- 4. validation ----
 struct_names = {e["name"] for r in routes for c in r["children"] for e in c["children"]}
@@ -192,8 +219,12 @@ for o in orphans:
 for m in malformed:
     warnings.append(m)
 
-# products.json only needs excipients the taxonomy can actually reach.
-products = OrderedDict((e, tree[e]) for e in tree if e in struct_names and tree[e])
+# products.json only needs excipients the taxonomy can actually reach. Keys are
+# sorted too: stage 6 looks products up by key so order does not reach the
+# screen, but it keeps the generated file's diffs readable.
+products = OrderedDict(
+    (e, OrderedDict(sorted(tree[e].items(), key=lambda kv: sort_key(kv[0]))))
+    for e in sorted(tree, key=sort_key) if e in struct_names and tree[e])
 
 # ---- write ----
 (OUT / "excipients.json").write_text(
@@ -204,7 +235,7 @@ products = OrderedDict((e, tree[e]) for e in tree if e in struct_names and tree[
 # ---- report ----
 n_cats = sum(len(r["children"]) for r in routes)
 n_slots = len(struct_names and [e for r in routes for c in r["children"] for e in c["children"]])
-all_sup = sorted({s for v in products.values() for s in v}, key=str.lower)
+all_sup = sorted({s for v in products.values() for s in v}, key=sort_key)
 no_page = [s for s in all_sup if not page_url(s)]
 n_prod = sum(len(i) for v in products.values() for i in v.values())
 n_linked = sum(1 for v in products.values() for i in v.values() for p in i if p["links"])
