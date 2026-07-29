@@ -142,6 +142,11 @@
 
     .searchbar[hidden] { display: none; }
 
+    /* On the landing page the breadcrumb is empty and hidden, so the search bar
+       would otherwise sit right under the header. Give it room to breathe there
+       without changing the breadcrumb-to-search gap on stages 2 to 6. */
+    .breadcrumb:empty + .searchbar { padding-top: 40px; }
+
     .search-shell {
       position: relative;
       width: 100%;
@@ -886,6 +891,7 @@
       main { padding: 20px 16px 48px; }
       .breadcrumb { padding: 14px 16px 0; }
       .searchbar { padding: 12px 16px 0; }
+      .breadcrumb:empty + .searchbar { padding-top: 28px; }
       .search-results { max-height: 300px; }
       .welcome h2 { font-size: 23px; }
       .welcome p { font-size: 15px; }
