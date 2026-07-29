@@ -13,6 +13,22 @@
     :root {
       --blue: #2B6099;
       --blue-hover: #1E4A75;
+      /* A subtle fade across the brand blue, about 8% either side of it, used on
+         the landing CTA (stage 1), the route cards (stage 2), and the excipient
+         buttons (stage 4). Runs top to bottom, so the bands of colour lie
+         horizontally: lighter along the top edge, deeper along the bottom. Kept
+         narrow on purpose, enough to give the fill some depth without reading as
+         a second colour. */
+      --blue-fade: linear-gradient(180deg, #336DA9 0%, #2B6099 52%, #245483 100%);
+      --blue-fade-hover: linear-gradient(180deg, #285E8F 0%, #1E4A75 52%, #17395B 100%);
+      /* The same treatment for the other button colours, each staying within its
+         own family: white buttons (stages 3, 5, 6), the pale blue they turn on
+         hover, and the sky-blue link pills. These are deliberately shallower
+         than the brand-blue fade, because the same drop looks like dirt on a
+         near-white fill. */
+      --white-fade: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 55%, #F3F7FB 100%);
+      --blue-light-fade: linear-gradient(180deg, #F5F9FD 0%, #EEF3F8 52%, #E3ECF5 100%);
+      --sky-fade: linear-gradient(180deg, #D9F1FF 0%, #CDEBFF 52%, #BEE3FA 100%);
       --blue-light: #EEF3F8;
       --blue-glow: rgba(43, 96, 153, 0.25);
       --gray-brand: #4A4F54;
@@ -242,7 +258,7 @@
     }
 
     .search-option:hover,
-    .search-option.active { background: var(--blue-light); }
+    .search-option.active { background: var(--blue-light-fade); }
 
     .search-path {
       display: block;
@@ -323,7 +339,7 @@
     }
 
     .cta-btn {
-      background: var(--blue);
+      background: var(--blue-fade);
       color: var(--white);
       border: none;
       border-radius: 8px;
@@ -338,7 +354,7 @@
     }
 
     .cta-btn:hover {
-      background: var(--blue-hover);
+      background: var(--blue-fade-hover);
       box-shadow: 0 6px 24px rgba(43, 96, 153, 0.35);
       transform: translateY(-2px);
     }
@@ -418,7 +434,7 @@
       padding: 0;
       border: 1px solid var(--blue);
       border-radius: 8px;
-      background: var(--blue);
+      background: var(--blue-fade);
       overflow: hidden;
       cursor: pointer;
       font-family: 'Outfit', sans-serif;
@@ -438,15 +454,17 @@
     }
 
     /* Slightly transparent blue over the photo: near-solid where the label
-       sits, opening up towards the image so the subject stays readable. */
+       sits, opening up towards the image so the subject stays readable. The
+       alpha stops are tuned for legibility and unchanged; the blue itself now
+       fades from lighter to deeper across the same axis. */
     .route-card .route-veil {
       position: absolute;
       inset: 0;
       background: linear-gradient(100deg,
-        rgba(43, 96, 153, 0.98) 0%,
+        rgba(51, 109, 169, 0.98) 0%,
         rgba(43, 96, 153, 0.95) 40%,
-        rgba(43, 96, 153, 0.66) 72%,
-        rgba(43, 96, 153, 0.36) 100%);
+        rgba(38, 87, 137, 0.66) 72%,
+        rgba(36, 84, 131, 0.36) 100%);
       transition: opacity 0.25s ease;
     }
 
@@ -501,7 +519,7 @@
 
     /* ── Excipient Buttons (blue variant) ── */
     .nav-btn.blue {
-      background: var(--blue);
+      background: var(--blue-fade);
       border-color: var(--blue);
       border-left-color: var(--blue);
       color: var(--white);
@@ -516,14 +534,14 @@
     }
 
     .nav-btn.blue:hover {
-      background: var(--blue-hover);
+      background: var(--blue-fade-hover);
       border-color: var(--blue-hover);
       border-left-color: var(--white);
     }
 
     /* ── Navigation Buttons ── */
     .nav-btn {
-      background: var(--white);
+      background: var(--white-fade);
       border: 1px solid var(--border);
       border-radius: 6px;
       padding: 16px 18px;
@@ -539,7 +557,7 @@
 
     .nav-btn:hover {
       border-color: var(--blue);
-      background: var(--blue-light);
+      background: var(--blue-light-fade);
       box-shadow: var(--shadow-md);
       transform: translateY(-1px);
     }
@@ -609,13 +627,13 @@
     }
 
     .supplier-btn-page {
-      background: #CDEBFF;
+      background: var(--sky-fade);
       border-color: #B0DEFF;
       color: var(--dark);
     }
 
     .supplier-btn-page:hover {
-      background: var(--blue);
+      background: var(--blue-fade);
       border-color: var(--blue);
       color: var(--white);
       box-shadow: 0 4px 14px var(--blue-glow);
@@ -623,7 +641,7 @@
     }
 
     .supplier-btn-products {
-      background: var(--white);
+      background: var(--white-fade);
       border-color: var(--border);
       color: var(--dark);
       flex: 1;
@@ -640,7 +658,7 @@
 
     .supplier-btn-products:hover {
       border-color: var(--blue);
-      background: var(--blue-light);
+      background: var(--blue-light-fade);
       box-shadow: var(--shadow-md);
       transform: translateY(-1px);
     }
@@ -665,7 +683,7 @@
 
     .product-card {
       display: block;
-      background: var(--white);
+      background: var(--white-fade);
       border: 1px solid var(--border);
       border-radius: 6px;
       padding: 14px 18px;
@@ -677,7 +695,7 @@
 
     a.product-card:hover {
       border-color: var(--blue);
-      background: var(--blue-light);
+      background: var(--blue-light-fade);
       box-shadow: var(--shadow-md);
       transform: translateY(-1px);
     }
@@ -736,7 +754,7 @@
       font-size: 12px;
       font-weight: 500;
       color: var(--dark);
-      background: #CDEBFF;
+      background: var(--sky-fade);
       border: 1px solid #B0DEFF;
       border-radius: 5px;
       padding: 5px 10px;
@@ -745,7 +763,7 @@
     }
 
     .shop-chip:hover {
-      background: var(--blue);
+      background: var(--blue-fade);
       border-color: var(--blue);
       color: var(--white);
     }
@@ -782,7 +800,7 @@
     .unavailable-note {
       padding: 28px 24px;
       text-align: center;
-      background: var(--blue-light);
+      background: var(--blue-light-fade);
       border: 1px dashed var(--border);
       border-radius: 12px;
       color: var(--text-light);
