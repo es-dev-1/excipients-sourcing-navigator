@@ -23,8 +23,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # enablement: true creates the Pages site on first run and sets its source
+      # to GitHub Actions. Without it this step fails with "Get Pages site
+      # failed" until someone sets the source by hand in Settings > Pages.
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
