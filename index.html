@@ -30,6 +30,11 @@
       --blue-light-fade: linear-gradient(180deg, #F5F9FD 0%, #EEF3F8 52%, #E3ECF5 100%);
       --sky-fade: linear-gradient(180deg, #D9F1FF 0%, #CDEBFF 52%, #BEE3FA 100%);
       --blue-light: #EEF3F8;
+      /* A light blue for de-emphasised text, used on the landing page stats
+         line. Reads as blue rather than grey while staying quieter than the
+         body text, and lands slightly above --text-muted on contrast so it is
+         no harder to read than the grey it replaced. */
+      --blue-soft: #7A9EC5;
       --blue-glow: rgba(43, 96, 153, 0.25);
       --gray-brand: #4A4F54;
       --gray-brand-hover: #3A3E42;
@@ -366,7 +371,7 @@
     .stats {
       margin-top: 40px;
       font-size: 13px;
-      color: var(--text-muted);
+      color: var(--blue-soft);
       letter-spacing: 0.02em;
     }
 
