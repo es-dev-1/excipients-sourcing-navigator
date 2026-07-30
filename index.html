@@ -1011,6 +1011,11 @@ function esc(s) {
     .replace(/"/g, '&quot;');
 }
 
+// Thousands separator, so the product count reads 2,382 rather than 2382.
+function thousands(n) {
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 function computeStats() {
   let routes = 0, categories = 0;
   // An excipient appears under several routes, so count distinct names.
@@ -1026,7 +1031,23 @@ function computeStats() {
       });
     });
   });
-  return { routes: routes, categories: categories, excipients: excipients.size, suppliers: suppliers.size };
+
+  // A co-processed product is filed under every excipient it contains, so the
+  // 3185 listings in products.json are only 2382 actual products. Count
+  // distinct product-and-supplier pairs: the same name from two suppliers is
+  // two products, the same product under three excipients is still one.
+  const products = new Set();
+  if (state.products) {
+    Object.keys(state.products).forEach(function(exc) {
+      var bySupplier = state.products[exc];
+      Object.keys(bySupplier).forEach(function(sup) {
+        bySupplier[sup].forEach(function(p) { products.add(p.product + ' ' + sup); });
+      });
+    });
+  }
+
+  return { routes: routes, categories: categories, excipients: excipients.size,
+           suppliers: suppliers.size, products: products.size };
 }
 
 function startExploring() {
@@ -1143,7 +1164,11 @@ function render() {
 function renderWelcome(container) {
   var s = state.data ? computeStats() : null;
   var statsHtml = s
-    ? '<div class="stats">' + s.routes + ' routes &middot; ' + s.categories + ' categories &middot; ' + s.excipients + ' excipients &middot; ' + s.suppliers + ' suppliers</div>'
+    ? '<div class="stats">' + thousands(s.routes) + ' routes &middot; ' +
+        thousands(s.categories) + ' categories &middot; ' +
+        thousands(s.excipients) + ' excipients &middot; ' +
+        thousands(s.suppliers) + ' suppliers &middot; ' +
+        thousands(s.products) + ' products</div>'
     : '';
 
   container.innerHTML =
