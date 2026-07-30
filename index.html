@@ -375,6 +375,32 @@
       letter-spacing: 0.02em;
     }
 
+    /* ── Supplier walls (Stage 1) ── */
+    .suppliers-heading {
+      margin-top: 76px;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: -0.02em;
+    }
+
+    /* Both walls are the same width, which is the point: their five columns sit
+       at the same relative positions, so the two blocks read as one grid. */
+    .supplier-walls {
+      width: 100%;
+      max-width: 820px;
+      margin-top: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .supplier-wall {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     /* ── Stage Header ── */
     .stage-header {
       display: flex;
@@ -918,6 +944,8 @@
       .search-results { max-height: 300px; }
       .welcome h2 { font-size: 23px; }
       .welcome p { font-size: 15px; }
+      .suppliers-heading { margin-top: 52px; font-size: 19px; }
+      .supplier-walls { margin-top: 20px; }
       .stage-header h2 { font-size: 19px; }
       .logo { height: 28px; }
       /* Sized by width, not height: the mark is ~1.94:1, and anything wider
@@ -1021,19 +1049,17 @@ function thousands(n) {
   return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
+// Feeds the landing page stats line only. Suppliers are deliberately not
+// counted: the line no longer reports them.
 function computeStats() {
   let routes = 0, categories = 0;
   // An excipient appears under several routes, so count distinct names.
   const excipients = new Set();
-  const suppliers = new Set();
   state.data.forEach(function(r) {
     routes++;
     (r.children || []).forEach(function(c) {
       categories++;
-      (c.children || []).forEach(function(e) {
-        excipients.add(e.name);
-        (e.suppliers || []).forEach(function(s) { suppliers.add(s.name); });
-      });
+      (c.children || []).forEach(function(e) { excipients.add(e.name); });
     });
   });
 
@@ -1051,8 +1077,8 @@ function computeStats() {
     });
   }
 
-  return { routes: routes, categories: categories, excipients: excipients.size,
-           suppliers: suppliers.size, products: products.size };
+  return { routes: routes, categories: categories,
+           excipients: excipients.size, products: products.size };
 }
 
 function startExploring() {
@@ -1170,11 +1196,19 @@ function renderWelcome(container) {
   var s = state.data ? computeStats() : null;
   var statsHtml = s
     ? '<div class="stats">' + thousands(s.routes) + ' routes &middot; ' +
-        thousands(s.categories) + ' categories &middot; ' +
+        thousands(s.categories) + ' functional categories &middot; ' +
         thousands(s.excipients) + ' excipients &middot; ' +
-        thousands(s.suppliers) + ' suppliers &middot; ' +
-        thousands(s.products) + ' products</div>'
+        thousands(s.products) + ' excipient products</div>'
     : '';
+
+  // Both walls render at the same width and are uncropped, so their five
+  // columns line up with each other. See build-route-images.py.
+  var suppliersHtml =
+    '<h3 class="suppliers-heading">Our Suppliers</h3>' +
+    '<div class="supplier-walls">' +
+      '<img class="supplier-wall" src="assets/suppliers-featured.webp" alt="Featured supplier logos" loading="lazy">' +
+      '<img class="supplier-wall" src="assets/suppliers-all.webp" alt="Supplier logos" loading="lazy">' +
+    '</div>';
 
   container.innerHTML =
     '<div class="welcome animate-in">' +
@@ -1182,6 +1216,7 @@ function renderWelcome(container) {
       '<p>Navigate by route of administration and category to find the right excipient products on PharmaExcipients.com</p>' +
       '<button class="cta-btn" onclick="startExploring()">Start Exploring</button>' +
       statsHtml +
+      suppliersHtml +
     '</div>';
 }
 

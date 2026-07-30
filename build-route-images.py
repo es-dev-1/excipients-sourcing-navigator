@@ -63,6 +63,31 @@ FILES = {
 TARGET_H = 420
 QUALITY = 82
 
+# The two supplier logo walls on the landing page. These are screenshots, so the
+# source names are whatever the screenshot tool produced; replacing a wall means
+# updating this map. Both sit on a flat #F5F5F5 backdrop, which gets keyed out so
+# the white logo cards float on the page background instead of on a grey slab
+# that cuts off the page's dot pattern.
+#
+# Neither frame is cropped, on purpose. The five columns sit at the same relative
+# positions in both screenshots (gutter centres within 0.6% of each other), so
+# rendering both at the same width lines the columns up between the two blocks.
+# Cropping each to its own content would break that.
+SUPPLIER_FILES = {
+    "Screenshot 2026-07-30 at 06.38.48.png": "suppliers-featured",
+    "Screenshot 2026-07-30 at 06.40.09.png": "suppliers-all",
+}
+SUPPLIER_BACKDROP = np.array([245, 245, 245], dtype=np.float32)
+SUPPLIER_SOLID, SUPPLIER_CLEAR = 4.0, 14.0   # white cards are 17 away, so they stay
+SUPPLIER_MAX_W = 1680                        # 2x the 820px the block renders at
+
+# Rows to shave off the top of a wall. The featured screenshot caught four rows
+# of a blue underline belonging to the heading above it, which otherwise renders
+# as a stray blue dash under "Our Suppliers". Its cards start at row 42, so
+# taking eight rows loses nothing. Trimming rows only, never columns, keeps the
+# two walls the same width and their columns aligned.
+SUPPLIER_TRIM_TOP = {"suppliers-featured": 8}
+
 # Cards anchor the photo to their right edge, so its left edge floats somewhere
 # in the middle of the card and would otherwise show as a hard vertical seam
 # against the blue. Ramping alpha to zero across this fraction of the width
@@ -155,6 +180,52 @@ def build_navigator_mark():
           f"renders {round(im.size[0] / 3)}x{MARK_H // 3} in the header")
 
 
+def build_supplier_walls():
+    """The landing page logo walls: key the flat grey backdrop to transparent.
+
+    Only backdrop reaching the image border is removed, so a logo containing the
+    same grey stays intact. The frames are left uncropped so the two walls'
+    columns stay aligned with each other.
+    """
+    dest_dir = Path(__file__).parent / "assets"
+    for src_name, slug in SUPPLIER_FILES.items():
+        src = SRC / src_name
+        if not src.exists():
+            print(f"  skipped {slug}, no source at {src.name}")
+            continue
+
+        rgb = np.asarray(Image.open(src).convert("RGB"), dtype=np.float32)
+        trim = SUPPLIER_TRIM_TOP.get(slug, 0)
+        if trim:
+            rgb = rgb[trim:]
+        dist = np.linalg.norm(rgb - SUPPLIER_BACKDROP, axis=2)
+        alpha = np.clip((dist - SUPPLIER_SOLID) / (SUPPLIER_CLEAR - SUPPLIER_SOLID), 0.0, 1.0)
+
+        is_bg = dist < SUPPLIER_CLEAR
+        labels, _ = ndimage.label(is_bg)
+        border = np.concatenate([labels[0, :], labels[-1, :], labels[:, 0], labels[:, -1]])
+        outer = np.isin(labels, np.unique(border[border > 0]))
+        alpha = np.where(outer, alpha, 1.0)
+
+        a = alpha[..., None]
+        with np.errstate(divide="ignore", invalid="ignore"):
+            colour = np.where(a > 0.004,
+                              (rgb - (1 - a) * SUPPLIER_BACKDROP) / np.maximum(a, 1e-6), rgb)
+        colour = np.clip(colour, 0, 255)
+
+        im = Image.fromarray(np.dstack([colour, alpha * 255.0]).astype(np.uint8), mode="RGBA")
+        w, h = im.size
+        if w > SUPPLIER_MAX_W:
+            im = im.resize((SUPPLIER_MAX_W, max(1, round(h * SUPPLIER_MAX_W / w))), Image.LANCZOS)
+
+        dest = dest_dir / f"{slug}.webp"
+        im.save(dest, "WEBP", quality=88, method=6)
+        kept = round(float((np.asarray(im)[..., 3] > 8).mean()) * 100)
+        print(f"  {src_name[:30]:30s} -> assets/{slug}.webp  "
+              f"{im.size[0]}x{im.size[1]}  {dest.stat().st_size // 1024} KB  "
+              f"{kept}% of frame opaque")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     print(f"source: {SRC}")
@@ -174,6 +245,7 @@ def main():
               f"{kept}% of frame opaque")
     print(f"\n  {len(FILES)} route images, {total // 1024} KB total")
     build_navigator_mark()
+    build_supplier_walls()
 
 
 if __name__ == "__main__":
